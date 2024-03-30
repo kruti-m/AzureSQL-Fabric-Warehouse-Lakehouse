@@ -8,7 +8,7 @@ GO
 ALTER DATABASE [RetailTest] SET  READ_WRITE 
 GO
 ```
-Post database creation execute the scripts in SQLScripts folder as per the numbers assigned.
+Post database creation execute the scripts in SQLScripts folder as per the numbers assigned in the context of the newly created database.
 
 The scripts which are numbered will first create the schema and user defined data types. It will then create the following tables using the schema and UDF's in the Sales Schema.
 
