@@ -10,10 +10,10 @@ GO
 ```
 Post database creation execute the scripts in SQLScripts folder as per the numbers assigned.
 
-The scripts which are numbered will first create the schema and user defined data types. It will then create the following tables using the schema and UDF's
+The scripts which are numbered will first create the schema and user defined data types. It will then create the following tables using the schema and UDF's in the Sales Schema.
 
 ![TableList](/Assests/Media/TableList.PNG)
-in the Sales Schema
+
 
 The relationship diagram is as follows:
 
