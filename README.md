@@ -8,6 +8,6 @@ In order to implement the patterns below, it is expected that the user knows how
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
 
-![Fabric Options](/Assests/Media/FabricOptions.PNG)
+![Fabric Options]{ width: 200px; }(/Assests/Media/FabricOptions.PNG)
 
 # Moving Data from Azure SQL to Fabric Lakehouse
