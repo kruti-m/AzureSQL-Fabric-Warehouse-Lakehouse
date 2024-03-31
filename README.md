@@ -48,8 +48,8 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 1. Select the data source as Azure SQL Database
 1. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
 
-|<img src='/Assests/Media/SelectDataSource.gif' width='1100' height='600'>|
-|--------- |
+<img src='/Assests/Media/SelectDataSource.gif' width='1000' height='600'>
+
 
 1. Select the tables you wish to load
 1. Select the Datawarehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
