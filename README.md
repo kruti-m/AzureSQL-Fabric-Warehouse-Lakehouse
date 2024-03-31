@@ -13,8 +13,8 @@ Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collabo
 
 Step 2 : Create a Data Pipeline
 Once the workspace is selected navigate to New -> Data Pipeline
-<img src='/Assests/Media/NewButton.PNG' width='360' height='100'> 
-<img src='/Assests/Media/SamplePipeline.PNG' width='550' height='300'>
+<img src='/Assests/Media/NewButton.PNG' width='360' height='100'><img src='/Assests/Media/SamplePipeline.PNG' width='570' height='300'>
+
 Before you create the pipeline, ensure the right Sensitivity Label is mapped based on your development requirement.
 <img src='/Assests/Media/SensitivityLabel.PNG' width='400' height='400'>
 
