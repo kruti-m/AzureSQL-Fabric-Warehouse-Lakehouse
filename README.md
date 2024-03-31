@@ -13,7 +13,7 @@ Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collabo
 
 Step 2 : Create a Data Pipeline
 Once the workspace is selected navigate to New -> Data Pipeline
-<img src='/Assests/Media/NewButton.PNG' width='300' height='150'>
+<img src='/Assests/Media/NewButton.PNG' width='320' height='120'>
 
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
 <img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
