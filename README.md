@@ -7,9 +7,9 @@ The [SQLScripts](/Assests/SQLScripts/) will help you create a test Azure SQL dat
 In order to implement the patterns below, it is expected that the user knows how to create Azure SQL database and have acquired trial or Fabric licenses which will allow them to create workspaces and pipelines. It is implicit that the user would also have the required permissions on both Azure SQL and Microsoft Fabric for the implementation.
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
-Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace)
+Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice
 
-<img src='/Assests/Media/CreateWorkspace.PNG' width='300' height='350'>
+<img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='350'>
 
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
 <img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
