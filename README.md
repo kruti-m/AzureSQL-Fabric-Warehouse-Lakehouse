@@ -8,12 +8,12 @@ In order to implement the patterns below, it is expected that the user knows how
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
 **Step 1:** [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice. 
-> :bulb: **Tip:** In our example we have selected the workspace name 'AzureSQLtoFabric'. Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
+> :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**. Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
 
 <img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='450' height='450'>
 
 **Step 2:**[Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
-> :bulb: **Tip:** In our example we have selected the pipeline name 'IngestData'. 
+> :bulb: **Tip:** In our example we have selected the pipeline name **'IngestData'**. 
 
 Once the workspace is selected navigate to **New -> Data Pipeline**
 
