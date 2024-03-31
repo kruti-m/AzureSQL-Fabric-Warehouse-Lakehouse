@@ -30,12 +30,12 @@ Ensure the right Sensitivity Label is mapped based on your development requireme
 
 ### Step 3
 
-**[Create a data pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)**
+**[Create a data pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)** and **assign it a name** of your choice.
 > :bulb: **Tip:** In our example we have selected the pipeline name **'IngestData'**. 
 
 Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 
-|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='350'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='400'>|
+|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='330'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='370'>|
 | ------------- |-------- |
 
 ### Step 4
