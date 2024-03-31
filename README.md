@@ -35,7 +35,7 @@ Ensure the right Sensitivity Label is mapped based on your development requireme
 
 Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 
-|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='330'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='370'>|
+|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='310'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='370'>|
 | ------------- |-------- |
 
 ### Step 4
@@ -43,7 +43,16 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 **Mapping the Azure SQL to Pipeline to Warehouse using Copy Data Assist**.
 We now have all the set-up ready. Azure SQL with some data. An empty Warehouse in Fabric. Let's start with mapping the pipeline to bring data.
 
+1. Select Copy Data Assist from the Canvas
+1. Select the data source as Azure SQL Database
+1. Create a new connection with the right connection string and credentials to load the data from the database. (> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database)
+1. Select the tables you wish to load
+1. Select the Datawarehouse you created in Fabric (> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**)
+1. The Connect to Data Destination lets you specify the mapping. Select Load to new tables for the wizard to create the tables for you.
+1. Leave the default Settings as is.
+1. Select "Save+Run" at the end of the wizard.
 
+ 
 ## Moving Data from Azure SQL to Fabric Lakehouse
 
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
