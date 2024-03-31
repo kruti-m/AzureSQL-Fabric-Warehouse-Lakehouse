@@ -68,3 +68,10 @@ Once the above steps are completed you will be redirected to the Pipeline canvas
 
 |<img src='/Assests/Media/ActivityRename.PNG' width='320' height='300'>|
 |--------- |
+
+### Step 6
+
+**Running the Pipeline**</br>
+We are now ready to run our pipeline. Hit run from the main ribbon above and you should be able to see the activity executing.
+
+<img src='/Assests/Media/PipelineRun.gif' width='550' height='370'>
