@@ -18,8 +18,7 @@ In our example we have selected the workspace name 'AzureSQLtoFabric'. Ensure th
 Once the workspace is selected navigate to **New -> Data Pipeline**
 <img src='/Assests/Media/NewButton.PNG' width='360' height='100'><img src='/Assests/Media/SamplePipeline.PNG' width='600' height='300'>
 
-In our example we have selected the pipeline name 'IngestData'. Ensure the right Sensitivity Label is mapped based on your development requirement.
-
+In our example we have selected the pipeline name 'IngestData'. Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 <img src='/Assests/Media/SensitivityLabel.PNG' width='380' height='400'>
 
 Step 3: 
