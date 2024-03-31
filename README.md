@@ -53,9 +53,6 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 1. Leave the default Settings as is.
 1. Select "Save+Run" at the end of the wizard.
 
-::: video
-<video controls src="Assests/Media/CopyDataActivity.mp4" title="Title"></video>
-:::
+<video controls src="Assests/Media/CopyDataActivity.mp4" title="CopyDataAssist" align="center"></video>
 
-To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
-<img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
+
