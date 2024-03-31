@@ -45,9 +45,9 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 
 1. Select Copy Data Assist from the Canvas
 1. Select the data source as Azure SQL Database
-1. Create a new connection with the right connection string and credentials to load the data from the database. (> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database)
+1. Create a new connection with the right connection string and credentials to load the data from the database. > :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
 1. Select the tables you wish to load
-1. Select the Datawarehouse you created in Fabric (> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**)
+1. Select the Datawarehouse you created in Fabric > :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
 1. The Connect to Data Destination lets you specify the mapping. Select Load to new tables for the wizard to create the tables for you.
 1. Leave the default Settings as is.
 1. Select "Save+Run" at the end of the wizard.
