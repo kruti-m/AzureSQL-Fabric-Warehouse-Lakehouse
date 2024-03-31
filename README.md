@@ -7,16 +7,19 @@ The [SQLScripts](/Assests/SQLScripts/) will help you create a test Azure SQL dat
 In order to implement the patterns below, it is expected that the user knows how to create Azure SQL database and have acquired trial or Fabric licenses which will allow them to create workspaces and pipelines. It is implicit that the user would also have the required permissions on both Azure SQL and Microsoft Fabric for the implementation.
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
-Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice. 
+**Step 1:** [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice. 
+
 In our example we have selected the workspace name 'AzureSQLtoFabric'. Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
 
 <img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='450' height='450'>
 
-Step 2 : [Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
+**Step 2:** [Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
+
 Once the workspace is selected navigate to **New -> Data Pipeline**
 <img src='/Assests/Media/NewButton.PNG' width='360' height='100'><img src='/Assests/Media/SamplePipeline.PNG' width='600' height='300'>
 
 In our example we have selected the pipeline name 'IngestData'. Ensure the right Sensitivity Label is mapped based on your development requirement.
+
 <img src='/Assests/Media/SensitivityLabel.PNG' width='380' height='400'>
 
 Step 3: 
