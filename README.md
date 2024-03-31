@@ -60,5 +60,5 @@ A quick demo can be found [here.](/Assests/Media/CopyDataActivity.mp4)
 Once the above steps are completed you will be redirected to the Pipeline canvas. You need to give appropriate names to the *'ForEach'* and *'CopyData'* activities respectively.
 > :bulb: **Tip:** In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
-|<img src='/Assests/Media/ActivityRename.PNG' width='380' height='350'>|
+|<img src='/Assests/Media/ActivityRename.PNG' width='320' height='350'>|
 |--------- |
