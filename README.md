@@ -31,7 +31,11 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 |<img src='/Assests/Media/SamplePipeline.PNG' width='470' height='300'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='350'>|
 | ------------- |-------- |
 
-**Step 3:**
+**Step 4:** Mapping the Azure SQL to Pipeline to Warehouse using Copy Data Assist.
+We now have all the set-up ready. Azure SQL with some data. An empty Warehouse in Fabric. Let's start with mapping the pipeline to bring data.
+
+
+
 
 
 # Moving Data from Azure SQL to Fabric Lakehouse
