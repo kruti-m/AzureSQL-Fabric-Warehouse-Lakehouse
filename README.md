@@ -57,7 +57,7 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
  <img src='/Assests/Media/SelectDataDestination.gif' width='900' height='350'>
 
 1. Once the Data Warehouse is selected select Load to new tables option.
-1. The wizard will create the destination tables with the same name. You can preview each table if required.
+1. The wizard will create the destination tables with the same name. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
 1. Leave the default Settings page as is and proceed.
 1. You should be able to see the entire flow.
 
