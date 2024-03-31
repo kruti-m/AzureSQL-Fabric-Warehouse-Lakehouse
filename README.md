@@ -9,12 +9,12 @@ In order to implement the patterns below, it is expected that the user knows how
 # Moving Data from Azure SQL to Fabric DataWarehouse
 Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice. In our example we have selected the name 'AzureSQLtoFabric'. Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
 
-<img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='420' height='450'>
+<img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='430' height='450'>
 
 Step 2 : Create a Data Pipeline
 Once the workspace is selected navigate to New -> Data Pipeline
 <img src='/Assests/Media/NewButton.PNG' width='370' height='100'> 
-<img src='/Assests/Media/SamplePipeline.PNG' width='480' height='300'>
+<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='300'>
 Before you create the pipeline, ensure the right Sensitivity Label is mapped based on your development requirement.
 <img src='/Assests/Media/SensitivityLabel.PNG' width='400' height='400'>
 
