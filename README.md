@@ -12,7 +12,9 @@ In order to implement the patterns below, it is expected that the user knows how
 
 <img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='450' height='450'>
 
-**Step 2:**[Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline). > :bulb: **Tip:** In our example we have selected the pipeline name 'IngestData'. 
+**Step 2:**[Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
+> :bulb: **Tip:** In our example we have selected the pipeline name 'IngestData'. 
+
 Once the workspace is selected navigate to **New -> Data Pipeline**
 
 <img src='/Assests/Media/NewButton.PNG' width='360' height='100'><img src='/Assests/Media/SamplePipeline.PNG' width='600' height='300'>
