@@ -17,7 +17,7 @@ In order to implement the patterns below, it is expected that the user knows how
 
 ### Step 2
 
-**[Create an empty warehouse](https://learn.microsoft.com/fabric/data-warehouse/create-warehouse#create-a-warehouse-using-the-home-hub)**.
+**[Create an empty warehouse](https://learn.microsoft.com/fabric/data-warehouse/create-warehouse#create-a-warehouse-using-the-home-hub)** and **assign it a name** of your choice.
 > :bulb: **Tip:** In our example we have selected the Warehouse name **'RetailTestWarehouse'**. 
 
 Once the workspace is selected navigate to **New -> Warehouse**.
@@ -35,7 +35,7 @@ Ensure the right Sensitivity Label is mapped based on your development requireme
 
 Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 
-|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='400'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='400'>|
+|<img src='/Assests/Media/SamplePipeline.PNG' width='500' height='350'>|<img src='/Assests/Media/PipelineLabel.PNG' width='340' height='400'>|
 | ------------- |-------- |
 
 ### Step 4
@@ -44,9 +44,7 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 We now have all the set-up ready. Azure SQL with some data. An empty Warehouse in Fabric. Let's start with mapping the pipeline to bring data.
 
 
+## Moving Data from Azure SQL to Fabric Lakehouse
 
-
-
-# Moving Data from Azure SQL to Fabric Lakehouse
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
 <img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
