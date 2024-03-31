@@ -75,3 +75,6 @@ Once the above steps are completed you will be redirected to the Pipeline canvas
 We are now ready to run our pipeline. Hit run from the main ribbon above and you should be able to see the activity executing.
 
 <img src='/Assests/Media/PipelineRun.gif' width='550' height='370'>
+
+> :bulb: **Tip:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
+|<img src='/Assests/Media/Array.PNG' width='320' height='300'>|
