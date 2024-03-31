@@ -8,7 +8,9 @@ In order to implement the patterns below, it is expected that the user knows how
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
 Step 1: [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace)
-<img src='/Assests/Media/CreateWorkspace.PNG' width='250' height='300'>
+
+<img src='/Assests/Media/CreateWorkspace.PNG' width='300' height='350'>
+
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
 <img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
 
