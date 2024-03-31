@@ -8,9 +8,9 @@ In order to implement the patterns below, it is expected that the user knows how
 
 # Moving Data from Azure SQL to Fabric DataWarehouse
 **Step 1:** [Create a sample workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#create-a-workspace) and assign it a name of your choice. 
-> :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**. Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
-|<img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'>|<img src='/Assests/Media/AdvancedTab.PNG' width='450' height='450'>|
-|-----------|-----------|
+> :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.Ensure the appropriate users/groups are added and license is select. (*Preferred Trail*)
+
+<img src='/Assests/Media/CreateWorkspace.PNG' width='350' height='500'><img src='/Assests/Media/AdvancedTab.PNG' width='450' height='450'>
 
 **Step 2:** [Create and Empty Warehouse](https://learn.microsoft.com/fabric/data-warehouse/create-warehouse#create-a-warehouse-using-the-home-hub).
 > :bulb: **Tip:** In our example we have selected the Warehouse name **'RetailTestWarehouse'**. 
@@ -22,12 +22,14 @@ Once the workspace is selected navigate to **New -> Warehouse**.
 Ensure the right Sensitivity Label is mapped based on your development requirement.
 |<img src='/Assests/Media/Warehouse.PNG' width='400' height='400'>|<img src='/Assests/Media/WarehouseLabel.PNG' width='380' height='400'>|
 | ----------- |----------- |
+
 **Step 3:** [Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
 > :bulb: **Tip:** In our example we have selected the pipeline name **'IngestData'**. 
 
 Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 
-<img src='/Assests/Media/SamplePipeline.PNG' width='600' height='300'><img src='/Assests/Media/PipelineLabel.PNG' width='380' height='400'>
+|<img src='/Assests/Media/SamplePipeline.PNG' width='600' height='300'>|<img src='/Assests/Media/PipelineLabel.PNG' width='380' height='400'>|
+| ----------- |----------- |
 
 **Step 3:**
 
