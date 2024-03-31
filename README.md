@@ -41,7 +41,7 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 
 ### Step 4
 
-**Mapping the Azure SQL to Pipeline to Warehouse using Copy Data Assist**.
+**Mapping the Azure SQL to Pipeline to Warehouse using Copy Data Assist**.</br>
 We now have all the set-up ready. Azure SQL with some data. An empty Warehouse in Fabric. Let's start with mapping the pipeline to bring data.
 
 1. Select Copy Data Assist from the Canvas
@@ -52,7 +52,13 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 1. The Connect to Data Destination lets you specify the mapping. Select Load to new tables for the wizard to create the tables for you.
 1. Leave the default Settings as is.
 1. Select "Save+Run" at the end of the wizard.
+A quick demo can be found [here.](/Assests/Media/CopyDataActivity.mp4)
 
-<video controls src="Assests/Media/CopyDataActivity.mp4" title="CopyDataAssist" align="center"></video>
+### Step 5
 
+**Renaming the Activities**</br>
+Once the above steps are completed you will be redirected to the Pipeline canvas. You need to give appropriate names to the *'ForEach'* and *'CopyData'* activities respectively.
+> :bulb: **Tip:** In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
+|<img src='/Assests/Media/ActivityRename.PNG' width='380' height='400'>|
+|--------- |
