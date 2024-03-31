@@ -16,7 +16,9 @@ In order to implement the patterns below, it is expected that the user knows how
 > :bulb: **Tip:** In our example we have selected the Warehouse name **'RetailTestWarehouse'**. 
 
 Once the workspace is selected navigate to **New -> Warehouse**.
-<img src='/Assests/Media/NewButton.PNG' width='360' height='100'>
+
+|<img src='/Assests/Media/NewButton.PNG' width='360' height='100'>|
+| ----------- |
 
 Ensure the right Sensitivity Label is mapped based on your development requirement.</br>
 <img src='/Assests/Media/Warehouse.PNG' width='400' height='400'><img src='/Assests/Media/WarehouseLabel.PNG' width='380' height='400'>
