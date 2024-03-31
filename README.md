@@ -65,8 +65,10 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 
 <img src='/Assests/Media/EntireFlow.PNG' width='900' height='350'>
 
+1. Select the default "start data transfer immediately" checkbox enabled.
 1. Select "Save+Run" at the end of the wizard once satisfied with the flow
 
+<img src='/Assests/Media/Output.gif.PNG' width='900' height='350'>
 
 ### Step 5
 
