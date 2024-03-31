@@ -68,6 +68,7 @@ We now have all the set-up ready. Azure SQL with some data. An empty Warehouse i
 
 **Renaming the Activities**</br>
 Once the above steps are completed you will be redirected to the Pipeline canvas. You need to give appropriate names to the *'ForEach'* and *'CopyData'* activities respectively.
+
 <img src='/Assests/Media/RenamingActivities.gif' width='900' height='350'>
 
 > :bulb: **Tip:** In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
