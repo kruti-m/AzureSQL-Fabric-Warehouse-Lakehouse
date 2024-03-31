@@ -45,29 +45,21 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 We now have all the set-up ready. Azure SQL with some data. An empty Warehouse in Fabric. Let's start with mapping the pipeline to bring data.
 
 1. Select Copy Data Assist from the Canvas
-1. Select the data source as Azure SQL Database
-1. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
-
+2. Select the data source as Azure SQL Database
+3. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
 <img src='/Assests/Media/SelectDataSource.gif' width='900' height='350'>
 
-
-1. Select the tables you wish to load
-1. Select the Datawarehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
-
+4. Select the tables you wish to load
+5. Select the Datawarehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
  <img src='/Assests/Media/SelectDataDestination.gif' width='900' height='350'>
-
-1. Once the Data Warehouse is selected select Load to new tables option.
-1. The wizard will create the destination tables with the same name. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
-1. Leave the default Settings page as is and proceed.
-1. You should be able to see the entire flow. Ensure you verify the connections and credentials
-
- <img src='/Assests/Media/ColumnMapping.gif' width='900' height='350'>
-
+6. Once the Data Warehouse is selected select Load to new tables option.
+7. The wizard will create the destination tables with the same name. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
+8. Leave the default Settings page as is and proceed.
+9. You should be able to see the entire flow. Ensure you verify the connections and credentials
+<img src='/Assests/Media/ColumnMapping.gif' width='900' height='350'>
 <img src='/Assests/Media/EntireFlow.PNG' width='900' height='350'>
-
-1. Select the default "start data transfer immediately" checkbox enabled.
-1. Select "Save+Run" at the end of the wizard once satisfied with the flow
-
+10. Select the default "start data transfer immediately" checkbox enabled.
+11. Select "Save+Run" at the end of the wizard once satisfied with the flow
 <img src='/Assests/Media/Output.gif.PNG' width='900' height='350'>
 
 ### Step 5
