@@ -15,7 +15,7 @@ In order to implement the patterns below, it is expected that the user knows how
 **Step 2:** [Create and Empty Warehouse](https://learn.microsoft.com/fabric/data-warehouse/create-warehouse#create-a-warehouse-using-the-home-hub).
 > :bulb: **Tip:** In our example we have selected the Warehouse name **'RetailTestWarehouse'**. 
 
-<img src='/Assests/Media/Warehouse.PNG' width='360' height='100'><img src='/Assests/Media/SamplePipeline.PNG' width='500' height='300'>
+<img src='/Assests/Media/Warehouse.PNG' width='500' height='300'>
 
 **Step 3:** [Create a Data Pipeline](https://learn.microsoft.com/fabric/data-factory/create-first-pipeline-with-sample-data#create-a-data-pipeline)
 > :bulb: **Tip:** In our example we have selected the pipeline name **'IngestData'**. 
