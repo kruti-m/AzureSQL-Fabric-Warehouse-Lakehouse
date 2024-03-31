@@ -16,7 +16,7 @@ Once the workspace is selected navigate to New -> Data Pipeline
 <img src='/Assests/Media/NewButton.PNG' width='360' height='100'> 
 <img src='/Assests/Media/SamplePipeline.PNG' width='500' height='270'>
 Before you create the pipeline, ensure the right Sensitivity Label is mapped based on your development requirement.
-<img src='/Assests/Media/SensitivityLabel.PNG' width='400' height='400'>
+<img src='/Assests/Media/SensitivityLabel.PNG' width='450' height='450'>
 
 To move the data to a Warehouse we will navigate to the Data Warehouse tab in Fabric.
 <img src='/Assests/Media/FabricOptions.PNG' width='300' height='500'>
