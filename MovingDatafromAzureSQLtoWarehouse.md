@@ -78,3 +78,8 @@ We are now ready to run our pipeline. Hit run from the main ribbon above and you
 
 > :bulb: **Tip:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
 |<img src='/Assests/Media/Array.PNG' width='320' height='300'>|
+
+### Step 7
+
+Navigate to your Workspace  -> DataWarehouse and you should be able to see the tables as follows
+<img src='/Assests/Media/TableLoad.PNG' width='550' height='370'>
