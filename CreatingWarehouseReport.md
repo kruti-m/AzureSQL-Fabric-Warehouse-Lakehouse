@@ -21,6 +21,6 @@ These visual will be showing:
 * Which sales person sold the most ?
 
 We will create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/WarehouseScripts/) one by one on your newly created warehouse.    
-<img src='/Assests/Media/QueryResults.gif' width='900' height='350'>
+<img src='/Assests/Media/CreatingViews.gif' width='900' height='350'>
 
 ### Step 1
