@@ -77,7 +77,7 @@ We are now ready to run our pipeline. Hit run from the main ribbon above and you
 
 <img src='/Assests/Media/PipelineRun.gif' width='550' height='370'>
 
-> :bulb: **Tip:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
+> :warning: **Warning:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
 |<img src='/Assests/Media/Array.PNG' width='320' height='300'>|
 
 ### Step 7
