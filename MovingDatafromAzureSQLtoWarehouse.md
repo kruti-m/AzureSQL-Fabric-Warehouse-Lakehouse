@@ -1,7 +1,7 @@
 
 # In this article we will cover:
 
-* [Creating a Data Warehouse and projecting the results](#creating-a-data-warehouse-and-projecting-the-results)
+* [Creating a Data Warehouse](#creating-a-data-warehouse)
   * [Moving data from Azure SQL to Fabric DataWarehouse](#moving-data-from-azure-sql-to-fabric-datawarehouse)
     * [Step 1: Create a sample workspace](#step-1)
     * [Step 2: Create an empty warehouse](#step-2)
@@ -11,7 +11,9 @@
     * [Step 6: Running the pipeline](#step-6)
     * [Step 7: Verifying results in data warehouse](#step-7)
 
-# Creating a Data Warehouse and projecting the results
+Once completed follow [this](/CreatingWarehouseReport.md) page to create the reports from warehouse
+
+# Creating a Data Warehouse
 
 ## Moving data from Azure SQL to Fabric DataWarehouse
 
@@ -106,4 +108,6 @@ Using the *'New SQL Query'* wizard you should be able to run the same [VerifyCou
 
 <img src='/Assests/Media/QueryResults.gif' width='900' height='350'>
 
-## Moving data from Fabric DataWarehouse to PowerBI Reports
+## Projecting data from Fabric DataWarehouse to PowerBI Reports
+
+Once completed follow [this](/CreatingWarehouseReport.md) page to create the reports from warehouse
