@@ -49,3 +49,8 @@ We are now ready to connect to our Datawarehouse. Select **Get data -> more -> M
 <img src='/Assests/Media/SelectinWarehousePBI.gif' width='800' height='350'>
 
 <img src='/Assests/Media/SQLEndpoint.PNG' width='700' height='350'>
+
+Once the SQL endpoint is selected you should be able to select only the view from where we want to populate data.</br>
+> :bulb: **Tip:** In our example we will be selecting views **Sales.MostCitiesPurchasing, Sales.MostSoldProducts, Sales.TopMostCustomer, Sales.TopMostSalesPerson** 
+<img src='/Assests/Media/Views.PNG' width='800' height='350'>
+.
