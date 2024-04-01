@@ -1,6 +1,6 @@
 # Creating a Data Warehouse and projecting the results
 
-## Moving Data from Azure SQL to Fabric DataWarehouse
+## Moving data from Azure SQL to Fabric DataWarehouse
 
 ### Step 1
 
@@ -93,3 +93,4 @@ Using the *'New SQL Query'* wizard you should be able to run the same [VerifyCou
 
 <img src='/Assests/Media/QueryResults.gif' width='900' height='350'>
 
+## Moving data from Fabric DataWarehouse to PowerBI Reports
