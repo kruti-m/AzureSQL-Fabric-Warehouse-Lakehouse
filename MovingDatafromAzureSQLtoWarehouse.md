@@ -82,4 +82,5 @@ We are now ready to run our pipeline. Hit run from the main ribbon above and you
 ### Step 7
 
 Navigate to your Workspace  -> DataWarehouse and you should be able to see the tables as follows
-<img src='/Assests/Media/TableLoad.PNG' width='550' height='370'>
+
+<img src='/Assests/Media/TableLoad.PNG' width='600' height='350'>
