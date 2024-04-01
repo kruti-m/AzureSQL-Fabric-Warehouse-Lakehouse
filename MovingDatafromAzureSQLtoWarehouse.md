@@ -91,5 +91,5 @@ Navigate to your **Workspace  -> DataWarehouse** and you should be able to see t
 Using the *'New SQL Query'* wizard you should be able to run the same [VerifyCounts.SQL](/Assests/SQLScripts/8.VerifyCounts.sql) script that you used to verify counts on your database.
 > :memo: **Note:** When you run multiple queries and those return multiple results, you can select results drop down list to see individual results.
 
-<img src='/Assests/Media/QueryResults.gif' width='650' height='350'>
+<img src='/Assests/Media/QueryResults.gif' width='550' height='300'>
 
