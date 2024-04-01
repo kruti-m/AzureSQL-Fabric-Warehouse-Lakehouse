@@ -2,7 +2,8 @@
 
 * [Creating a Data Warehouse report](#creating-a-data-warehouse-report)
   * [Projecting data from Fabric DataWarehouse to PowerBI Reports](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
-    * [Step 1: Creating views in data warehouse](#step-1
+    * [Step 1: Creating views in data warehouse](#step-1)
+
 
 # Creating a Data Warehouse report
 
@@ -11,7 +12,7 @@
 For the purpose of this lab we will project 2 visuals in a PowerBI Report
 These visual will be showing:
 
-* Which product generates most renew and the quantity in which it is sold ?
+* Which product generates most revenue and the quantity in which it is sold ?
 * Which city generates the most sales amount ?
 * Which customer made the highest purchase ?
 * Which sales person sold the most ?
