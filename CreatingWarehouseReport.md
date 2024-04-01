@@ -44,4 +44,8 @@ For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power
 We are now ready to connect to our Datawarehouse. Select **Get data -> more -> Microsoft Fabric -> Warehouses.** If the PowerBI is signed in correctly you should be able to see the Warehouse load from OneLake
 > :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestWarehouse'**.
 
-<img src='/Assests/Media/SelectinWarehousePBI.gif' width='700' height='350'>
+<img src='/Assests/Media/SelectinWarehousePBI.gif' width='800' height='350'>
+
+By default it will only load the tables data Which you should be able to see on the right hand side *'Data'* panel. Again select **Get data -> more**. You should be able see the following pop-up for **DirectQuery** connection.
+
+<img src='/Assests/Media/DirectQueryConnection.PNG' width='800' height='300'>
