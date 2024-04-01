@@ -3,6 +3,7 @@
 * [Creating a Data Warehouse report](#creating-a-data-warehouse-report)
   * [Projecting data from Fabric DataWarehouse to PowerBI Reports](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
     * [Step 1: Creating views in data warehouse](#step-1)
+    * [Step 2: launch PowerBI Desktop](#step-2)
 
 
 # Creating a Data Warehouse report
@@ -25,4 +26,18 @@ We will create 4 non-materialized views to address the above scenarios. Execute 
 |<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
 | ------------- |------------- |
 <img src='/Assests/Media/CreatingViews.gif' width='900' height='350'>
+
+### Step 2 
+
+Reports that use the Warehouse or SQL analytics endpoint can be created in either of the following two tools:
+
+1. [Power BI service](https://learn.microsoft.com/fabric/data-warehouse/reports-power-bi-service)
+2. [Power BI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-getting-started)
+
+For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-get-the-desktop) version to access the SQL analytics endpoint and bring in data from the views we created. Once launched sign-in to your PowerBI Desktop service.
+
+|<img src='/Assests/Media/SigninPBI.PNG' width='500' height='350'>|
+| ------- |
+
+After signing-in select **New -> Report.** It should open a blank report like the one below.
 
