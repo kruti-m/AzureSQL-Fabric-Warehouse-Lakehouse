@@ -29,11 +29,9 @@ At a high level we will be executing the following steps
 
 - Step 1: Creating views in data warehouse.
 - Step 2: Create an empty report.
-- Step 3: Use Get data to connect to Fabric Warehouse.
-- Step 4: 
-- Step 5: 
-- Step 6: 
-- Step 7: 
+- Step 3: Connect to Fabric warehouse using SQL Endpoint.
+- Step 4: Mapping view data to visuals in Power BI.
+- Step 5: Publish the report in workspace
 
 # Lakehouse Tutorials
 

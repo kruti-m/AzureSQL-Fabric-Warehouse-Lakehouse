@@ -4,7 +4,8 @@
   * [Projecting data from Fabric DataWarehouse to PowerBI Reports.](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
     * [Step 1: Creating views in data warehouse.](#step-1)
     * [Step 2: Create an empty report.](#step-2)
-    * [Step 3: Use Get data to connect to Fabric Warehouse.](#step-3)
+    * [Step 3: Connect to Fabric warehouse using SQL Endpoint.](#step-3)
+    * [Step 4: Mapping view data to visuals in Power BI.](#step-4)
 
 # Creating a Data Warehouse report
 
@@ -50,6 +51,8 @@ We are now ready to connect to our Datawarehouse. Select **Get data -> more -> M
 
 <img src='/Assests/Media/SQLEndpoint.PNG' width='700' height='350'>
 
+### Step 4
+
 Once the SQL endpoint is selected you should be able to select only the view from where we want to populate data.</br>
 
 <img src='/Assests/Media/DirectQuery.gif' width='800' height='450'>
@@ -58,3 +61,6 @@ Once the SQL endpoint is selected you should be able to select only the view fro
 <img src='/Assests/Media/Views.PNG' width='350' height='180'>|
 |------- |
 
+For the purpose of this lab we have used the *'Direct Query'* mode. We are now ready to map the view contents to visuals in PowerBI.
+
+> :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
