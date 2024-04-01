@@ -15,8 +15,10 @@ At a high level we will be executing the following steps
 - Step 2: Create an empty warehouse
 - Step 3: Create a data pipeline
 - Step 4: Use Copy Data Assist wizard to bring data from Azure SQL to Warehouse
-- Step 5: Run the pipeline to load data.
-- Step 6: 
+- Step 5: Renaming the pipeline for load data.
+- Step 6: Running the pipeline.
+- Step 7: Verifying results in data warehouse.
+  
 Follow [this](/MovingDatafromAzureSQLtoWarehouse.md) page for detailed instructions
 
 ## Moving Data from Azure SQL to Fabric Lakehouse
