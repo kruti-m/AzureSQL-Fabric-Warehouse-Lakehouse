@@ -1,14 +1,10 @@
 # In this article we will cover:
 
-* [Creating a Data Warehouse](#creating-a-data-warehouse)
-  * [Moving data from Azure SQL to Fabric DataWarehouse](#moving-data-from-azure-sql-to-fabric-datawarehouse)
-    * [Step 1: Create a sample workspace](#step-1)
-    * [Step 2: Create an empty warehouse](#step-2)
-    * [Step 3: Create a data pipeline](#step-3)
-    * [Step 4: Use Copy Data Assist wizard](#step-4)
-    * [Step 5: Renaming the pipeline](#step-5)
-    * [Step 6: Running the pipeline](#step-6)
-    * [Step 7: Verifying results in data warehouse](#step-7)
+* [Creating a Data Warehouse report](#creating-a-data-warehouse-report)
+  * [Projecting data from Fabric DataWarehouse to PowerBI Reports](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
+    * [Step 1: Creating views in data warehouse](#step-1
+
+# Creating a Data Warehouse report
 
 ## Projecting data from Fabric DataWarehouse to PowerBI Reports
 
@@ -20,7 +16,12 @@ These visual will be showing:
 * Which customer made the highest purchase ?
 * Which sales person sold the most ?
 
-We will create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/WarehouseScripts/) one by one on your newly created warehouse.    
+### Step 1
+
+We will create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/WarehouseScripts/) one by one on your newly created warehouse using *'New SQL Query'* wizard.</br>
+:grey_exclamation: **Hint** There is a commented section for each script to verify the results. Run it after creating the view and receiving the "Commands completed successfully" msg in the result box.
+
+|<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
+| ------------- |------------- |
 <img src='/Assests/Media/CreatingViews.gif' width='900' height='350'>
 
-### Step 1
