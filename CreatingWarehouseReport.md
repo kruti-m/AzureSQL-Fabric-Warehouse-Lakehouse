@@ -6,6 +6,7 @@
     * [Step 2: Create an empty report.](#step-2)
     * [Step 3: Connect to Fabric warehouse using SQL Endpoint.](#step-3)
     * [Step 4: Mapping view data to visuals in Power BI.](#step-4)
+    * [Step 5: Publish the report in workspace.]
 
 # Creating a Data Warehouse report
 
@@ -67,3 +68,7 @@ For the purpose of this lab we have used the *'Direct Query'* mode. We are now r
 |------- |
 
 > :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
+
+The final report looks something like below.
+|<img src='/Assests/Media/FinalReport.PNG' width='900' height='450'>|
+|------- |
