@@ -18,6 +18,7 @@ At a high level we will be executing the following steps
 - Step 5: Renaming the pipeline for load data.
 - Step 6: Running the pipeline.
 - Step 7: Verifying results in data warehouse.
+  
 Follow [this](/MovingDatafromAzureSQLtoWarehouse.md) page for detailed instructions
 
 ## Moving Data from Azure SQL to Fabric Lakehouse
