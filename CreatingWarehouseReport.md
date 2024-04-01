@@ -77,8 +77,10 @@ The final report looks something like below. You can find the sample PBIX file [
 
 Once satisfied with the report you can publish it.In Power BI Desktop, choose **File -> Publish -> Publish** to Power BI or select Publish on the Home ribbon.
 
-<img src='/Assests/Media/Publish.png' width='450' height='180'>|
+<img src='/Assests/Media/Publish.png' width='950' height='180'>|
 |------- |
 
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
+
+Your Workspace should now contain the Warehouse, Pipeline and Report. You can now schedule the flow for both the sample pipeline and sample report. 
