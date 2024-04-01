@@ -34,12 +34,7 @@ Reports that use the Warehouse or SQL analytics endpoint can be created in eithe
 1. [Power BI service](https://learn.microsoft.com/fabric/data-warehouse/reports-power-bi-service)
 2. [Power BI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-getting-started)
 
-For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-get-the-desktop) version to access the SQL analytics endpoint and bring in data from the views we created. Once launched sign-in to your PowerBI Desktop service.
+For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-get-the-desktop) version to access the SQL analytics endpoint and bring in data from the views we created. Once launched sign-in to your PowerBI Desktop service.After signing-in select **New -> Report.** It should open a blank report like the one below.
 
-|<img src='/Assests/Media/SigninPBI.PNG' width='400' height='250'>|
-| ------- |
-
-After signing-in select **New -> Report.** It should open a blank report like the one below.
-
-|<img src='/Assests/Media/BlankReport.PNG' width='400' height='250'>|
-| ------- |
+|<img src='/Assests/Media/SigninPBI.PNG' width='400' height='250'>|<img src='/Assests/Media/BlankReport.PNG' width='400' height='250'>|
+| ------- | ------- |
