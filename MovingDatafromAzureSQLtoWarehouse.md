@@ -1,3 +1,10 @@
+
+# In this article we will cover:
+
+* [Creating a Data Warehouse and projecting the results](#creating-a-data-warehouse-and-projecting-the-results)
+  * [Moving data from Azure SQL to Fabric DataWarehouse](#moving-data-from-azure-sql-to-fabric-datawarehouse)
+    * [Step 1:](#step-1)
+
 # Creating a Data Warehouse and projecting the results
 
 ## Moving data from Azure SQL to Fabric DataWarehouse
