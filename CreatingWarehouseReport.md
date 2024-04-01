@@ -52,5 +52,5 @@ We are now ready to connect to our Datawarehouse. Select **Get data -> more -> M
 
 Once the SQL endpoint is selected you should be able to select only the view from where we want to populate data.</br>
 > :bulb: **Tip:** In our example we will be selecting views **Sales.MostCitiesPurchasing, Sales.MostSoldProducts, Sales.TopMostCustomer, Sales.TopMostSalesPerson** 
-<img src='/Assests/Media/Views.PNG' width='400' height='230'>
+<img src='/Assests/Media/Views.PNG' width='380' height='200'>
 .
