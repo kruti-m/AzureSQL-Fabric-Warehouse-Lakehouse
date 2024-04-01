@@ -48,4 +48,4 @@ We are now ready to connect to our Datawarehouse. Select **Get data -> more -> M
 
 By default it will only load the tables data Which you should be able to see on the right hand side *'Data'* panel. Again select **Get data -> more**. You should be able see the following pop-up for **DirectQuery** connection.
 
-<img src='/Assests/Media/DirectQueryConnection.PNG' width='800' height='300'>
+<img src='/Assests/Media/DirectQueryConnection.PNG' width='600' height='250'>
