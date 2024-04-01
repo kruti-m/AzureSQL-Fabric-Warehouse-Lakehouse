@@ -63,4 +63,7 @@ Once the SQL endpoint is selected you should be able to select only the view fro
 
 For the purpose of this lab we have used the *'Direct Query'* mode. We are now ready to map the view contents to visuals in PowerBI.
 
+|<img src='/Assests/Media/MappingViewstoVisuals.gif' width='800' height='450'>|
+|------- |
+
 > :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
