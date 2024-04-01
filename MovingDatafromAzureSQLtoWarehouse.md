@@ -1,5 +1,3 @@
-
-[[_TOC_]]
 # Creating a Data Warehouse and projecting the results
 
 ## Moving data from Azure SQL to Fabric DataWarehouse
