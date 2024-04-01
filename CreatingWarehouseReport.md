@@ -44,4 +44,4 @@ For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power
 We are now ready to connect to our Datawarehouse. Select **Get data -> more -> Microsoft Fabric -> Warehouses.** If the PowerBI is signed in correctly you should be able to see the Warehouse load from OneLake
 > :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestWarehouse'**.
 
-<img src='/Assests/Media/SelectinWarehousePBI.gif' width='900' height='350'>
+<img src='/Assests/Media/SelectinWarehousePBI.gif' width='700' height='350'>
