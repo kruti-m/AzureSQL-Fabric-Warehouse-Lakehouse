@@ -9,9 +9,7 @@ AS
 			,[ProductDescription]
 		FROM Sales.SalesOrderDetail AS OD
 		INNER JOIN [Sales].[Product] AS P ON OD.ProductID = P.ProductID
-		GROUP BY OD.productID
-				,P.ProductID
-				,ProductName
+		GROUP BY ProductName
 				,ProductDescription
 				,Color
 )
