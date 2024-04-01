@@ -65,7 +65,7 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 
 <img src='/Assests/Media/RenamingActivities.gif' width='550' height='370'>
 
-> :bulb: **Tip:** In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
+> :grey_exclamation: **Hint**  In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
 |<img src='/Assests/Media/ActivityRename.PNG' width='320' height='300'>|
 |--------- |
@@ -78,6 +78,7 @@ We are now ready to run our pipeline. Hit run from the main ribbon above and you
 <img src='/Assests/Media/PipelineRun.gif' width='550' height='370'>
 
 > :warning: **Warning:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
+
 |<img src='/Assests/Media/Array.PNG' width='320' height='300'>|
 
 ### Step 7
@@ -90,5 +91,5 @@ Navigate to your **Workspace  -> DataWarehouse** and you should be able to see t
 Using the *'New SQL Query'* wizard you should be able to run the same [VerifyCounts.SQL](/Assests/SQLScripts/8.VerifyCounts.sql) script that you used to verify counts on your database.
 > :memo: **Note:** When you run multiple queries and those return multiple results, you can select results drop down list to see individual results.
 
-<img src='/Assests/Media/QueryResults.gif' width='550' height='370'>
+<img src='/Assests/Media/QueryResults.gif' width='650' height='350'>
 
