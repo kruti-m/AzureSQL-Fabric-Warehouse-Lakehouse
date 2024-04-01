@@ -1,10 +1,10 @@
 # In this article we will cover:
 
-* [Creating a Data Warehouse report](#creating-a-data-warehouse-report)
-  * [Projecting data from Fabric DataWarehouse to PowerBI Reports](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
-    * [Step 1: Creating views in data warehouse](#step-1)
-    * [Step 2: launch PowerBI Desktop](#step-2)
-
+* [Creating a Data Warehouse report.](#creating-a-data-warehouse-report)
+  * [Projecting data from Fabric DataWarehouse to PowerBI Reports.](#projecting-data-from-fabric-datawarehouse-to-powerbi-reports)
+    * [Step 1: Creating views in data warehouse.](#step-1)
+    * [Step 2: Create an empty report.](#step-2)
+    * [Step 3: Use Get data to connect to Fabric Warehouse.](#step-3)
 
 # Creating a Data Warehouse report
 
@@ -38,3 +38,5 @@ For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power
 
 |<img src='/Assests/Media/SigninPBI.PNG' width='400' height='300'>|<img src='/Assests/Media/BlankReport.PNG' width='400' height='300'>|
 | ------- | ------- |
+
+### Step 3
