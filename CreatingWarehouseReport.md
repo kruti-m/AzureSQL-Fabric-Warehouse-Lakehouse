@@ -82,5 +82,8 @@ Once satisfied with the report you can publish it.In Power BI Desktop, choose **
 
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
+You should see the following messages when the report is being published.
 
-Your Workspace should now contain the Warehouse, Pipeline and Report. You can now schedule the flow for both the sample pipeline and sample report. 
+|<img src='/Assests/Media/MSG1.PNG' width='400' height='400'>|<img src='/Assests/Media/MSG2.PNG' width='400' height='400'>|
+| ----------- |---------- |
+Ensure the right *'Sensitivity Label'* is mapped based on your development requirement for the report in Warehouse. Your Workspace should now contain the Warehouse, Pipeline and Report. You can now schedule the flow for both the sample pipeline and sample report. 
