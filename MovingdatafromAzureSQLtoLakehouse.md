@@ -45,7 +45,7 @@ Ensure the right *'Sensitivity Label'* is mapped based on your development requi
 
 Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the right *'Sensitivity Label'* is mapped based on your development requirement.</br>
 
-|<img src='/Assests/Media/SamplePipeline.PNG width='500' height='310'>|<img src='/Assests/Media/Pipeline2Label.PNG' width='340' height='370'>|
+|<img src='/Assests/Media/SamplePipeline2.PNG' width='500' height='310'>|<img src='/Assests/Media/Pipeline2Label.PNG' width='340' height='370'>|
 | ------------- |-------- |
 
 ### Step 4
