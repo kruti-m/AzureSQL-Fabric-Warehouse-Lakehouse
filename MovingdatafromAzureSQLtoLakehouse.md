@@ -67,8 +67,8 @@ Let's start with mapping the pipeline to bring data.
 5. Select the Lakehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestLakehouse'**.
  <img src='/Assests/Media/SelectLakehouseDestination.gif' width='900' height='350'>
 
-6. Once the data warehouse is selected select Load to new tables option.
-7. The wizard will create the destination tables with the same name. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
+6. Once the data lakehouse is selected select Files option.
+7. The wizard will create the destination files with the same name and *.txt* extension. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
 8. Leave the default *'Settings'* page as is and proceed.
 9. You should be able to see the entire flow. Ensure you verify the connections and credentials
 
