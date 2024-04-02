@@ -71,10 +71,12 @@ Let's start with mapping the pipeline to bring data.
 7. The wizard will create the destination files with the same name and *.txt* extension. You can preview each table if required.</br> :grey_exclamation: **Hint** You need not wait for all the tables to be previewed. Click Next.
 8. Leave the default *'Settings'* page as is and proceed.
 9. You should be able to see the entire flow. Ensure you verify the connections and credentials
-
 <img src='/Assests/Media/ColumMapping2.gif' width='900' height='350'>
 <img src='/Assests/Media/EntireFlow2.PNG' width='900' height='350'>
 
+10. Select the default "start data transfer immediately" checkbox enabled.
+11. Select *'Save+Run'* at the end of the wizard once satisfied with the flow
+<img src='/Assests/Media/Output2.PNG' width='900' height='350'>
 ### Step 5
 
 ### Step 6
