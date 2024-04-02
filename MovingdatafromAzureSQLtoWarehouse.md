@@ -78,7 +78,7 @@ Let's start with mapping the pipeline to bring data.
 **Renaming the Activities**</br>
 Once the above steps are completed you will be redirected to the pipeline canvas. You need to give appropriate names to the *'ForEach'* and *'CopyData'* activities respectively.
 
-<img src='/Assests/Media/RenamingActivities.gif' width='800' height='370'>
+<img src='/Assests/Media/RenamingActivities.gif' width='800' height='350'>
 
 > :grey_exclamation: **Hint**  In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
