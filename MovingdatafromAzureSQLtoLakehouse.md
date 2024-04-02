@@ -76,7 +76,8 @@ Let's start with mapping the pipeline to bring data.
 
 10. Select the default "start data transfer immediately" checkbox enabled.
 11. Select *'Save+Run'* at the end of the wizard once satisfied with the flow
-<img src='/Assests/Media/Output2.PNG' width='900' height='350'>
+<img src='/Assests/Media/Output2.gif' width='900' height='350'>
+
 ### Step 5
 
 ### Step 6
