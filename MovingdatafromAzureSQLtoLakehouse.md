@@ -50,6 +50,15 @@ Once the workspace is selected navigate to **New -> Data Pipeline**. Ensure the 
 
 ### Step 4
 
+**Mapping the Azure SQL to Pipeline to Lakehouse using Copy Data Assist**.</br>
+We now have all the set-up ready. An azure SQL with some data. An empty lakehouse in fabric.</br>
+Let's start with mapping the pipeline to bring data.
+
+1. Select Copy Data Assist from the canvas
+2. Select the data source as Azure SQL Database
+3. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
+<img src='/Assests/Media/SelectDataSource.gif' width='900' height='350'>
+
 ### Step 5
 
 ### Step 6
