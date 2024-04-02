@@ -95,5 +95,5 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 
 Navigate to your **Workspace  -> DataWarehouse** and you should be able to see the tables as follows
 
-|<img src='/Assests/Media/FilesLoad.PNG' width='800' height='350'>|
+|<img src='/Assests/Media/FilesLoad.PNG' width='900' height='300'>|
 | -------------- |
