@@ -82,7 +82,7 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 
 > :grey_exclamation: **Hint**  In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
-|<img src='/Assests/Media/ActivityRename.PNG' width='320' height='300'>|
+|<img src='/Assests/Media/ActivityRename.PNG' width='220' height='200'>|
 |--------- |
 
 ### Step 6
