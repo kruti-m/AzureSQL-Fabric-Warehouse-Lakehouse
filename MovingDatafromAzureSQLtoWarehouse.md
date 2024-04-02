@@ -1,5 +1,5 @@
 
-# In this article we will cover:
+# In this article we will cover
 
 * [Creating a Data Warehouse.](#creating-a-data-warehouse)
   * [Moving data from Azure SQL to Fabric DataWarehouse.](#moving-data-from-azure-sql-to-fabric-datawarehouse)
@@ -11,7 +11,7 @@
     * [Step 6: Running the pipeline.](#step-6)
     * [Step 7: Verifying results in data warehouse.](#step-7)
 
-Once completed follow [this](/CreatingWarehouseReport.md) page to create the reports from warehouse
+Once completed follow [this](/CreatingWarehouseReport.md) page to create the reports from warehouse.
 
 # Creating a Data Warehouse
 
