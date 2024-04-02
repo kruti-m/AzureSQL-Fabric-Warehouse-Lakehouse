@@ -106,3 +106,7 @@ Navigate to your **Workspace  -> DataWarehouse** and you should be able to see t
 
 |<img src='/Assests/Media/FilesLoad.PNG' width='900' height='300'>|
 | -------------- |
+
+## Projecting data from Fabric DataWarehouse to PowerBI Reports
+
+Once completed follow [this](/CreatingLakehouseReport.md) page to create the reports from warehouse
