@@ -84,9 +84,16 @@ Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
 You should see the following messages when the report is being published.
 
-|<img src='/Assests/Media/MSG1.PNG' width='600' height='400'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='400'>|
-| ----------- | ----------- |
+|<img src='/Assests/Media/MSG1.PNG' width='600' height='300'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='300'>|
+| ---------- | ----------- |
 
 > :memo: **Note:** Ensure the right *'Sensitivity Label'* is mapped based on your development requirement for the report in Warehouse.
+
+> :bulb: **Tip:** Check if you can answer the questions using the report.
+
+* Which product generates most revenue and the quantity in which it is sold ?
+* Which city generates the most sales amount ?
+* Which customer made the highest purchase ?
+* Which sales person sold the most ?
 
 Your Workspace should now contain the Warehouse, Pipeline and Report. You can now schedule the flow for both the sample pipeline and sample report. 

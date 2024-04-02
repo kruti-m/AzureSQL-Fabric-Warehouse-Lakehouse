@@ -1,4 +1,6 @@
-This Repository contains artifacts to move data from Azure SQL to Microsoft Fabric within same region and Azure Subscription through data pipelines. It also elaborates how to project the data using PowerBI
+# Overview
+
+This Repository contains artifacts to move data from Azure SQL to Microsoft Fabric within same region and Azure Subscription through data pipelines. It also elaborates how to project the data using PowerBI.
 This is ideal if you are trying Fabric for the first time and create a development environment to understand the data moving patterns.
 
 # Pre-requisites
@@ -21,7 +23,7 @@ At a high level we will be executing the following steps
 - Step 6: Running the pipeline.
 - Step 7: Verifying results in data warehouse.
   
-Follow [this](/MovingDatafromAzureSQLtoWarehouse.md) page for detailed instructions
+Follow [this](/MovingdatafromAzureSQLtoWarehouse.md) page for detailed instructions
 
 ## Projecting data from Fabric DataWarehouse to PowerBI Reports
 
@@ -31,9 +33,24 @@ At a high level we will be executing the following steps
 - Step 2: Create an empty report.
 - Step 3: Connect to Fabric warehouse using SQL Endpoint.
 - Step 4: Mapping view data to visuals in Power BI.
-- Step 5: Publish the report in workspace
+- Step 5: Publish the report in workspace.
+
+Follow [this](/CreatingWarehouseReport.md) page for detailed instructions.
 
 # Lakehouse Tutorials
 
-
 ## Moving Data from Azure SQL to Fabric Lakehouse
+
+At a high level we will be executing the following steps
+
+- Step 1: Using the sample workspace created in earlier labs
+- Step 2: Create an empty lakehouse.
+- Step 3: Create a data pipeline
+- Step 4: Use Copy Data Assist wizard to bring data from Azure SQL to Warehouse
+- Step 5: Renaming the pipeline for load data.
+- Step 6: Running the pipeline.
+- Step 7: Verifying results in lakehouse.
+  
+Follow [this](/MovingdatafromAzureSQLtoLakehouse.md) page for detailed instructions.
+
+## Projecting data from Fabric DataWarehouse to PowerBI Reports
