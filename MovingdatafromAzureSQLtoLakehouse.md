@@ -60,7 +60,7 @@ Let's start with mapping the pipeline to bring data.
 <img src='/Assests/Media/SelectDataSource.gif' width='900' height='350'>
 
 4. Select the tables you wish to load
-5. Select the Datawarehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
+5. Select the Lakehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestLakehouse'**.
  <img src='/Assests/Media/SelectLakehouseDestination.gif' width='900' height='350'>
 
 ### Step 5
