@@ -87,7 +87,7 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 
 > :grey_exclamation: **Hint**  In our example we have selected the 'ForEach' activity name **'ForEach_SQLtoLakehouse'** and the 'CopyData' activity name **'Copy_SQLtoLakehouse'**.
 
-|<img src='/Assests/Media/ActivityRename2.PNG' width='320' height='300'>|
+|<img src='/Assests/Media/ActivityRename2.PNG' width='220' height='200'>|
 |--------- |
 ### Step 6
 
@@ -106,6 +106,8 @@ Navigate to your **Workspace  -> Lakehouse** and you should be able to see the t
 
 |<img src='/Assests/Media/FilesLoad.PNG' width='900' height='300'>|
 | -------------- |
+
+Verifying the counts
 
 ## Projecting data from Fabric Lakehouse to PowerBI Reports
 
