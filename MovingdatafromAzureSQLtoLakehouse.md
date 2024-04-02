@@ -102,11 +102,11 @@ We are now ready to run our pipeline. Hit run from the main ribbon above and you
 
 ### Step 7
 
-Navigate to your **Workspace  -> DataWarehouse** and you should be able to see the tables as follows
+Navigate to your **Workspace  -> Lakehouse** and you should be able to see the tables as follows
 
 |<img src='/Assests/Media/FilesLoad.PNG' width='900' height='300'>|
 | -------------- |
 
-## Projecting data from Fabric DataWarehouse to PowerBI Reports
+## Projecting data from Fabric Lakehouse to PowerBI Reports
 
 Once completed follow [this](/CreatingLakehouseReport.md) page to create the reports from warehouse
