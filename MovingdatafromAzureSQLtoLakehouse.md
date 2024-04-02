@@ -55,7 +55,10 @@ We now have all the set-up ready. An azure SQL with some data. An empty lakehous
 Let's start with mapping the pipeline to bring data.
 
 1. Select Copy Data Assist from the canvas
-2. Select the data source as Azure SQL Database
+2. Select the data source as Azure SQL Database.
+
+> :warning: **Warning:** If you have done the previous lab re-use the same connection you used to connect to Azure SQL database. Else proceed to the step below.<img src='/Assests/Media/Pre-selected.gif' width='900' height='350'>
+
 3. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
 <img src='/Assests/Media/SelectDataSource.gif' width='900' height='350'>
 
