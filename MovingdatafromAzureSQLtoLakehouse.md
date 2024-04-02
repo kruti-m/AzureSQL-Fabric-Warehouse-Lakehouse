@@ -27,6 +27,19 @@ Once completed follow [this](/CreatingLakehouseReport.md) page to create the rep
 
 ### Step 2
 
+
+**[Create an empty lakehouse](https://learn.microsoft.com/fabric/onelake/create-lakehouse-onelake#create-a-lakehouse)** and **assign it a name** of your choice.
+> :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestlakehouse'**.
+
+Once the workspace is selected navigate to **New -> Lakehouse**.
+|<img src='/Assests/Media/NewButton.PNG' width='360' height='100'>|
+| ----------- |
+
+
+Ensure the right *'Sensitivity Label'* is mapped based on your development requirement.
+|<img src='/Assests/Media/Lakehouse.PNG' width='400' height='400'>|<img src='/Assests/Media/LakehouseLabel.PNG' width='380' height='400'>|
+| ----------- |--------- |
+
 ### Step 3
 
 ### Step 4
