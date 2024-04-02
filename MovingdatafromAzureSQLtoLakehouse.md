@@ -35,8 +35,8 @@ Once the workspace is selected navigate to **New -> Lakehouse**.
 | ----------- |
 
 Ensure the right *'Sensitivity Label'* is mapped based on your development requirement.
-|<img src='/Assests/Media/Lakehouse.PNG' width='4000' height='380'>|<img src='/Assests/Media/LakehouseLabel.PNG' width='380' height='400'>|
-| ----------- |----------- |
+|<img src='/Assests/Media/Lakehouse.PNG' width='400' height='380'>|<img src='/Assests/Media/LakehouseLabel.PNG' width='380' height='400'>|
+| ----------- |----------|
 
 ### Step 3
 
