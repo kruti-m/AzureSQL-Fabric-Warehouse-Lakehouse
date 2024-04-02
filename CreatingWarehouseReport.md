@@ -85,7 +85,7 @@ Select the destination as your workspace used for this lab.</br>
 You should see the following messages when the report is being published.
 
 |<img src='/Assests/Media/MSG1.PNG' width='600' height='300'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='300'>|
-| ----------- | ----------- |
+| ---------- | ----------- |
 
 > :memo: **Note:** Ensure the right *'Sensitivity Label'* is mapped based on your development requirement for the report in Warehouse.
 
