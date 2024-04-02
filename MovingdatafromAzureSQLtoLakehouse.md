@@ -59,6 +59,10 @@ Let's start with mapping the pipeline to bring data.
 3. Create a new connection with the right connection string and credentials to load the data from the database.</br> :grey_exclamation: **Hint** Use the same credentials with which you populated the data in the database.
 <img src='/Assests/Media/SelectDataSource.gif' width='900' height='350'>
 
+4. Select the tables you wish to load
+5. Select the Datawarehouse you created in Fabric.</br> :grey_exclamation: **Hint** In this example we are using **'RetailTestWarehouse'**.
+ <img src='/Assests/Media/SelectLakehouseDestination.gif' width='900' height='350'>
+
 ### Step 5
 
 ### Step 6
