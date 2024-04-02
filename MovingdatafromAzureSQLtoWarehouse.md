@@ -90,7 +90,7 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 **Running the Pipeline**</br>
 We are now ready to run our pipeline. Hit run from the main ribbon above and you should be able to see the activity executing.
 
-<img src='/Assests/Media/PipelineRun.gif' width='850' height='400'>
+<img src='/Assests/Media/PipelineRun.gif' width='900' height='400'>
 
 > :warning: **Warning:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
 
