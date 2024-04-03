@@ -78,11 +78,11 @@ Let's start with mapping the pipeline to bring data.
 **Renaming the Activities**</br>
 Once the above steps are completed you will be redirected to the pipeline canvas. You need to give appropriate names to the *'ForEach'* and *'CopyData'* activities respectively.
 
-<img src='/Assests/Media/RenamingActivities.gif' width='550' height='370'>
+<img src='/Assests/Media/RenamingActivities.gif' width='800' height='350'>
 
 > :grey_exclamation: **Hint**  In our example we have selected the 'ForEach' activity name **'ForEachLoopSQLtoWarehouseTable'** and the 'CopyData' activity name **'CopyfromSQLtoWarehouse'**.
 
-|<img src='/Assests/Media/ActivityRename.PNG' width='320' height='300'>|
+|<img src='/Assests/Media/ActivityRename.PNG' width='220' height='200'>|
 |--------- |
 
 ### Step 6
@@ -90,7 +90,7 @@ Once the above steps are completed you will be redirected to the pipeline canvas
 **Running the Pipeline**</br>
 We are now ready to run our pipeline. Hit run from the main ribbon above and you should be able to see the activity executing.
 
-<img src='/Assests/Media/PipelineRun.gif' width='550' height='370'>
+<img src='/Assests/Media/PipelineRun.gif' width='900' height='400'>
 
 > :warning: **Warning:** You may notice the following pop-up when the array of table list is being passed. Select Ok.
 
