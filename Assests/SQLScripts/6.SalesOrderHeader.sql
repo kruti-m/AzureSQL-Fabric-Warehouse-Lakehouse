@@ -154,11 +154,3 @@ Table [Sales].[SalesOrderHeader]
 	GO
 	ALTER TABLE [Sales].[SalesOrderHeader] CHECK CONSTRAINT [CK_SalesOrderHeader_TaxAmt]
 	GO
-/****** Object:  Foreign Key for SalesOrderHeader Table with Customer
-[CustomerID]
-******/
-	ALTER TABLE [SalesLT].[SalesOrderHeader]  WITH CHECK ADD  CONSTRAINT [FK_SalesOrderHeader_Customer_CustomerID] FOREIGN KEY([CustomerID])
-	REFERENCES [SalesLT].[Customer] ([CustomerID])
-	GO
-	ALTER TABLE [SalesLT].[SalesOrderHeader] CHECK CONSTRAINT [FK_SalesOrderHeader_Customer_CustomerID]
-	GO
