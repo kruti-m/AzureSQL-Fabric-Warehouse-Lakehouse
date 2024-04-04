@@ -6,7 +6,7 @@
     * [Step 2: Create an empty report.](#step-2)
     * [Step 3: Connect to Fabric warehouse using SQL Endpoint.](#step-3)
     * [Step 4: Mapping view data to visuals in Power BI.](#step-4)
-    * [Step 5: Publish the report in workspace.]
+    * [Step 5: Publish the report in workspace.](#step-5)
 
 # Creating a Data Warehouse report
 
