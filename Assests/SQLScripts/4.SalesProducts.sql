@@ -329,8 +329,6 @@ INSERT [Sales].[Product] ([ProductID], [ProductCategoryID], [ProductName], [Prod
 INSERT [Sales].[Product] ([ProductID], [ProductCategoryID], [ProductName], [ProductDescription], [ProductNumber], [Color], [Size], [Weight], [StandardCost], [ListPrice], [ModifiedDate]) VALUES (999, 6, N'Road-750', N'Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.', N'BK-R19B-52', N'Black', N'52', CAST(9262.31 AS Decimal(8, 2)), 343.6496, 539.9900, CAST(N'2008-03-11T10:01:36.827' AS DateTime))
 Commit
 
-ALTER TABLE [Sales].[Product] ADD  CONSTRAINT [DF_Product_ModifiedDate]  DEFAULT (getdate()) FOR [ModifiedDate]
-GO
 /****** Object:  Default Constraints for Product Table
 [ModifiedDate]
 ******/
