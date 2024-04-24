@@ -1,4 +1,10 @@
-# Creating a Data Lakehouse report
+# In this article we will cover:
+
+* [Creating a lakehouse report.](#creating-a-lakehouse-report)
+  * [Projecting data from Fabric Lakehouse to PowerBI Reports.](#projecting-data-from-fabric-lakehouse-to-powerbi-reports)
+    * [Step 1: Creating tables from CSV files.](#step-1)
+
+# Creating a Lakehouse report
 
 ## Projecting data from Fabric Lakehouse to PowerBI Reports
 
@@ -12,7 +18,7 @@ These visual will be showing:
 
 ### Step 1
 
-We will load the data in CSV files to tables in Lakehouse. From within the Lakehouse, navigate to view the filename of the file you want to load into a table. Click on the 3 dots next to the filename. Then click on the arrow next to Load to Tables and select New table. Select the appropriate name.
+We will load the data in CSV files to tables in Lakehouse. Within the Lakehouse, navigate to view the filename of the file you want to load into a table. Click on the 3 dots next to the filename. Then click on the arrow next to Load to Tables and select New table. Select the appropriate name.
 
 <img src='/Assests/Media/LoadTable.gif' width='800' height='300'>
 
@@ -20,12 +26,14 @@ Repeat this step till all the CSV are loaded to tables.Upon successful completio
 |<img src='/Assests/Media/TablesLoaded.PNG' width='200' height='180'>|
 | -------------- |
 
-<Extra>
-To do this we will first create the Sales schema and then load the tables.From the explorer switch to SQL analytics endpoint connection for Lakehouse.
+### Step 2
 
+We will now use the SQL Endpoint to query these tables. From the explorer switch to SQL analytics endpoint connection for Lakehouse.
 |<img src='/Assests/Media/SwitchSQLEndpoint.PNG' width='700' height='270'>|
 | -------------- |
 
+
+<Extra>
 Select the New Query and run the command 
 ```sql
 CREATE SCHEMA Sales
