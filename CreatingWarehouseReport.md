@@ -12,7 +12,7 @@
 
 ## Projecting data from Fabric DataWarehouse to PowerBI Reports
 
-For the purpose of this lab we will project 2 visuals in a PowerBI Report
+For the purpose of this lab we will project 4 visuals in a PowerBI Report
 These visual will be showing:
 
 * Which product generates most revenue and the quantity in which it is sold ?
