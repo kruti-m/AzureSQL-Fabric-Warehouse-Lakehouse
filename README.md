@@ -53,4 +53,15 @@ At a high level we will be executing the following steps
   
 Follow [this](/MovingdatafromAzureSQLtoLakehouse.md) page for detailed instructions.
 
-## Projecting data from Fabric DataWarehouse to PowerBI Reports
+## Projecting data from Fabric Lakehouse to PowerBI Reports
+
+At a high level we will be executing the following steps
+
+- Step 1: Creating tables from CSV files.
+- Step 2: Creating views in lakehouse.
+- Step 3: Create an empty report.
+- Step 4: Connect to Fabric warehouse using SQL Endpoint.
+- Step 5: Mapping view data to visuals in Power BI.
+- Step 6: Publish the report in workspace.
+
+Follow [this](/CreatingLakehouseReport.md) page for detailed instructions.
