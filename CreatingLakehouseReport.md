@@ -3,8 +3,9 @@
 * [Creating a lakehouse report.](#creating-a-lakehouse-report)
   * [Projecting data from Fabric Lakehouse to PowerBI Reports.](#projecting-data-from-fabric-lakehouse-to-powerbi-reports)
     * [Step 1: Creating tables from CSV files.](#step-1)
-    * [Step 2: Creating views in lakehouse.](#step-1)
-    * [Step 3: Create an empty report.](#step-2)
+    * [Step 2: Creating views in lakehouse.](#step-2)
+    * [Step 3: Create an empty report.](#step-3)
+    * [Step 4: Connect to Fabric lakehouse using SQL Endpoint.](#step-4)
 
 # Creating a Lakehouse report
 
@@ -38,7 +39,7 @@ We will now create 4 non-materialized views to address the above scenarios. Exec
 
 |<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
 | ------------- |------------- |
-<img src='/Assests/Media/RunningViewScripts.gif' width='900' height='300'>
+<img src='/Assests/Media/RunningViewScripts.gif' width='800' height='300'>
 
 ### Step 3
 
@@ -53,16 +54,9 @@ For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power
 | ------- | ------- |
 
 ### Step 4
+
 We are now ready to connect to our Lakehouse. Select **Get data -> more -> Microsoft Fabric -> Lakehouse.** If the PowerBI is signed in correctly you should be able to see the Warehouse load from OneLake
 > :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestlakehouse'**.
 
 > :warning: **Warning:** Do not Connect before selecting SQL Endpoint.
-
-<Extra>
-Select the New Query and run the command 
-```sql
-CREATE SCHEMA Sales
-```
-|<img src='/Assests/Media/CreateSchema.PNG' width='450' height='250'>|
-| -------------- |
 
