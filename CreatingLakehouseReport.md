@@ -6,6 +6,8 @@
     * [Step 2: Creating views in lakehouse.](#step-2)
     * [Step 3: Create an empty report.](#step-3)
     * [Step 4: Connect to Fabric lakehouse using SQL Endpoint.](#step-4)
+    * [Step 5: Mapping view data to visuals in Power BI.](#step-5)
+    * [Step 6: Publish the report in workspace.](#step-6)
 
 # Creating a Lakehouse report
 
@@ -81,7 +83,7 @@ For the purpose of this lab we have used the *'Direct Query'* mode. We are now r
 
 > :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
 
-The final report looks something like below. You can find the sample PBIX file [here](/Assests/)
+The final report looks something like below. You can find the sample PBIX file [here](/Assests/LakehouseScripts/LakehouseSampleRetailReport.pbix)
 |<img src='/Assests/Media/FinalReport2.PNG' width='900' height='450'>|
 |------- |
 
