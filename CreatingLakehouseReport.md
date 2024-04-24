@@ -95,7 +95,7 @@ Once satisfied with the report you can publish it.In Power BI Desktop, choose **
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
 
-<img src='/Assests/Media/PublishWorkspace.PNG' width='950' height='220'>|
+<img src='/Assests/Media/PublishWorkspace.PNG' width='850' height='250'>|
 |------- |
 
 You should see the following messages when the report is being published.
