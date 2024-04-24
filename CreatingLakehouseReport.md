@@ -3,6 +3,8 @@
 * [Creating a lakehouse report.](#creating-a-lakehouse-report)
   * [Projecting data from Fabric Lakehouse to PowerBI Reports.](#projecting-data-from-fabric-lakehouse-to-powerbi-reports)
     * [Step 1: Creating tables from CSV files.](#step-1)
+    * [Step 2: Creating views in lakehouse.](#step-1)
+    * [Step 3: Create an empty report.](#step-2)
 
 # Creating a Lakehouse report
 
@@ -36,15 +38,31 @@ We will now create 4 non-materialized views to address the above scenarios. Exec
 
 |<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
 | ------------- |------------- |
-<img src='/Assests/Media/RunningViewScripts.gif' width='900' height='350'>
+<img src='/Assests/Media/RunningViewScripts.gif' width='900' height='300'>
+
+### Step 3
+
+Reports that use the Lakehouse or SQL analytics endpoint can be created in either of the following two tools:
+
+1. [Power BI service](https://learn.microsoft.com/fabric/data-warehouse/reports-power-bi-service)
+2. [Power BI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-getting-started)
+
+For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-get-the-desktop) version to access the SQL analytics endpoint and bring in data from the views we created. Once launched sign-in to your PowerBI Desktop service.After signing-in select **New -> Report.** It should open a blank report like the one below.
+
+|<img src='/Assests/Media/SigninPBI.PNG' width='400' height='300'>|<img src='/Assests/Media/BlankReport.PNG' width='450' height='300'>|
+| ------- | ------- |
+
+### Step 4
+We are now ready to connect to our Lakehouse. Select **Get data -> more -> Microsoft Fabric -> Lakehouse.** If the PowerBI is signed in correctly you should be able to see the Warehouse load from OneLake
+> :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestlakehouse'**.
+
+> :warning: **Warning:** Do not Connect before selecting SQL Endpoint.
 
 <Extra>
-
 Select the New Query and run the command 
 ```sql
 CREATE SCHEMA Sales
 ```
-
 |<img src='/Assests/Media/CreateSchema.PNG' width='450' height='250'>|
 | -------------- |
 
