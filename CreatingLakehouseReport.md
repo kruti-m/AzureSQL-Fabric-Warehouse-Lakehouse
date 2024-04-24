@@ -21,5 +21,5 @@ Select the New Query and run the command
 ```sql
 CREATE SCHEMA Sales
 ```
-|<img src='/Assests/Media/CreateSchema.PNG' width='600' height='300'>|
+|<img src='/Assests/Media/CreateSchema.PNG' width='500' height='270'>|
 | -------------- |
