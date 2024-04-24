@@ -29,7 +29,7 @@ Repeat this step till all the CSV are loaded to tables.Upon successful completio
 ### Step 2
 
 We will now use the SQL Endpoint to query these tables. From the explorer switch to SQL analytics endpoint connection for Lakehouse.
-<img src='/Assests/Media/SQLEndpoint.gif' width='800' height='270'>
+<img src='/Assests/Media/SQLEndpoint.gif' width='900' height='300'>
 
 
 
