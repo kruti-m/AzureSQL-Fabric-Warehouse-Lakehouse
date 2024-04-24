@@ -71,5 +71,45 @@ Once the SQL endpoint is selected you should be able to select only the view fro
 <img src='/Assests/Media/DirectQueryLakehouse.gif' width='900' height='400'>
 
 | :bulb: **Tip:** In our example we will be selecting views **MostCitiesPurchasing, MostSoldProducts, TopMostCustomer, TopMostSalesPerson** 
-<img src='/Assests/Media/ViewsLakehouse.PNG' width='300' height='280'>|
+<img src='/Assests/Media/ViewsLakehouse.PNG' width='300' height='350'>|
 |------- |
+
+For the purpose of this lab we have used the *'Direct Query'* mode. We are now ready to map the view contents to visuals in PowerBI.
+
+|<img src='/Assests/Media/MappingViewstoVisuals.gif' width='900' height='450'>|
+|------- |
+
+> :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
+
+The final report looks something like below. You can find the sample PBIX file [here](/Assests/)
+|<img src='/Assests/Media/FinalReport.PNG' width='900' height='450'>|
+|------- |
+
+### Step 6
+
+Once satisfied with the report you can publish it.In Power BI Desktop, choose **File -> Publish -> Publish** to Power BI or select Publish on the Home ribbon.
+
+<img src='/Assests/Media/Publish.png' width='950' height='180'>|
+|------- |
+
+Select the destination as your workspace used for this lab.</br>
+> :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
+
+<img src='/Assests/Media/PublishWorkspace.PNG' width='950' height='220'>|
+|------- |
+
+You should see the following messages when the report is being published.
+
+|<img src='/Assests/Media/MSG1.PNG' width='600' height='300'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='300'>|
+| ---------- | ----------- |
+
+> :memo: **Note:** Ensure the right *'Sensitivity Label'* is mapped based on your development requirement for the report in Warehouse.
+
+> :bulb: **Tip:** Check if you can answer the questions using the report.
+
+* Which product generates most revenue and the quantity in which it is sold ?
+* Which city generates the most sales amount ?
+* Which customer made the highest purchase ?
+* Which sales person sold the most ?
+
+Your Workspace should now contain the Warehouse, Pipeline and Report. You can now schedule the flow for both the sample pipeline and sample report. 
