@@ -17,7 +17,7 @@ We will load the data in CSV files to tables in Lakehouse. From within the Lakeh
 <img src='/Assests/Media/LoadTable.gif' width='800' height='300'>
 
 Repeat this step till all the CSV are loaded to tables.Upon successful completion you should see the tables as follows
-|<img src='/Assests/Media/TablesLoaded.PNG' width='300' height='200'>|
+|<img src='/Assests/Media/TablesLoaded.PNG' width='250' height='180'>|
 | -------------- |
 
 <Extra>
