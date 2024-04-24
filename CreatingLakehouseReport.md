@@ -57,7 +57,7 @@ For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power
 
 ### Step 4
 
-We are now ready to connect to our Lakehouse. Select **Get data -> more -> Microsoft Fabric -> Lakehouse.** If the PowerBI is signed in correctly you should be able to see the Warehouse load from OneLake
+We are now ready to connect to our Lakehouse. Select **Get data -> more -> Microsoft Fabric -> Lakehouse.** If the PowerBI is signed in correctly you should be able to see the Lakehouse load from OneLake
 > :bulb: **Tip:** In our example we have selected the warehouse name **'RetailTestlakehouse'**.
 
 > :warning: **Warning:** Do not Connect before selecting SQL Endpoint.
