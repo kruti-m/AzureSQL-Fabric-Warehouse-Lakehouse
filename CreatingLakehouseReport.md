@@ -20,7 +20,7 @@ We will load the data in CSV files to tables in Lakehouse. From within the Lakeh
 <Extra>
 To do this we will first create the Sales schema and then load the tables.From the explorer switch to SQL analytics endpoint connection for Lakehouse.
 
-|<img src='/Assests/Media/SwitchSQLEndpoint.PNG' width='900' height='300'>|
+|<img src='/Assests/Media/SwitchSQLEndpoint.PNG' width='700' height='270'>|
 | -------------- |
 
 Select the New Query and run the command 
