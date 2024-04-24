@@ -31,7 +31,11 @@ Repeat this step till all the CSV are loaded to tables.Upon successful completio
 We will now use the SQL Endpoint to query these tables. From the explorer switch to SQL analytics endpoint connection for Lakehouse.
 <img src='/Assests/Media/SQLEndpoint.gif' width='800' height='300'>
 
+We will now create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/WarehouseScripts/) one by one on your newly created warehouse using *'New SQL Query'* wizard.</br>
+:grey_exclamation: **Hint** There is a commented section for each script to verify the results. Run it after creating the view and receiving the "Commands completed successfully" msg in the result box.
 
+|<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
+| ------------- |------------- |
 
 <Extra>
 
@@ -39,6 +43,8 @@ Select the New Query and run the command
 ```sql
 CREATE SCHEMA Sales
 ```
+
 |<img src='/Assests/Media/CreateSchema.PNG' width='450' height='250'>|
 | -------------- |
+
 Once the schema is created we will load the CSV files into tables in Lakehouse.
