@@ -60,6 +60,6 @@ We are now ready to connect to our Lakehouse. Select **Get data -> more -> Micro
 
 > :warning: **Warning:** Do not Connect before selecting SQL Endpoint.
 
-<img src='/Assests/Media/SelectingLakehousePBI.gif' width='800' height='350'>
+<img src='/Assests/Media/SelectingLakehousePBI.gif' width='900' height='350'>
 
-<img src='/Assests/Media/LakehouseEndpoint.PNG' width='600' height='350'>
+<img src='/Assests/Media/LakehouseEndpoint.PNG' width='700' height='300'>
