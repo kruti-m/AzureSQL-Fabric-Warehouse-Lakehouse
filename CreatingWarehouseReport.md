@@ -70,7 +70,7 @@ For the purpose of this lab we have used the *'Direct Query'* mode. We are now r
 > :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
 
 The final report looks something like below. You can find the sample PBIX file [here](/Assests/WarehouseScripts/WarehouseSampleRetailReport.pbix)
-|<img src='/Assests/Media/FinalReport2.PNG' width='900' height='450'>|
+|<img src='/Assests/Media/FinalReport.PNG' width='900' height='450'>|
 |------- |
 
 ### Step 5
@@ -83,7 +83,7 @@ Once satisfied with the report you can publish it.In Power BI Desktop, choose **
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
 
-<img src='/Assests/Media/PublishWorkspace.PNG' width='850' height='250'>|
+<img src='/Assests/Media/PublishWorkspace.PNG' width='800' height='300'>|
 |------- |
 
 You should see the following messages when the report is being published.
