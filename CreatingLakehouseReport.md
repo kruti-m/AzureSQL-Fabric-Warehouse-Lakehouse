@@ -12,7 +12,13 @@ These visual will be showing:
 
 ### Step 1
 
-We will load the data in CSV files to tables in Lakehouse.To do this we will first create the Sales schema and then load the tables.From the explorer switch to SQL analytics endpoint connection for Lakehouse.
+We will load the data in CSV files to tables in Lakehouse. From within the Lakehouse, navigate to view the filename of the file you want to load into a table. Click on the 3 dots next to the filename. Then click on the arrow next to Load to Tables and select New table. Select the appropriate name.
+
+<img src='/Assests/Media/LoadTable.gif' width='900' height='350'>
+
+
+<Extra>
+To do this we will first create the Sales schema and then load the tables.From the explorer switch to SQL analytics endpoint connection for Lakehouse.
 
 |<img src='/Assests/Media/SwitchSQLEndpoint.PNG' width='900' height='300'>|
 | -------------- |
@@ -23,3 +29,4 @@ CREATE SCHEMA Sales
 ```
 |<img src='/Assests/Media/CreateSchema.PNG' width='450' height='250'>|
 | -------------- |
+Once the schema is created we will load the CSV files into tables in Lakehouse.
