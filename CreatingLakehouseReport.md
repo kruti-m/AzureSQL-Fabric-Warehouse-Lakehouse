@@ -14,7 +14,7 @@ These visual will be showing:
 
 We will load the data in CSV files to tables in Lakehouse. From within the Lakehouse, navigate to view the filename of the file you want to load into a table. Click on the 3 dots next to the filename. Then click on the arrow next to Load to Tables and select New table. Select the appropriate name.
 
-<img src='/Assests/Media/LoadTable.gif' width='900' height='350'>
+<img src='/Assests/Media/LoadTable.gif' width='700' height='300'>
 
 
 <Extra>
