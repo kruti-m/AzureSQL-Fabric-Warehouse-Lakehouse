@@ -63,3 +63,4 @@ We are now ready to connect to our Lakehouse. Select **Get data -> more -> Micro
 <img src='/Assests/Media/SelectingLakehousePBI.gif' width='900' height='350'>
 
 <img src='/Assests/Media/LakehouseEndpoint.PNG' width='700' height='300'>
+<img src='/Assests/Media/LakehouseSQLEndpoint.PNG width='700' height='300'>
