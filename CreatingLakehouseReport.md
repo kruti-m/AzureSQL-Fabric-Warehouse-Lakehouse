@@ -16,3 +16,10 @@ We will load the data in CSV files to tables in Lakehouse.To do this we will fir
 
 |<img src='/Assests/Media/SwitchSQLEndpoint.PNG' width='900' height='300'>|
 | -------------- |
+
+Select the New Query and run the command 
+```sql
+CREATE SCHEMA Sales
+```
+|<img src='/Assests/Media/CreateSchema.PNG' width='600' height='300'>|
+| -------------- |
