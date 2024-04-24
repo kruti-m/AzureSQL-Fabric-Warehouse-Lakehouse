@@ -54,3 +54,4 @@ At a high level we will be executing the following steps
 Follow [this](/MovingdatafromAzureSQLtoLakehouse.md) page for detailed instructions.
 
 ## Projecting data from Fabric Lakehouse to PowerBI Reports
+

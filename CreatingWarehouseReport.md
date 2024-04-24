@@ -12,7 +12,7 @@
 
 ## Projecting data from Fabric DataWarehouse to PowerBI Reports
 
-For the purpose of this lab we will project 4 visuals in a PowerBI Report
+For the purpose of this lab we will project  visuals in a PowerBI Report
 These visual will be showing:
 
 * Which product generates most revenue and the quantity in which it is sold ?
@@ -82,6 +82,10 @@ Once satisfied with the report you can publish it.In Power BI Desktop, choose **
 
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
+
+<img src='/Assests/Media/PublishWorkspace.PNG' width='800' height='300'>|
+|------- |
+
 You should see the following messages when the report is being published.
 
 |<img src='/Assests/Media/MSG1.PNG' width='600' height='300'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='300'>|
