@@ -62,5 +62,14 @@ We are now ready to connect to our Lakehouse. Select **Get data -> more -> Micro
 
 <img src='/Assests/Media/SelectingLakehousePBI.gif' width='900' height='350'>
 
-<img src='/Assests/Media/LakehouseEndpoint.PNG' width='700' height='300'>
 <img src='/Assests/Media/LakehouseSQLEndpoint.PNG' width='700' height='300'>
+
+### Step 5
+
+Once the SQL endpoint is selected you should be able to select only the view from where we want to populate data.</br>
+
+<img src='/Assests/Media/DirectQueryLakehouse.gif' width='800' height='450'>
+
+| :bulb: **Tip:** In our example we will be selecting views **MostCitiesPurchasing, MostSoldProducts, TopMostCustomer, TopMostSalesPerson** 
+<img src='/Assests/Media/ViewsLakehouse.PNG.PNG' width='400' height='180'>|
+|------- |
