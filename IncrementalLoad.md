@@ -10,8 +10,8 @@ Pattern 2: Moving data from Azure SQL to Fabric Warehouse within the same region
 
 At a high level we will be executing the following steps
 
-- Step 1: Create a storage account.
-</br> :grey_exclamation: **Hint** Got to advance enable heirarchical namespace and SFTP before saving
+- Step 1: Create a storage account with SFTP enabled.
+</br> :grey_exclamation: **Hint** Go to *'Advanced'* tab enable heirarchical namespace and SFTP before saving
 |<img src='/Assests/IncrementalData/Media/StorageAccountCreate.PNG' width='450' height='300'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='350'>|
 | ----------- | ----------- |
 
