@@ -11,9 +11,12 @@ Pattern 2: Moving data from Azure SQL to Fabric Warehouse within the same region
 At a high level we will be executing the following steps
 
 - Step 1: Create a storage account
+
 |<img src='/Assests/IncrementalData/Media/StorageAccountCreate.PNG' width='400' height='400'>|
 | ----------- |
+
 - Step 2: Enable file share
+
 |<img src='/Assests/IncrementalData/Media/FileshareDisabled.PNG' width='400' height='400'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='380' height='400'>|
 | ----------- |-----------|
 
