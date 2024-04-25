@@ -15,8 +15,9 @@ At a high level we will be executing the following steps
 
 |<img src='/Assests/IncrementalData/Media/StorageAccountCreate.PNG' width='450' height='300'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='350'>|
 | ----------- | ----------- |
+> :warning: **Warning:** You may not be able to use the exact same storage account name if the namespace is already taken. You can try with your own naming conventions
 
-- Step 2: 
+- Step 2: Create
 
 
 ## Performing incremental load
