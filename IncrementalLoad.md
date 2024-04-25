@@ -17,7 +17,7 @@ At a high level we will be executing the following steps
 
 - Step 2: Enable file share
 
-|<img src='/Assests/IncrementalData/Media/FileshareDisabled.PNG' width='450' height='350'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='350'>|
+|<img src='/Assests/IncrementalData/Media/FileshareDisabled.PNG' width='450' height='320'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='320'>|
 | ----------- |-----------|
 
 ## Performing incremental load
