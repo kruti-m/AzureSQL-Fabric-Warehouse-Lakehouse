@@ -107,7 +107,7 @@ Navigate to your **Workspace  -> Lakehouse** and you should be able to see the t
 |<img src='/Assests/BasicTutorials/Media/PNG/FilesLoad.PNG' width='900' height='300'>|
 | -------------- |
 
-Verifying the counts
+Verifying the table creation.
 
 ## Projecting data from Fabric Lakehouse to PowerBI Reports
 
