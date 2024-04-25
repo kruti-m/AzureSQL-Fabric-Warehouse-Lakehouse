@@ -25,3 +25,8 @@ At a high level we will be executing the following steps
 At a high level we will be executing the following steps
 
 # Data Warehouse tutorials
+
+## Creating the environment
+
+At a high level we will be executing the following steps
+- Step 1: Create a database with the name 
