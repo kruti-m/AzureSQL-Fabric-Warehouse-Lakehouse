@@ -12,7 +12,7 @@ At a high level we will be executing the following steps
 
 - Step 1: Create a storage account with enabled file share
 
-|<img src='/Assests/IncrementalData/Media/StorageAccountCreate.PNG' width='450' height='320'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='320'>|
+|<img src='/Assests/IncrementalData/Media/StorageAccountCreate.PNG' width='450' height='350'>|<img src='/Assests/IncrementalData/Media/FileshareEnable.PNG' width='450' height='350'>|
 | ----------- | ----------- |
 
 - Step 2: Enable file share
