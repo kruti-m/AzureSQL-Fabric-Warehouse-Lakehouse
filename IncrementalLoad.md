@@ -4,6 +4,10 @@ This Repository contains artifacts to move data in incremental fashion to Micros
 Pattern 1: Moving data from Storage Account using SFTP connection to Fabric Lakehouse within same region and Azure Subscription through data pipelines.
 Pattern 2: Moving data from Azure SQL to Fabric Warehouse within the same region and Azure Subscription through data pipelines.
 
+# Pre-requisites
+
+In order to implement the patterns below, it is expected that the user knows how to create Azure Storage accounts and have acquired trial or Fabric licenses which will allow them to create workspaces and pipelines. It is implicit that the user would also have the required permissions on both Azure Storage accounts and Microsoft Fabric for the implementation. 
+
 # Lakehouse Tutorials
 
 ## Creating the environment
