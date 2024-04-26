@@ -12,12 +12,12 @@ Post database creation execute the scripts in SQLScripts folder as per the numbe
 
 The scripts which are numbered will first create the schema and user defined data types. It will then create the following tables using the schema and UDF's in the Sales Schema.
 
-![TableList](/Assests/Media/TableList.PNG)
+![TableList](/Assests/BasicTutorials/Media/PNG/TableList.PNG)
 
 
 The relationship diagram is as follows:
 
-![RelationshipDiagram](/Assests/Media/RetailDiagram.png)
+![RelationshipDiagram](/Assests/BasicTutorials/Media/PNG/RetailDiagram.png)
 
 The verification script should display the following result
 ```sql
