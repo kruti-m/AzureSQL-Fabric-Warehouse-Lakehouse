@@ -22,12 +22,12 @@ These visual will be showing:
 
 ### Step 1
 
-We will create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/WarehouseScripts/) one by one on your newly created warehouse using *'New SQL Query'* wizard.</br>
+We will create 4 non-materialized views to address the above scenarios. Execute the scripts [here](/Assests/BasicTutorials/WarehouseScripts/) one by one on your newly created warehouse using *'New SQL Query'* wizard.</br>
 :grey_exclamation: **Hint** There is a commented section for each script to verify the results. Run it after creating the view and receiving the "Commands completed successfully" msg in the result box.
 
-|<img src='/Assests/Media/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/Media/SucessfulCompletionMsg.PNG' width='400' height='300'>|
+|<img src='/Assests/BasicTutorials/Media/PNG/ExecutionMsg.PNG' width='400' height='300'>|<img src='/Assests/BasicTutorials/Media/PNG/SucessfulCompletionMsg.PNG' width='400' height='300'>|
 | ------------- |------------- |
-<img src='/Assests/Media/CreatingViews.gif' width='900' height='350'>
+<img src='/Assests/BasicTutorials/Media/GIF/CreatingViews.gif' width='900' height='350'>
 
 ### Step 2 
 
@@ -38,7 +38,7 @@ Reports that use the Warehouse or SQL analytics endpoint can be created in eithe
 
 For this lab we will use the [PowerBI Desktop](https://learn.microsoft.com/power-bi/fundamentals/desktop-get-the-desktop) version to access the SQL analytics endpoint and bring in data from the views we created. Once launched sign-in to your PowerBI Desktop service.After signing-in select **New -> Report.** It should open a blank report like the one below.
 
-|<img src='/Assests/Media/SigninPBI.PNG' width='400' height='300'>|<img src='/Assests/Media/BlankReport.PNG' width='450' height='300'>|
+|<img src='/Assests/BasicTutorials/Media/PNG/SigninPBI.PNG' width='400' height='300'>|<img src='/Assests/BasicTutorials/Media/PNG/BlankReport.PNG' width='450' height='300'>|
 | ------- | ------- |
 
 ### Step 3
@@ -48,47 +48,47 @@ We are now ready to connect to our Datawarehouse. Select **Get data -> more -> M
 
 > :warning: **Warning:** Do not Connect before selecting SQL Endpoint.
 
-<img src='/Assests/Media/SelectinWarehousePBI.gif' width='800' height='350'>
+<img src='/Assests/BasicTutorials/Media/GIF/SelectinWarehousePBI.gif' width='800' height='350'>
 
-<img src='/Assests/Media/SQLEndpoint.PNG' width='700' height='350'>
+<img src='/Assests/BasicTutorials/Media/PNG/SQLEndpoint.PNG' width='700' height='350'>
 
 ### Step 4
 
 Once the SQL endpoint is selected you should be able to select only the view from where we want to populate data.</br>
 
-<img src='/Assests/Media/DirectQuery.gif' width='800' height='450'>
+<img src='/Assests/BasicTutorials/Media/GIF/DirectQuery.gif' width='800' height='450'>
 
 | :bulb: **Tip:** In our example we will be selecting views **Sales.MostCitiesPurchasing, Sales.MostSoldProducts, Sales.TopMostCustomer, Sales.TopMostSalesPerson** 
-<img src='/Assests/Media/Views.PNG' width='350' height='180'>|
+<img src='/Assests/BasicTutorials//Media/PNG/Views.PNG' width='350' height='180'>|
 |------- |
 
 For the purpose of this lab we have used the *'Direct Query'* mode. We are now ready to map the view contents to visuals in PowerBI.
 
-|<img src='/Assests/Media/MappingViewstoVisuals.gif' width='900' height='450'>|
+|<img src='/Assests/BasicTutorials/Media/GIF/MappingViewstoVisuals.gif' width='900' height='450'>|
 |------- |
 
 > :memo: **Note:** This lab expects you are familiar with working with visuals in PowerBI. If not please refer [this](https://learn.microsoft.com/power-bi/visuals/power-bi-map-tips-and-tricks) link for more help.
 
 The final report looks something like below. You can find the sample PBIX file [here](/Assests/WarehouseScripts/WarehouseSampleRetailReport.pbix)
-|<img src='/Assests/Media/FinalReport.PNG' width='900' height='450'>|
+|<img src='/Assests/BasicTutorials/Media/PNG/FinalReport.PNG' width='900' height='450'>|
 |------- |
 
 ### Step 5
 
 Once satisfied with the report you can publish it.In Power BI Desktop, choose **File -> Publish -> Publish** to Power BI or select Publish on the Home ribbon.
 
-<img src='/Assests/Media/Publish.png' width='950' height='180'>|
+<img src='/Assests/BasicTutorials/Media/PNG/Publish.png' width='950' height='180'>|
 |------- |
 
 Select the destination as your workspace used for this lab.</br>
 > :bulb: **Tip:** In our example we have selected the workspace name **'AzureSQLtoFabric'**.
 
-<img src='/Assests/Media/PublishWorkspace.PNG' width='800' height='300'>|
+<img src='/Assests/BasicTutorials/Media/PNG/PublishWorkspace.PNG' width='800' height='300'>|
 |------- |
 
 You should see the following messages when the report is being published.
 
-|<img src='/Assests/Media/MSG1.PNG' width='600' height='300'>|<img src='/Assests/Media/MSG2.PNG' width='600' height='300'>|
+|<img src='/Assests/BasicTutorials/Media/PNG/MSG1.PNG' width='600' height='300'>|<img src='/Assests/BasicTutorials/Media/PNG/MSG2.PNG' width='600' height='300'>|
 | ---------- | ----------- |
 
 > :memo: **Note:** Ensure the right *'Sensitivity Label'* is mapped based on your development requirement for the report in Warehouse.
