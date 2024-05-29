@@ -2,8 +2,11 @@
 
 * [Item Security](#item-security)
   * [Semantic Model](#semantic-model)
-  * [Authorization](#authorization)
-  * [Guest user sharing](#guest-user-sharing)
+  * [Data Warehouse](#data-warehouse)
+  * [Lakehouse](#lakehouse)
+  * [Data Factory](#data-factory)
+  * [Data Science](#data-science)
+  * [Real-time Analytics](#real-time-analytics)
 
 # Item Security
 
@@ -25,7 +28,7 @@ In Power BI, semantic model creators can control who has access to their data by
 
 * **[Shared report links](https://learn.microsoft.com/power-bi/collaborate-share/service-share-dashboards)**: Shows you links that were generated for sharing reports. Such links sometimes also give access to your semantic model. On this tab you can review them and remove them if necessary.
 
-|<img src='/Assests/Security/Media/Sharereports.png' width='380' height='120'>|
+|<img src='/Assests/Security/Media/Sharereports.png' width='380' height='100'>|
 | ----------- |
 
 > :bulb: **Tip:** Leverage the [Manage semantic model in PowerBI](https://learn.microsoft.com/training/modules/manage-datasets-power-bi/?source=recommendations) module to gain more knowledge.
@@ -39,12 +42,17 @@ After identifying the Warehouse you would like to share with another user in you
 
 You can share your Warehouse from the OneLake data hub or Warehouse item by choosing Share from quick action, as highlighted in the following image.
 
-|<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='800' height='380'>|
+|<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='800' height='350'>|
 | ----------- |
 
 > :memo: **Note:** You can select the permissions following [this](https://learn.microsoft.com/fabric/data-warehouse/share-warehouse-manage-permissions#share-a-warehouse) page.
 
 ## Lakehouse
+
+When you share a lakehouse, you grant other users or groups access to a lakehouse without giving access to the workspace and the rest of its items.Sharing a lakehouse also grants access to the SQL endpoint and the associated default semantic model. Select the Lakehouse from your workspace, select the permissions to assign, and then finally Grant the permissions to another user.
+
+|<img src='/Assests/Security/Media/ShareLakehouse.gif' width='900' height='400'>|
+| ----------- |
 
 ## Data Factory
 
