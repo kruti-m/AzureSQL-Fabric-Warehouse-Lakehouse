@@ -17,6 +17,7 @@ Authentication is the process of proving the user is who they claim to be.Micros
 
 |<img src='/Assests/Security/Media/UserSignIn.PNG' width='600' height='270'>|
 
+
 | **Item** | **Description** |
 | --- | --- |
 |1| The user opens a browser (or a client application) and signs in to the [Fabric portal](https://app.fabric.microsoft.com/). |
@@ -24,6 +25,13 @@ Authentication is the process of proving the user is who they claim to be.Micros
 |3| After authentication succeeds, the web front end receives the user's request and delivers the front-end (HTML and CSS) content from the nearest location. It also routes the request to the metadata platform and backend capacity platform. |
 |4| The metadata platform, which resides in your tenant's [home region](../admin/find-fabric-home-region.md), stores your tenant's metadata, such as workspaces and access controls. This platform ensures that the user is authorized to access the relevant workspaces and Fabric items. |
 |5| The back-end capacity platform performs compute operations and stores your data. It's located in the [capacity region](../admin/service-admin-premium-multi-geo.md). When a workspace is assigned to Fabric capacity, all data that resides in the workspace, including the data lake [OneLake](../onelake/onelake-overview.md), is stored and processed in the capacity region. |
+
+Fabric's default security settings include:
+
+• Microsoft Entra ID which is used to authenticate every request.
+• Upon successful authentication, requests are routed to the appropriate backend service through secure Microsoft managed endpoints.
+• Internal traffic between experiences in Fabric is routed over the Microsoft backbone.
+• Traffic between clients and Fabric is encrypted using at least the Transport Layer Security (TLS) 1.2 protocol.
 
 ## Guest user sharing
 
