@@ -49,7 +49,7 @@ Some compute engines in Fabric have their own security models.Granular engine pe
 
 Sharing items with guest users in Fabric is similar to sharing items with guest users in Power BI, except that in Fabric, you can only share items by sharing the workspace.
 
-|<img src='/Assests/Security/Media/GuestUser.png' width='700' height='380'>|
+|<img src='/Assests/Security/Media/GuestUser.png' width='700' height='400'>|
 |-------|
 
 > :bulb: **Tip:** More on granular settings(item,workspace,Power BI, OneLake) in the next modules.
