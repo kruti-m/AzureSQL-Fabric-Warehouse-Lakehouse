@@ -15,7 +15,6 @@ Authentication is the process of proving the user is who they claim to be.Micros
 
 |<img src='/Assests/Security/Media/UserSignIn.PNG' width='600' height='270'>|
 
-
 | **Item** | **Description** |
 | --- | --- |
 |1| The user opens a browser (or a client application) and signs in to the [Fabric portal](https://app.fabric.microsoft.com/). |
@@ -46,11 +45,11 @@ Some compute engines in Fabric have their own security models.Granular engine pe
 * [Data Factory - Set up you Lakehouse Connection](https://learn.microsoft.com/fabric/data-factory/connector-lakehouse-overview)
 * [Real-Time Analytics Row-Level Security](https://learn.microsoft.com/azure/data-explorer/kusto/management/row-level-security-policy)
 
-## Guest user sharin. 
+## Guest user sharing 
 
 Sharing items with guest users in Fabric is similar to sharing items with guest users in Power BI, except that in Fabric, you can only share items by sharing the workspace.
 
 |<img src='/Assests/Security/Media/GuestUser.png' width='700' height='380'>|
 |-------|
 
-> :bulb: **Tip:** More in workspace settings in the next modules.
+> :bulb: **Tip:** More in granular settings in the next modules.
