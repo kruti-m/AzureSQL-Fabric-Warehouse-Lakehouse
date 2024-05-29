@@ -21,14 +21,14 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 
 * **Data in Transit** :Inbound Fabric communication also enforces TLS 1.2 and negotiates to TLS 1.3, whenever possible. Outbound Fabric communication to customer-owned infrastructure prefers secure protocols but might fall back to older, insecure protocols (including TLS 1.0) when newer protocols aren't supported.
 
-    |<img src='/Assests/Security/Media/TLSHandshake.PNG' width='450' height='370'>|
+    |<img src='/Assests/Security/Media/TLSHandshake.PNG' width='500' height='400'>|
     | ----------- |
 
 ## Labelling
 
 Security can be set for an entire workspace, for individual items, or through granular permissions in each Fabric engine. Fabric leverages Microsoft Purview for protecting sensitive data and helping ensure compliance with data privacy regulations and requirements.You can [use sensitivity labels from Microsoft Purview Information Protection](https://learn.microsoft.com/abric/get-started/apply-sensitivity-labels#apply-a-label) in combination with built-in Fabric capabilities to manually or automatically tag your organization's data
 
-|<img src='/Assests/Security/Media/SensitivityLabel.png' width='550' height='370'>|
+|<img src='/Assests/Security/Media/SensitivityLabel.png' width='600' height='400'>|
 | ----------- |
 
 ## Granular permissions
