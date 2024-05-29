@@ -1,11 +1,12 @@
 # In this article we will cover:
 
 * [Workspace Scurity](#workspace-security)
-  * [Share item via link](#share-item-via-link)
-  * [Semantic Model](#semantic-model)
-  * [Data Warehouse](#data-warehouse)
-  * [Lakehouse](#lakehouse)
-  * [Data Factory](#data-factory)
+  * [Roles for Workspace](#roles-for-workspace)
+  * [Giving access to workspace](#giving-access-to-workspaces)
+  * [Existing workspace settings](#check-existing-workspace-settings)
+  * [Workspace retention](#workspace-retention)
+  * [workspace governance](#govern-my-workspace)
+  * [Quick Tips](#tips-when-working-with-workspaces)
 
 # Workspace Security
 
