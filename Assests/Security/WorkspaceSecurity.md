@@ -93,7 +93,7 @@ To open the workspace settings, you can select the workspace in the nav pane, th
 
 You can also open it from the workspace page.
 
-|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='470' height='250'>|
+|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='500' height='350'>|
 | ----------- | 
 
 
