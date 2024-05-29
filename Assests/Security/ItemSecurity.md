@@ -1,6 +1,7 @@
 # In this article we will cover:
 
 * [Item Security](#item-security)
+  * [Share item via link](#share-item-via-link)
   * [Semantic Model](#semantic-model)
   * [Data Warehouse](#data-warehouse)
   * [Lakehouse](#lakehouse)
@@ -14,6 +15,23 @@ In workspaces, data appears in the form of Fabric Items, and users can't view or
 | ----------- | 
 
  Item permissions are confined to a specific item and don't apply to other items. Use item permissions to control who can view, modify, and manage individual items in a workspace. You can use item permissions to give a user access to a single item in a workspace that they don't have access to. When you're sharing the item with a user or group, you can configure item permissions. Sharing an item grants the user the read permission for that item by default. Read permissions allow users to see the metadata for that item and view any reports associated with it. However, read permissions don't allow users to access underlying data in SQL or OneLake. Different Fabric items have different permissions.
+
+## Share item via link
+
+You can also use [item sharing via link](https://learn.microsoft.com/fabric/get-started/share-items#share-an-item-via-link) option to grant and manage item-level permissions in scenarios where:
+
+1. You want to collaborate with colleagues who don't have a role in the workspace.
+2. You want to grant additional item level-permissions for colleagues who already have a role in the workspace.
+
+In the list of items, or in an open item, select the Share button Screenshot of share button. The Create and send link dialog opens. Select People in your organization can view.
+
+|<img src='/Assests/Security/Media/ShareViaLink.png' width='500' height='300'>|
+| ----------- |
+
+You have the following options:
+**People in your organization**: This type of link allows people in your organization to access this item. It doesn't work for external users or guest users.
+**People with existing access**: This type of link generates a URL to the item, but it doesn't grant any access to the item. Use this link type if you just want to send a link to somebody who already has access.
+**Specific people**: This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type also lets you share to guest users in your organization's Microsoft Entra ID. You can't share to external users who aren't guests in your organization.
 
 ## Semantic model
 
