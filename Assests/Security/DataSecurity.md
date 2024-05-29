@@ -28,7 +28,7 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 
 Security can be set for an entire workspace, for individual items, or through granular permissions in each Fabric engine. Fabric leverages Microsoft Purview for protecting sensitive data and helping ensure compliance with data privacy regulations and requirements.You can [use sensitivity labels from Microsoft Purview Information Protection](https://learn.microsoft.com/abric/get-started/apply-sensitivity-labels#apply-a-label) in combination with built-in Fabric capabilities to manually or automatically tag your organization's data
 
- |<img src='/Assests/Security/Media/SensitivityLabel.png' width='700' height='360'>|
+ |<img src='/Assests/Security/Media/SensitivityLabel.png' width='500' height='360'>|
 
 ## Granular permissions
 
