@@ -28,6 +28,8 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 
 Security can be set for an entire workspace, for individual items, or through granular permissions in each Fabric engine. Fabric leverages Microsoft Purview for protecting sensitive data and helping ensure compliance with data privacy regulations and requirements.You can [use sensitivity labels from Microsoft Purview Information Protection](https://learn.microsoft.com/abric/get-started/apply-sensitivity-labels#apply-a-label) in combination with built-in Fabric capabilities to manually or automatically tag your organization's data
 
+ |<img src='/Assests/Security/Media/SensitivityLabel.png' width='700' height='360'>|
+
 ## Granular permissions
 
 Many Fabric engines allow fine-grained access control such as table, column, and row-level security to be defined. Some compute engines in Fabric have their own security models.Engine-specific granular data security:
@@ -42,4 +44,4 @@ Most operations and support performed by Microsoft personnel and sub-processors 
 
  |<img src='/Assests/Security/Media/CustomerLockboxWorkflow.png' width='800' height='160'>|
 
-You can also enable [Customer Lockbox for Microsoft Fabric](https://learn.microsoft.com/fabric/security/security-lockbox#enable-customer-lockbox-for-microsoft-fabric).
+You can also enable [Customer Lockbox for Microsoft Fabric](https://learn.microsoft.com/fabric/security/security-lockbox#enable-customer-lockbox-for-microsoft-fabric). 
