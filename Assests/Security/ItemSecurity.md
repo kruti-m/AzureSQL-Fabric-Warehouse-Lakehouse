@@ -51,7 +51,7 @@ You can share your Warehouse from the OneLake data hub or Warehouse item by choo
 
 When you share a lakehouse, you grant other users or groups access to a lakehouse without giving access to the workspace and the rest of its items.Sharing a lakehouse also grants access to the SQL endpoint and the associated default semantic model. Select the Lakehouse from your workspace, select the permissions to assign, and then finally Grant the permissions to another user.
 
-|<img src='/Assests/Security/Media/ShareLakehouse.gif' width='900' height='400'>|
+|<img src='/Assests/Security/Media/ShareLakehouse.gif' width='600' height='350'>|
 | ----------- |
 
 ## Data Factory
