@@ -25,7 +25,7 @@ You can also use [item sharing via link](https://learn.microsoft.com/fabric/get-
 
 In the list of items, or in an open item, select the Share button Screenshot of share button. The Create and send link dialog opens. Select People in your organization can view.
 
-|<img src='/Assests/Security/Media/ShareViaLink.png' width='300' height='300'>|
+|<img src='/Assests/Security/Media/ShareViaLink.png' width='270' height='270'>|
 | ----------- |
 
 You have the following options:
