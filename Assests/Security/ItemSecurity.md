@@ -42,6 +42,8 @@ You can share your Warehouse from the OneLake data hub or Warehouse item by choo
 |<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='800' height='380'>|
 | ----------- |
 
+> :memo: **Note:** You can select the permissions following [this](https://learn.microsoft.com/fabric/data-warehouse/share-warehouse-manage-permissions#share-a-warehouse) page.
+
 ## Lakehouse
 
 ## Data Factory
