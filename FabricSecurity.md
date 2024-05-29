@@ -12,7 +12,7 @@ As a SaaS service, Fabric offers a complete security package for the entire plat
 1. Power BI - Power BI is an online software service (SaaS, or Software as a Service) offering as part of Microsoft Fabric. Its the unified visualization layer for Fabric. When a Power BI report loads data from OneLake, the data goes 
 through the internal Microsoft network.
 
-|<img src='/Assests/Security/Media/FabricSecurityLayers.PNG' width='900' height='500'>|
+|<img src='/Assests/Security/Media/FabricSecurityLayers.PNG' width='1000' height='550'>|
 | ----------- | 
 
 # Pre-requisites
