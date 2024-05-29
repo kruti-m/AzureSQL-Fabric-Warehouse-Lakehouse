@@ -25,5 +25,5 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 - **Encryption in Transit** :Inbound Fabric communication also enforces TLS 1.2 and negotiates to TLS 1.3, whenever possible. Outbound Fabric communication to customer-owned infrastructure prefers secure protocols but might fall back to older, insecure protocols (including TLS 1.0) when newer protocols aren't supported.
 
 
-|<img src='/Assests/Security/Media/TLSHandshake.PNG' width='400' height='270'>|
+|<img src='/Assests/Security/Media/TLSHandshake.PNG' width='400' height='350'>|
 | ----------- | 
