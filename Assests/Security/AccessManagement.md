@@ -28,10 +28,10 @@ Authentication is the process of proving the user is who they claim to be.Micros
 
 Fabric's default security settings include:
 
-• Microsoft Entra ID which is used to authenticate every request.
-• Upon successful authentication, requests are routed to the appropriate backend service through secure Microsoft managed endpoints.
-• Internal traffic between experiences in Fabric is routed over the Microsoft backbone.
-• Traffic between clients and Fabric is encrypted using at least the Transport Layer Security (TLS) 1.2 protocol.
+* Microsoft Entra ID which is used to authenticate every request.
+* Upon successful authentication, requests are routed to the appropriate backend service through secure Microsoft managed endpoints.
+* Internal traffic between experiences in Fabric is routed over the Microsoft backbone.
+* Traffic between clients and Fabric is encrypted using at least the Transport Layer Security (TLS) 1.2 protocol.
 
 ## Guest user sharing
 
