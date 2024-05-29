@@ -28,7 +28,8 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 
 Security can be set for an entire workspace, for individual items, or through granular permissions in each Fabric engine. Fabric leverages Microsoft Purview for protecting sensitive data and helping ensure compliance with data privacy regulations and requirements.You can [use sensitivity labels from Microsoft Purview Information Protection](https://learn.microsoft.com/abric/get-started/apply-sensitivity-labels#apply-a-label) in combination with built-in Fabric capabilities to manually or automatically tag your organization's data
 
- |<img src='/Assests/Security/Media/SensitivityLabel.png' width='500' height='360'>|
+    |<img src='/Assests/Security/Media/SensitivityLabel.png' width='500' height='340'>|
+    | ----------- |
 
 ## Granular permissions
 
@@ -42,6 +43,7 @@ Many Fabric engines allow fine-grained access control such as table, column, and
 
 Most operations and support performed by Microsoft personnel and sub-processors do not require access to customer data. In those rare circumstances where such access is required, [Customer Lockbox for Microsoft Azure](https://learn.microsoft.com/training/modules/m365-compliance-insider-manage-customer-lockbox/) provides an interface for customers to review and approve or reject customer data access requests.It is used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft.
 
- |<img src='/Assests/Security/Media/CustomerLockboxWorkflow.png' width='800' height='160'>|
+    |<img src='/Assests/Security/Media/CustomerLockboxWorkflow.png' width='800' height='160'>|
+    | ----------- |
 
 You can also enable [Customer Lockbox for Microsoft Fabric](https://learn.microsoft.com/fabric/security/security-lockbox#enable-customer-lockbox-for-microsoft-fabric). 
