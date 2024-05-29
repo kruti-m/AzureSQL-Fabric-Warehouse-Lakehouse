@@ -17,6 +17,7 @@ through the internal Microsoft network.
 
 Refer the sub-sections below to address each layer
 
-|Layer | Feature|
-|Data Handling and Security| Encryption,Labelling,Customer Lockbox|
+| Layer | Feature|
 |----------|--------------|
+|**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption,Labelling,Customer Lockbox|
+
