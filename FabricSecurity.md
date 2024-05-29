@@ -23,4 +23,4 @@ through the internal Microsoft network.
 |**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption, Labelling, Customer Lockbox|
 |**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication, Authorization, Guest user sharing|
 |**[Item Security](/Assests/Security/ItemSecurity.md)**| Share item via link, Semantic Model, Data Warehouse, Lakehouse, Data Factory |
-|**[WorkspaceSecurity](/Assests/Security/WorkspaceSecurity.md)**| Roles in Workspace, Access Management, Workspace Settings, Tips |
+|**[WorkspaceSecurity](/Assests/Security/WorkspaceSecurity.md)**| Roles in Workspace, Access Management, Workspace Settings, Retention, Governance|

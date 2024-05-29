@@ -106,6 +106,7 @@ The retention period for collaborative workspaces is configurable. The default r
 
 ## Govern My Workspace
 
+For development purposes, a best practice is to have isolated workspaces per developer, so that they can work on their own without interfering with the shared workspace.
 Every Fabric user has a personal workspace called My workspace where they can work with their own content. While generally only My workspace owners have access to their My workspaces, you can explicitly [prevent users from moving My workspaces](https://learn.microsoft.com/fabric/admin/portal-workspaces#prevent-my-workspace-owners-from-reassigning-their-my-workspaces-to-a-different-capacity) to a different capacity that might reside in noncompliant regions & designate a default capacity for My Workspaces. This can be done through Admin portal -> select Capacity settings -> Fabric Capacity -> Preferred capacity for My workspace
 
 To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators
@@ -120,6 +121,6 @@ Here are some useful tips about working with workspaces.
 * **Pin workspaces** to the top of the workspace flyout list to quickly access your favorite workspaces. Read more about [pin workspaces](https://learn.microsoft.com/fabric/get-started/create-workspaces#pin-workspaces).
 * **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. 
 * **Create folders** in the workspace: Organize and manage artifacts in the workspace. 
-* **Manage a workspace in Git**: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a [workspace with Git](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git).
+* **Manage a workspace in Git**: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a [workspace with Git](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git). [Best Practices for implementing CI/CD](https://learn.microsoft.com/fabric/cicd/best-practices-cicd)
 * **Contact list**: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
 
