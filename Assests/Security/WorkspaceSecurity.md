@@ -74,7 +74,15 @@ Here is the extensive list of each roles permission
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
-[Here](https://learn.microsoft.com/fabric/get-started/give-access-workspaces#give-access-to-your-workspace) is the link to refer how to give access to the workspace. After you add or remove workspace access for a user or a group, the permission change only takes effect the next time the user logs into Microsoft Fabric.
+## Giving access to workspaces
+
+1.Because you have the Admin role in the workspace, on the workspace content list page, you see Access.
+2. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers.
+
+|<img src='/Assests/Security/Media/WorkSpaceAccess.png' width='500' height='250'>|
+| ----------- | 
+
+3. Select Add > Close.
 
 ## Check existing Workspace settings
 To open the workspace settings, you can select the workspace in the nav pane, then select More options (...) > Workspace settings next to the workspace name.
@@ -89,3 +97,24 @@ You can also open it from the workspace page.
 
 
 ### Tips when working with Workspaces
+
+Here are some useful tips about working with workspaces.
+
+Set up a task flow for the workspace to organize your data project and to help others understand and work on your project. Read more about task flows.
+
+Pin workspaces to the top of the workspace flyout list to quickly access your favorite workspaces. Read more about pin workspaces.
+
+Use granular workspace roles for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. Read more about workspace roles.
+
+Create folders in the workspace: Organize and manage artifacts in the workspace. Read more about creating folders in workspaces.
+
+Navigate to current workspace from anywhere by selecting the icon on left nav pane. Read more about current workspace in this article.
+
+Workspace settings: As workspace admin, you can update and manage your workspace configurations in workspace settings.
+
+Manage a workspace in Git: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a workspace with Git.
+
+Contact list: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
+
+
+
