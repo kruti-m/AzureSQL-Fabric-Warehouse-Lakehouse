@@ -38,7 +38,7 @@ Authorization is the process of verifying what they have access to.Authorization
 
 Fabric authorizes users through a granular approach. Security can be set for an entire workspace, for individual items, or through granular permissions in each Fabric engine.
 
-|<img src='/Assests/Security/Media/GranularPermissions.png' width='600' height='400'>|
+|<img src='/Assests/Security/Media/GranularPermissions.png' width='580' height='400'>|
 
 Some compute engines in Fabric have their own security models.Granular engine permissions allow fine-grained access control such as table, column, and row-level security to be defined. Engine-specific granular data security:
 
