@@ -79,12 +79,12 @@ Here is the extensive list of each roles permission
 ## Check existing Workspace settings
 To open the workspace settings, you can select the workspace in the nav pane, then select More options (...) > Workspace settings next to the workspace name.
 
-|<img src='/Assests/Security/Media/WorkspaceSetting.png' width='600' height='350'>|
+|<img src='/Assests/Security/Media/WorkspaceSetting.png' width='500' height='250'>|
 | ----------- | 
 
 You can also open it from the workspace page.
 
-|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='400' height='200'>|
+|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='450' height='200'>|
 | ----------- | 
 
 
