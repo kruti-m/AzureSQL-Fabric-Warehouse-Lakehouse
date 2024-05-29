@@ -15,6 +15,7 @@ through the internal Microsoft network.
 |<img src='/Assests/Security/Media/FabricSecurityLayers.PNG' width='1000' height='550'>|
 | ----------- | 
 
+Refer the table below for more information
 | Layer | Feature|
 |----------|--------------|
 |**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption,Labelling,Customer Lockbox|
