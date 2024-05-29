@@ -45,7 +45,16 @@ You can share your Warehouse from the OneLake data hub or Warehouse item by choo
 |<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='800' height='350'>|
 | ----------- |
 
-> :memo: **Note:** You can select the permissions following [this](https://learn.microsoft.com/fabric/data-warehouse/share-warehouse-manage-permissions#share-a-warehouse) page.
+* If no additional permissions are selected - The shared recipient by default receives "Read" permission, which only allows the recipient to connect to the SQL analytics endpoint, the equivalent of CONNECT permissions in SQL Server.
+
+> :warning: **Warning:** The shared recipient will not be able to query any table or view or execute any function or stored procedure unless they are provided access to objects within the Warehouse using T-SQL GRANT statement.
+
+* If "Read all data using SQL" is selected ("ReadData" permissions)- The shared recipient can read all the database objects within the Warehouse. ReadData is the equivalent of db_datareader role in SQL Server. If you want to further restrict and provide granular access to some objects within the Warehouse, you can do this using T-SQL GRANT/REVOKE/DENY statements.
+* In the SQL analytics endpoint of the Lakehouse, "Read all SQL Endpoint data" is equivalent to "Read all data using SQL".
+* If "Read all data using Apache Spark" is selected ("ReadAll" permissions)- The shared recipient has read access to the underlying parquet files in OneLake, which can be consumed using Spark. ReadAll should be provided only if the shared recipient wants complete access to your warehouse's files using the Spark engine.
+* If "Build reports on the default dataset" checkbox is selected ("Build" permissions)- The shared recipient can build reports on top of the default semantic model that is connected to your Warehouse.The Build checkbox is selected by default, but can be unchecked.
+
+> :memo: **Note:** You can refer [this](https://learn.microsoft.com/fabric/data-warehouse/share-warehouse-manage-permissions#share-a-warehouse) page for more context.
 
 ## Lakehouse
 
