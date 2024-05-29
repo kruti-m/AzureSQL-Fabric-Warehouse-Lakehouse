@@ -29,9 +29,9 @@ In the list of items, or in an open item, select the Share button Screenshot of 
 | ----------- |
 
 You have the following options:
-**People in your organization**: This type of link allows people in your organization to access this item. It doesn't work for external users or guest users.
-**People with existing access**: This type of link generates a URL to the item, but it doesn't grant any access to the item. Use this link type if you just want to send a link to somebody who already has access.
-**Specific people**: This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type also lets you share to guest users in your organization's Microsoft Entra ID. You can't share to external users who aren't guests in your organization.
+* **People in your organization**: This type of link allows people in your organization to access this item. It doesn't work for external users or guest users.
+* **People with existing access**: This type of link generates a URL to the item, but it doesn't grant any access to the item. Use this link type if you just want to send a link to somebody who already has access.
+* **Specific people**: This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type also lets you share to guest users in your organization's Microsoft Entra ID. You can't share to external users who aren't guests in your organization.
 
 ## Semantic model
 
