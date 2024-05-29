@@ -25,15 +25,30 @@ In Power BI, semantic model creators can control who has access to their data by
 
 * **[Shared report links](https://learn.microsoft.com/power-bi/collaborate-share/service-share-dashboards)**: Shows you links that were generated for sharing reports. Such links sometimes also give access to your semantic model. On this tab you can review them and remove them if necessary.
 
-|<img src='/Assests/Security/Media/Sharereports.png' width='400' height='150'>|
+|<img src='/Assests/Security/Media/Sharereports.png' width='300' height='150'>|
 | ----------- |
 
+> :bulb: **Tip:** Leverage the [Manage semantic model in PowerBI](https://learn.microsoft.com/training/modules/manage-datasets-power-bi/?source=recommendations) module to gain more knowledge.
 
-• Data Warehouse
-• Data Factory
-• Lakehouse
-• Data science
-• Real-Time Analytics
+## Data Warehouse
+
+After identifying the Warehouse you would like to share with another user in your Fabric workspace, select the quick action in the row to Share a Warehouse. Select the warehouse from your workspace, select the permissions to assign, and then finally Grant the permissions to another user.
+
+|<img src='/Assests/Security/Media/ShareWarehouse.gif' width='600' height='400'>|
+| ----------- |
+
+You can share your Warehouse from the OneLake data hub or Warehouse item by choosing Share from quick action, as highlighted in the following image.
+
+|<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='600' height='400'>|
+| ----------- |
+
+## Lakehouse
+
+## Data Factory
+
+## Data Science
+
+## Real-Time Analytics
+
 > :warning: **Warning:** Fabric doesn't support other authentication methods such as 
 
-> :bulb: **Tip:** More on granular settings(item,workspace,Power BI, OneLake) in the next modules.
