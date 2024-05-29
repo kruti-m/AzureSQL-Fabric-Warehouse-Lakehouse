@@ -2,7 +2,7 @@
 
 As a SaaS service, Fabric offers a complete security package for the entire platform. The Fabric platform comprises of experiences like include Lakehouse, Data Factory, Synapse Data Engineering, Synapse Data Warehouse, Power BI, and others. To understand the security in Fabric we have broken down Fabric components into the following layers:
 
-1. ***Data*** - Where the data actually resides inside Fabric (Warehouse/Lakehouse/Eventhouse)
+1. ***Data*** - Where the data actually resides inside Fabric (Warehouse/Lakehouse/Eventhouse/OneLake/Fabric clusters)
 1. ***Items*** - These are the building blocks of the Fabric platform. They're the objects that you create and manage in Fabric. There are different types of items, such as data warehouses, data pipelines, semantic models, reports, and dashboards.
 1. ***Workspace*** - A logical is a collection of items that brings together different functionality in a single tenant. It acts as a container that leverages capacity for the work that is executed, and provides controls for who can access the items in it. For example, in a sales workspace, users associated with the sales organization can create a data warehouse, run notebooks, create semantic models, create reports, etc.
 1. ***Domain*** - A logical grouping of workspaces. Domains are used to organize items in a way that makes sense for your organization. You can group things together in a way that makes it easier for the right people to have access to the right workspaces. For example, you might have a domain for sales, another for marketing, and another for finance.
@@ -25,5 +25,5 @@ All Fabric data stores are encrypted at rest by using Microsoft-managed keys. Wh
 - **Encryption in Transit** :Inbound Fabric communication also enforces TLS 1.2 and negotiates to TLS 1.3, whenever possible. Outbound Fabric communication to customer-owned infrastructure prefers secure protocols but might fall back to older, insecure protocols (including TLS 1.0) when newer protocols aren't supported.
 
 
-|<img src='/Assests/Security/Media/TLSHandshake.PNG' width='500' height='300'>|
+|<img src='/Assests/Security/Media/TLSHandshake.PNG' width='400' height='270'>|
 | ----------- | 
