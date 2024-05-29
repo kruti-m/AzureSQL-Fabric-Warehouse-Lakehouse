@@ -17,7 +17,7 @@ through the internal Microsoft network.
 
 # Data Handling and Security 
 
-Encryption
+- **Encryption**
 Fabric data includes customer data as well as system data and metadata.
 > :memo: **Note:** In Fabric, a tenant is assigned to a home metadata platform cluster. Tenant metadata, which can include customer data, is stored in this cluster.
 
