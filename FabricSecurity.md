@@ -18,8 +18,8 @@ through the internal Microsoft network.
 # Data Handling and Security 
 
 Encryption
-All Fabric data stores are encrypted at rest by using Microsoft-managed keys.
-> :memo: **Note:** In Fabric, a tenant is assigned to a home metadata platform cluster. Tenant metadata, which can include customer data, is stored in this cluster.
-Fabric data includes customer data as well as system data and metadata. While data can be processed in memory in an unencrypted state, it's never persisted to permanent storage while in an unencrypted state.
+Fabric data includes customer data as well as system data and metadata.
+> :memo: **Note:** In Fabric, a tenant is assigned to a home metadata platform cluster. Tenant metadata, which can include customer data, is stored in this cluster.</br>
+All Fabric data stores are encrypted at rest by using Microsoft-managed keys. While data can be processed in memory in an unencrypted state, it's never persisted to permanent storage while in an unencrypted state.
 
 
