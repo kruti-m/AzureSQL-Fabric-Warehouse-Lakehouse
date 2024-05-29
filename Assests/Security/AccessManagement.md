@@ -29,4 +29,4 @@ Authentication is the process of proving the user is who they claim to be.Micros
 
 Sharing items with guest users in Fabric is similar to sharing items with guest users in Power BI, except that in Fabric, you can only share items by sharing the workspace.
 
-|<img src='/Assests/Security/Media/GuestUser.png' width='600' height='450'>|
+|<img src='/Assests/Security/Media/GuestUser.png' width='650' height='400'>|
