@@ -5,8 +5,6 @@
   * [Data Warehouse](#data-warehouse)
   * [Lakehouse](#lakehouse)
   * [Data Factory](#data-factory)
-  * [Data Science](#data-science)
-  * [Real-time Analytics](#real-time-analytics)
 
 # Item Security
 
@@ -45,9 +43,7 @@ You can share your Warehouse from the OneLake data hub or Warehouse item by choo
 |<img src='/Assests/Security/Media/OneLakeShareWarehouse.png' width='800' height='350'>|
 | ----------- |
 
-* If no additional permissions are selected - The shared recipient by default receives "Read" permission, which only allows the recipient to connect to the SQL analytics endpoint, the equivalent of CONNECT permissions in SQL Server.
-
-> :warning: **Warning:** The shared recipient will not be able to query any table or view or execute any function or stored procedure unless they are provided access to objects within the Warehouse using T-SQL GRANT statement.
+* If no additional permissions are selected - The shared recipient by default receives "Read" permission, which only allows the recipient to connect to the SQL analytics endpoint, the equivalent of CONNECT permissions in SQL Server. The shared recipient will not be able to query any table or view or execute any function or stored procedure unless they are provided access to objects within the Warehouse using T-SQL GRANT statement.
 
 * If "Read all data using SQL" is selected ("ReadData" permissions)- The shared recipient can read all the database objects within the Warehouse. ReadData is the equivalent of db_datareader role in SQL Server. If you want to further restrict and provide granular access to some objects within the Warehouse, you can do this using T-SQL GRANT/REVOKE/DENY statements.
 * In the SQL analytics endpoint of the Lakehouse, "Read all SQL Endpoint data" is equivalent to "Read all data using SQL".
@@ -71,9 +67,7 @@ By default, sharing a lakehouse grants users read permission to the lakehouse, t
 
 ## Data Factory
 
-## Data Science
+To create and manage child resources for Data Factory - including datasets, linked services, pipelines, triggers, and integration runtimes you must belong to the **Data Factory Contributor role at the Resource Group level** or above. Membership in this role does not let the user create other resources.
 
-## Real-Time Analytics
-
-> :warning: **Warning:** Fabric doesn't support other authentication methods such as 
+Permissions on Azure Repos and GitHub are independent of Data Factory permissions. As a result, a user with repo permissions who is only a member of the Reader role can edit Data Factory child resources and commit changes to the repo, but can't publish these changes.
 
