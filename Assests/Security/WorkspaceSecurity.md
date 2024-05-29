@@ -84,7 +84,8 @@ Here is the extensive list of each roles permission
 
 3. Select Add > Close.
 
-## Check existing Workspace settings
+## Check existing workspace settings
+
 To open the workspace settings, you can select the workspace in the nav pane, then select More options (...) > Workspace settings next to the workspace name.
 
 |<img src='/Assests/Security/Media/WorkspaceSetting.png' width='500' height='250'>|
