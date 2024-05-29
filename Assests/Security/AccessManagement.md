@@ -25,3 +25,8 @@ Authentication is the process of proving the user is who they claim to be.Micros
 |4| The metadata platform, which resides in your tenant's [home region](../admin/find-fabric-home-region.md), stores your tenant's metadata, such as workspaces and access controls. This platform ensures that the user is authorized to access the relevant workspaces and Fabric items. |
 |5| The back-end capacity platform performs compute operations and stores your data. It's located in the [capacity region](../admin/service-admin-premium-multi-geo.md). When a workspace is assigned to Fabric capacity, all data that resides in the workspace, including the data lake [OneLake](../onelake/onelake-overview.md), is stored and processed in the capacity region. |
 
+## Guest user sharing
+
+Sharing items with guest users in Fabric is similar to sharing items with guest users in Power BI, except that in Fabric, you can only share items by sharing the workspace.
+
+|<img src='/Assests/Security/Media/GuestUser.png' width='600' height='450'>|
