@@ -20,6 +20,6 @@ through the internal Microsoft network.
 
 | Layer | Feature|
 |----------|--------------|
-|**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption,Labelling,Customer Lockbox|
-|**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication,Authorization,Guest user sharing|
+|**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption, Labelling, Customer Lockbox|
+|**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication, Authorization, Guest user sharing|
 |**[Item Security](/Assests/Security/ItemSecurity.md)**| Authentication,Authorization,Guest user sharing|
