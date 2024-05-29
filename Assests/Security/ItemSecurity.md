@@ -25,7 +25,7 @@ In Power BI, semantic model creators can control who has access to their data by
 
 * **[Shared report links](https://learn.microsoft.com/power-bi/collaborate-share/service-share-dashboards)**: Shows you links that were generated for sharing reports. Such links sometimes also give access to your semantic model. On this tab you can review them and remove them if necessary.
 
-|<img src='/Assests/Security/Media/Sharereports.png' width='600' height='200'>|
+|<img src='/Assests/Security/Media/Sharereports.png' width='400' height='150'>|
 | ----------- |
 
 
