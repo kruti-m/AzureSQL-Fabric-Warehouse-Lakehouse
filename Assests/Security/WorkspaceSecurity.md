@@ -78,10 +78,10 @@ Here is the extensive list of each roles permission
 
 Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per semantic model.A user or a service principal can be a member of up to 1,000 workspaces. Hence access needs to be provided carefully. 
 
-1.Because you have the Admin role in the workspace, on the workspace content list page, you see Access.
+1. Because you have the Admin role in the workspace, on the workspace content list page, you see Access.
 2. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers.
 
-|<img src='/Assests/Security/Media/WorkSpaceAccess.png' width='450' height='450'>|
+|<img src='/Assests/Security/Media/WorkSpaceAccess.png' width='435' height='450'>|
 | ----------- | 
 
 3. Select Add > Close.
@@ -116,19 +116,10 @@ Its good to know how to [restore a deleted workspace](https://learn.microsoft.co
 
 Here are some useful tips about working with workspaces.
 
-Set up a task flow for the workspace to organize your data project and to help others understand and work on your project. Read more about task flows.
-
-Pin workspaces to the top of the workspace flyout list to quickly access your favorite workspaces. Read more about pin workspaces.
-
-Use granular workspace roles for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. Read more about workspace roles.
-
-Create folders in the workspace: Organize and manage artifacts in the workspace. Read more about creating folders in workspaces.
-
-Navigate to current workspace from anywhere by selecting the icon on left nav pane. Read more about current workspace in this article.
-
-Workspace settings: As workspace admin, you can update and manage your workspace configurations in workspace settings.
-
-Manage a workspace in Git: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a workspace with Git.
-
-Contact list: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
+* **Set up a task flow** for the workspace to organize your data project and to help others understand and work on your project. Read more about [task flows](https://learn.microsoft.com/fabric/get-started/task-flow-overview).
+* **Pin workspaces** to the top of the workspace flyout list to quickly access your favorite workspaces. Read more about [pin workspaces](https://learn.microsoft.com/fabric/get-started/create-workspaces#pin-workspaces).
+* **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. 
+* **Create folders** in the workspace: Organize and manage artifacts in the workspace. 
+* **Manage a workspace in Git**: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a [workspace with Git](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git).
+* **Contact list**: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
 
