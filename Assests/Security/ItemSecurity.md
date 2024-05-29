@@ -51,8 +51,14 @@ You can share your Warehouse from the OneLake data hub or Warehouse item by choo
 
 When you share a lakehouse, you grant other users or groups access to a lakehouse without giving access to the workspace and the rest of its items.Sharing a lakehouse also grants access to the SQL endpoint and the associated default semantic model. Select the Lakehouse from your workspace, select the permissions to assign, and then finally Grant the permissions to another user.
 
-|<img src='/Assests/Security/Media/ShareLakehouse.gif' width='600' height='350'>|
+|<img src='/Assests/Security/Media/ShareLakehouse.gif' width='650' height='300'>|
 | ----------- |
+
+By default, sharing a lakehouse grants users read permission to the lakehouse, the associated SQL endpoint, and the default semantic model. In addition to these default permissions, you can grant:
+
+* ReadData permission on SQL endpoint to access data without SQL policy.
+* ReadAll permission on the lakehouse to access all data using Apache Spark.
+* Build permission on the default semantic model to allow building Power BI reports on top of the semantic model.
 
 ## Data Factory
 
