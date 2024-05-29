@@ -17,10 +17,13 @@ through the internal Microsoft network.
 
 # Data Handling and Security 
 
-- **Encryption**
-Fabric data includes customer data as well as system data and metadata.
+- **Encryption at Rest** : Fabric data includes customer data as well as system data and metadata.
 > :memo: **Note:** In Fabric, a tenant is assigned to a home metadata platform cluster. Tenant metadata, which can include customer data, is stored in this cluster.
 
 All Fabric data stores are encrypted at rest by using Microsoft-managed keys. While data can be processed in memory in an unencrypted state, it's never persisted to permanent storage while in an unencrypted state.
 
+- **Encryption in Transit** :Inbound Fabric communication also enforces TLS 1.2 and negotiates to TLS 1.3, whenever possible. Outbound Fabric communication to customer-owned infrastructure prefers secure protocols but might fall back to older, insecure protocols (including TLS 1.0) when newer protocols aren't supported.
 
+
+|<img src='/Assests/Security/Media/TLSHandshake.PNG' width='500' height='300'>|
+| ----------- | 
