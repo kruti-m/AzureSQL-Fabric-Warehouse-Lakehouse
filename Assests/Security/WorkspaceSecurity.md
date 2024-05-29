@@ -76,6 +76,8 @@ Here is the extensive list of each roles permission
 
 ## Giving access to workspaces
 
+Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per semantic model.A user or a service principal can be a member of up to 1,000 workspaces. Hence access needs to be provided carefully. 
+
 1.Because you have the Admin role in the workspace, on the workspace content list page, you see Access.
 2. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers.
 
@@ -96,8 +98,21 @@ You can also open it from the workspace page.
 |<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='400' height='150'>|
 | ----------- | 
 
+## Workspace retention
+
+By default, when a workspace is deleted, it isn't permanently and irrevocably deleted immediately. Instead, it enters a retention period during which it's possible to restore it. At the end of the retention period, it's removed permanently, and it will no longer be possible to recover it or its contents. The retention period for personal workspaces (My workspaces) is 30 days.
+
+The retention period for collaborative workspaces is configurable. The default retention period is seven days. However, Fabric administrators should change the length of the retention period by turning on the Define workspace retention period setting in the admin portal and specifying the desired retention period (from 7 to 90 days).
+
+## Govern My Workspace
+
+Every Fabric user has a personal workspace called My workspace where they can work with their own content. While generally only My workspace owners have access to their My workspaces, you can explicitly [prevent users from moving My workspaces](https://learn.microsoft.com/fabric/admin/portal-workspaces#prevent-my-workspace-owners-from-reassigning-their-my-workspaces-to-a-different-capacity) to a different capacity that might reside in noncompliant regions & designate a default capacity for My Workspaces. This can be done through Admin portal -> select Capacity settings -> Fabric Capacity -> Preferred capacity for My workspace
+
+To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators
 
 ### Tips when working with Workspaces
+
+Its good to know how to [restore a deleted workspace](https://learn.microsoft.com/fabric/admin/portal-workspaces#restore-a-deleted-collaborative-workspace) & [permanently delete a deleted collaborative workspace](https://learn.microsoft.com/fabric/admin/portal-workspaces#permanently-delete-a-deleted-collaborative-workspace-during-the-retention-period) from a security view point.
 
 Here are some useful tips about working with workspaces.
 
@@ -116,6 +131,4 @@ Workspace settings: As workspace admin, you can update and manage your workspace
 Manage a workspace in Git: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a workspace with Git.
 
 Contact list: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
-
-
 
