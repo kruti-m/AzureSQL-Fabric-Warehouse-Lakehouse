@@ -79,7 +79,7 @@ Here is the extensive list of each roles permission
 1.Because you have the Admin role in the workspace, on the workspace content list page, you see Access.
 2. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers.
 
-|<img src='/Assests/Security/Media/WorkSpaceAccess.png' width='500' height='350'>|
+|<img src='/Assests/Security/Media/WorkSpaceAccess.png' width='500' height='450'>|
 | ----------- | 
 
 3. Select Add > Close.
