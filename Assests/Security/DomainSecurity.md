@@ -58,14 +58,10 @@ When you define a domain as the default domain for specified users and/or securi
 2. After this, whenever a specified user or member of a specified security group creates a new workspace, it is assigned to the default domain.
 
 The specified users and/or members of the specified security groups generally automatically become domain contributors of workspaces that are assigned in this manner.To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
-
-|<img src='/Assests/Security/Media/DomainSettings.png' width='450' height='250'>|
-| ----------- | 
-
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
-|<img src='/Assests/Security/Media/DomainSettings2.png' width='450' height='150'>|
-| ----------- | 
+|<img src='/Assests/Security/Media/DomainSettings.png' width='450' height='250'>|<img src='/Assests/Security/Media/DomainSettings2.png' width='450' height='150'>|
+| ----------- |----------- | 
 
 ## Workspace Assignment to Domain/Subdomains
 
