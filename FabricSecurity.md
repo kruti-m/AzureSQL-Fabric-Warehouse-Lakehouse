@@ -10,8 +10,7 @@ As a SaaS service, Fabric offers a complete security package for the entire plat
 1. ***Capacity*** - A dedicated set of resources that is available at a given time to be used. A tenant can have one or more capacities associated with it. Capacity defines the ability of a resource to perform an activity or to produce output. Different items consume different capacity at a certain time. Fabric offers capacity through the Fabric SKU and Trials.
 1. ***Tenant*** - A dedicated space for organizations to create, store, and manage Fabric items. There's often a single instance of Fabric for an organization, and it's aligned with Microsoft Entra ID. The Fabric tenant maps to the root of OneLake and is at the top level of the hierarchy.You can create any number of workspaces, which you can think of as folders, within a tenant.
 1. ***One-lake*** - Microsoft Fabric Lake is also known as OneLake.There is OneLake per tenant. It comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. Its the unified storage layer for Fabric
-1. ***Power BI*** - Power BI is an online software service (SaaS, or Software as a Service) offering as part of Microsoft Fabric. Its the unified visualization layer for Fabric. When a Power BI report loads data from OneLake, the data goes. 
-through the internal Microsoft network.
+1. ***Power BI*** - Power BI is an online software service (SaaS, or Software as a Service) offering as part of Microsoft Fabric. Its the unified visualization layer for Fabric. When a Power BI report loads data from OneLake, the data goes through the internal Microsoft network.
 
 |<img src='/Assests/Security/Media/FabricSecurityLayers.PNG' width='1000' height='550'>|
 | ----------- | 
@@ -23,4 +22,5 @@ through the internal Microsoft network.
 |**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption, Labelling, Customer Lockbox|
 |**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication, Authorization, Guest user sharing|
 |**[Item Security](/Assests/Security/ItemSecurity.md)**| Share item via link, Semantic Model, Data Warehouse, Lakehouse, Data Factory |
-|**[WorkspaceSecurity](/Assests/Security/WorkspaceSecurity.md)**| Roles in Workspace, Access Management, Workspace Settings, Retention, Governance|
+|**[WorkspaceSecurity](/Assests/Security/WorkspaceSecurity.md)**| Roles in Workspace, Access Management, Workspace Settings, Retention, Governance |
+|

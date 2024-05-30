@@ -6,6 +6,7 @@
   * [Existing workspace settings](#check-existing-workspace-settings)
   * [Workspace retention](#workspace-retention)
   * [Workspace governance](#govern-my-workspace)
+  * [Workspace states](#workspace-states) 
   * [Quick Tips](#tips-when-working-with-workspaces)
 
 # Workspace Security
