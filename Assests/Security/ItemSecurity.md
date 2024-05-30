@@ -38,7 +38,7 @@ You have the following options:
 
 When you make changes to a Fabric item, or are considering making changes, it's important to be able to assess the potential impact of those changes on downstream items that depend on that item. Impact analysis provides you with information that can help you make this assessment.You can open an item's impact analysis from its card in lineage view, or from the Lineage option on the items detail's page.
 
-|<img src='/Assests/Security/Media/ImpactAnalysis1.png' width='250' height='150'>|<img src='/Assests/Security/Media/ImpactAnalysis2.png' width='400' height='200'>|
+|<img src='/Assests/Security/Media/ImpactAnalysis1.png' width='250' height='150'>|<img src='/Assests/Security/Media/ImpactAnalysis2.png' width='500' height='200'>|
 | ------------- | ---------- |
 
 ## Semantic model
