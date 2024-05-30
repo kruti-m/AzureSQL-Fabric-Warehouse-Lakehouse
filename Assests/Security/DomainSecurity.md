@@ -4,9 +4,9 @@
   * [Domain Roles](#domain-roles)
   * [Domain Creation](#domain-creation)
   * [Domain Settings](#check-existing-workspace-settings)
-  * [Workspace retention](#workspace-retention)
-  * [Workspace governance](#govern-my-workspace)
-  * [Workspace states](#workspace-states) 
+  * [Workspace Retention](#workspace-retention)
+  * [Workspace Governance](#govern-my-workspace)
+  * [Workspace States](#workspace-states) 
   * [Quick Tips](#tips-when-working-with-workspaces)
 
 # Domain Security
@@ -28,12 +28,14 @@ There are three roles involved in the creation and management of domains:
 
 |<img src='/Assests/Security/Media/DomainRoles.PNG' width='700' height='400'>|
 
+
 ## Domain Creation
 
 To create domain, you must be a Fabric admin.
 Open the admin portal and select the Domains tab.On the Domains tab, select Create new domain.
 
 |<img src='/Assests/Security/Media/DomainCreation.png' width='800' height='370'>|
+| ----------- | 
 
 In the New domain dialog that appears, provide a name (mandatory) and specify domain admins (optional). If you don't specify domain admins, you can do this later in the domain settings.Select Create. The domain is created, and you can continue configuring the domain as described in the following sections.
 
@@ -41,14 +43,17 @@ In the New domain dialog that appears, provide a name (mandatory) and specify do
 To create subdomains for a domain, you must be Fabric admin or domain admin.
 Open the domain you want to create a subdomain for and select New subdomain.Provide a name for the subdomain in the New subdomain dialog that appears. When done, select Create.
 
-|<img src='/Assests/Security/Media/Subdomain.png' width='450' height='250'>|
+|<img src='/Assests/Security/Media/Subdomain.png' width='450' height='200'>|
+| ----------- | 
 
-## Domain settings
+## Domain Settings
 
 To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
 
 |<img src='/Assests/Security/Media/DomainSettings.png' width='450' height='250'>|
+| ----------- | 
 
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
 |<img src='/Assests/Security/Media/DomainSettings2.png' width='300' height='150'>|
+| ----------- | 
