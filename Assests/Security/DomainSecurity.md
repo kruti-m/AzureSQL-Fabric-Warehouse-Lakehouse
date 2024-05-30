@@ -94,3 +94,7 @@ Organizations often have large numbers of Microsoft Fabric items available for s
 > :memo: **Note:** You can request permission to Certify from Fabric Admin.
 
 |<img src='/Assests/Security/Media/Endorsement.PNG' width='420' height='350'>|
+
+## Auditing
+
+Whenever a domain is created, edited, or deleted, that activity is recorded in the audit log for Fabric. You can track these activities in the unified audit log or in the Fabric activity log.These settings are configured in the tenant settings section of the Admin portal. 

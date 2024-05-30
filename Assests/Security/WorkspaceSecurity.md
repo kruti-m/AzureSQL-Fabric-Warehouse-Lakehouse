@@ -112,6 +112,21 @@ Every Fabric user has a personal workspace called My workspace where they can wo
 
 To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators
 
+## Lineage
+
+Data lineage is broadly understood as the lifecycle that spans the data’s origin, and where it moves over time across the data estate. Microsoft Purview works with Microsoft Fabric so users can discover and manage Microsoft Fabric items. We will cover the complete integration in the Governance Module but from security perspective its good to know how you can quickly check lineage.
+
+> :warning: **Note:**Lineage in Fabric is in preview, and not all connections between items are fully supported yet. It is possible that the lineage between some items will be incorrectly shown.
+
+Lineage is accessible from multiple locations. Typically, you can get to it from the workspace toolbar
+
+|<img src='/Assests/Security/Media/WorspaceLineage.png' width='420' height='350'>|
+
+Other methods are from an item's option menu (for instance, in the OneLake data hub) & from the menu items at the top of the item's details page.
+
+|<img src='/Assests/Security/Media/OneLakeLineage.png' width='450' height='220'>|<img src='/Assests/Security/Media/ItemLineage.png' width='400' height='300'>|
+| ------------- | ---------- |
+
 ## Workspace States
 
 The possible workspace states are described below.
