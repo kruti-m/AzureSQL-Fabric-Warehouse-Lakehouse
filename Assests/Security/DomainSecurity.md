@@ -2,8 +2,8 @@
 
 * [Domain Security](#domain-security)
   * [Domain Roles](#domain-roles)
-  * [Domain Creation](#giving-access-to-workspaces)
-  * [Existing Domain settings](#check-existing-workspace-settings)
+  * [Domain Creation](#domain-creation)
+  * [Domain Settings](#check-existing-workspace-settings)
   * [Workspace retention](#workspace-retention)
   * [Workspace governance](#govern-my-workspace)
   * [Workspace states](#workspace-states) 
@@ -34,3 +34,15 @@ To create domain, you must be a Fabric admin.
 Open the admin portal and select the Domains tab.On the Domains tab, select Create new domain.
 
 |<img src='/Assests/Security/Media/DomainCreation.png' width='800' height='370'>|
+
+In the New domain dialog that appears, provide a name (mandatory) and specify domain admins (optional). If you don't specify domain admins, you can do this later in the domain settings.Select Create. The domain is created, and you can continue configuring the domain as described in the following sections.
+
+## Domain settings
+
+To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
+
+|<img src='/Assests/Security/Media/DomainSettings.png' width='600' height='370'>|
+
+Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
+
+|<img src='/Assests/Security/Media/DomainSettings2.png' width='600' height='370'>|

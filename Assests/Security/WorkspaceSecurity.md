@@ -1,9 +1,9 @@
 # In this article we will cover:
 
 * [Workspace Scurity](#workspace-security)
-  * [Roles for Workspace](#roles-for-workspace)
+  * [Workspace Roles](#workspace-roles)
   * [Giving access to workspace](#giving-access-to-workspaces)
-  * [Existing workspace settings](#check-existing-workspace-settings)
+  * [Workspace settings](#workspace-settings)
   * [Workspace retention](#workspace-retention)
   * [Workspace governance](#govern-my-workspace)
   * [Workspace states](#workspace-states) 
@@ -28,7 +28,7 @@ You can either assign roles to individuals or to security groups, Microsoft 365 
 * Admin - Can view, modify, share, and manage all content in the workspace, including managing permissions.
 This is a small sub-set which can be easily remembered when mapping permissions
 
-## Roles for Workspace
+## Workspace Roles
 
 Here is the extensive list of each roles permission
 |Capability   | Admin  | Member  | Contributor  | Viewer |
@@ -88,7 +88,7 @@ Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per 
 
 3. Select Add > Close.
 
-## Check existing workspace settings
+## Workspace settings
 
 To open the workspace settings, you can select the workspace in the nav pane, then select More options (...) > Workspace settings next to the workspace name.
 
