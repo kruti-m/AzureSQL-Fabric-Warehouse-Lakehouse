@@ -1,6 +1,6 @@
 # In this article we will cover:
 
-* [Workspace Scurity](#workspace-security)
+* [Domain Security](#domain-security)
   * [Roles for Workspace](#roles-for-workspace)
   * [Giving access to workspace](#giving-access-to-workspaces)
   * [Existing workspace settings](#check-existing-workspace-settings)
@@ -18,3 +18,12 @@ Domain incorporate federated data architecture via data mesh approach. It provid
 
 |<img src='/Assests/Security/Media/DomainSecurity.PNG' width='1000' height='550'>|
 | ----------- | 
+
+Subdomains
+A subdomain is a way for fine tuning the logical grouping of your data. You can create subdomains under domains. For information about how to create subdomains, see [Create subdomains](https://learn.microsoft.com/fabric/governance/domains#create-subdomains).
+
+## Domain Roles
+
+There are three roles involved in the creation and management of domains:
+
+|<img src='/Assests/Security/Media/DomainRoles.PNG' width='435' height='450'>|
