@@ -15,7 +15,7 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 
 A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
-|<img src='/Assests/Security/Media/Tenant.png' width='600' height='350'>|
+|<img src='/Assests/Security/Media/Tenant.png' width='700' height='400'>|
 
 ## Licensing and Feature
 
