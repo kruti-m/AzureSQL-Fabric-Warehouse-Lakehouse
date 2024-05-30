@@ -26,4 +26,4 @@ A subdomain is a way for fine tuning the logical grouping of your data. You can 
 
 There are three roles involved in the creation and management of domains:
 
-|<img src='/Assests/Security/Media/DomainRoles.PNG' width='700' height='370'>|
+|<img src='/Assests/Security/Media/DomainRoles.PNG' width='700' height='400'>|
