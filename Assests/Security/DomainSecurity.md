@@ -1,9 +1,9 @@
 # In this article we will cover:
 
 * [Domain Security](#domain-security)
-  * [Roles for Workspace](#roles-for-workspace)
-  * [Giving access to workspace](#giving-access-to-workspaces)
-  * [Existing workspace settings](#check-existing-workspace-settings)
+  * [Domain Roles](#domain-roles)
+  * [Domain Creation](#giving-access-to-workspaces)
+  * [Existing Domain settings](#check-existing-workspace-settings)
   * [Workspace retention](#workspace-retention)
   * [Workspace governance](#govern-my-workspace)
   * [Workspace states](#workspace-states) 
@@ -27,3 +27,10 @@ A subdomain is a way for fine tuning the logical grouping of your data. You can 
 There are three roles involved in the creation and management of domains:
 
 |<img src='/Assests/Security/Media/DomainRoles.PNG' width='700' height='400'>|
+
+## Domain Creation
+
+To create domain, you must be a Fabric admin.
+Open the admin portal and select the Domains tab.On the Domains tab, select Create new domain.
+
+|<img src='/Assests/Security/Media/DomainCreation.png' width='800' height='400'>|
