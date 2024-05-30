@@ -45,7 +45,11 @@ Open the domain you want to create a subdomain for and select New subdomain.Prov
 
 ## Domain Settings
 
-A default domain is a domain that has been defined as the default domain for specified users and/or security groups. When you define a domain as the default domain for specified users and/or security groups, the following happens:
+A default domain is a domain that has been defined as the default domain for specified users and/or security groups. To define a domain as a default domain, you must be a Fabric admin or a domain admin of the domain. Select Default domain and specify users and/or security groups.
+
+|<img src='/Assests/Security/Media/DefaultDomainSetting.png' width='450' height='200'>|
+
+When you define a domain as the default domain for specified users and/or security groups, the following happens:
 
 1. The system scans the organization's workspaces. When it finds a workspace whose admin is a specified user or member of a specified security group:
     * If the workspace already has a domain assignment, it is preserved. The default domain doesn't override the current assignment.
@@ -71,4 +75,6 @@ To assign workspaces to a domain or subdomain in the admin portal, you must be a
 
 * **Assign by workspace name**: Some organizations have naming conventions for workspaces that make it easy to identify the data's business context.If a workspace is already associated with another domain, you'll see an icon next to the specific name.
 * **Assign by workspace admin**: You can select specific users or security groups as per your business structure.When selected all the workspaces the users and security groups are admins of will be associated to the domain. This action excludes "My workspaces". 
-* **Assign by capacity**: Some organizations have dedicated capacities per department/business unit.When you confirm your selection, all the workspaces associated to the selected capacities will be assigned to the domain.This action excludes "My workspaces".This action affects existing workspaces only. 
+* **Assign by capacity**: Some organizations have dedicated capacities per department/business unit.When you confirm your selection, all the workspaces associated to the selected capacities will be assigned to the domain.This action excludes "My workspaces".This action affects existing workspaces only.
+
+To unassign a workspace from a domain or subdomain, select the checkbox next to the workspace name and then select the Unassign button above the list. You can select several checkboxes to unassign more than one workspace at a time.
