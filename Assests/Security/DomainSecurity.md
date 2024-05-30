@@ -33,4 +33,4 @@ There are three roles involved in the creation and management of domains:
 To create domain, you must be a Fabric admin.
 Open the admin portal and select the Domains tab.On the Domains tab, select Create new domain.
 
-|<img src='/Assests/Security/Media/DomainCreation.png' width='800' height='400'>|
+|<img src='/Assests/Security/Media/DomainCreation.png' width='800' height='370'>|
