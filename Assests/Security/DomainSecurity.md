@@ -5,6 +5,7 @@
   * [Domain Creation](#domain-creation)
   * [Domain Settings](#domain-settings)
   * [Workspace Assignment to Domains/Subdomains](#workspace-assignment-to-domainsubdomains)
+  * [Endorsement](#endorsement)
 
 # Domain Security
 
@@ -63,6 +64,16 @@ Alternatively, for domains, you can hover over the domain on the Domain tab, sel
 |<img src='/Assests/Security/Media/DomainSettings.png' width='450' height='250'>|<img src='/Assests/Security/Media/DomainSettings2.png' width='450' height='150'>|
 | ----------- |----------- | 
 
+
+The domain settings side pane has the following tabs:
+
+* [General settings](https://learn.microsoft.com/fabric/governance/domains#edit-name-and-description): Edit domain name and description
+* [Image](https://learn.microsoft.com/fabric/governance/domains#specify-a-domain-image): Specify domain image
+* [Admins](https://learn.microsoft.com/fabric/governance/domains#specify-domain-admins): Specify domain admins
+* [Contributors](https://learn.microsoft.com/fabric/governance/domains#specify-domain-contributors): Specify domain contributors
+* [Default domain](https://learn.microsoft.com/fabric/governance/domains#define-the-domain-as-a-default-domain): Set up domain as a default domain
+* [Delegated settings](https://learn.microsoft.com/fabric/governance/domains#delegate-settings-to-the-domain-level): Override tenant-level settings
+
 ## Workspace Assignment to Domain/Subdomains
 
 To assign workspaces to a domain or subdomain in the admin portal, you must be a Fabric admin or a domain admin.Go to the domain or subdomain's page and select Assign workspaces.In the Assign workspaces to this domain side pane, select how to assign the workspaces.
@@ -75,3 +86,9 @@ To assign workspaces to a domain or subdomain in the admin portal, you must be a
 * **Assign by capacity**: Some organizations have dedicated capacities per department/business unit.When you confirm your selection, all the workspaces associated to the selected capacities will be assigned to the domain.This action excludes "My workspaces".This action affects existing workspaces only.
 
 To unassign a workspace from a domain or subdomain, select the checkbox next to the workspace name and then select the Unassign button above the list. You can select several checkboxes to unassign more than one workspace at a time.
+
+## Endorsement
+
+Organizations often have large numbers of Microsoft Fabric items available for sharing and reuse by their Fabric users. Identifying trustworthy, authoritative items can be difficult. Endorsed items are also given priority in some searches, and you can sort for endorsed items for in some lists.There are two kinds of endorsement:
+
+|<img src='/Assests/Security/Media/Endorsement.PNG' width='500' height='300'>|
