@@ -5,7 +5,7 @@
   * [Giving access to workspace](#giving-access-to-workspaces)
   * [Existing workspace settings](#check-existing-workspace-settings)
   * [Workspace retention](#workspace-retention)
-  * [workspace governance](#govern-my-workspace)
+  * [Workspace governance](#govern-my-workspace)
   * [Quick Tips](#tips-when-working-with-workspaces)
 
 # Workspace Security
@@ -112,6 +112,18 @@ Every Fabric user has a personal workspace called My workspace where they can wo
 
 To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators
 
+## Workspace States
+
+The possible workspace states are described below.
+
+|State  |Description  |
+|---------|---------|
+| **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| **Orphaned** | A workspace with no admin user. You need to assign an admin. |
+| **Deleted** | A deleted workspace. When a workspace is deleted, it enters a retention period. During the retention period, a Microsoft Fabric administrator can restore the workspace. See [Workspace retention](#workspace-retention) for detail. When the retention period ends, the workspace enters the *Removing* state.|
+| **Removing** | At the end of a deleted workspace's retention period, it moves into the *Removing* state. During this state, the workspace is permanently removed. Permanently removing a workspace takes a short while, and depends on the service and folder content. |
+| **Not found** | If the customer's API request includes a workspace ID for a workspace that doesn't belong to the customer's tenant, "Not found" is returned as the status for that ID. |
+
 ### Tips when working with Workspaces
 
 Its good to know how to [restore a deleted workspace](https://learn.microsoft.com/fabric/admin/portal-workspaces#restore-a-deleted-collaborative-workspace) & [permanently delete a deleted collaborative workspace](https://learn.microsoft.com/fabric/admin/portal-workspaces#permanently-delete-a-deleted-collaborative-workspace-during-the-retention-period) from a security view point.
@@ -123,5 +135,10 @@ Here are some useful tips about working with workspaces.
 * **Use granular workspace roles** for flexible permissions management in the workspaces: Admin, Member, Contributor, and Viewer. 
 * **Create folders** in the workspace: Organize and manage artifacts in the workspace. 
 * **Manage a workspace in Git**: Git integration in Microsoft Fabric enables Pro developers to integrate their development processes, tools, and best practices straight into the Fabric platform. Learn how to manage a [workspace with Git](https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started?tabs=commit-to-git). [Best Practices for implementing CI/CD](https://learn.microsoft.com/fabric/cicd/best-practices-cicd)
+* **Moving workspaces**: Workspaces and the data they contain reside on capacities, and can be moved around by assigning them to different capacities. In Microsoft Fabric, such movement currently has the following restrictions.
+
+1. Non Power BI Fabric items can't move from Premium to shared capacity.
+2. Non Power BI Fabric items can't move between regions.
+
 * **Contact list**: Specify who receives notification about workspace activity. Read more about workspace contact lists in this article.
 
