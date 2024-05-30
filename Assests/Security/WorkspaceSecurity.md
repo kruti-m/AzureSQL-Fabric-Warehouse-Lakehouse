@@ -17,14 +17,14 @@ Workspace roles are used to control access to workspaces and the content within 
 | ----------- | 
 
 To use the admin monitoring workspace, you need to be an admin with one of these roles.
-    *Microsoft 365 Global administrator.
-    *Fabric administrator.
+* Microsoft 365 Global administrator.
+* Fabric Administrator.
 
 You can either assign roles to individuals or to security groups, Microsoft 365 groups, and distribution lists. Workspace roles are confined to a specific workspace and don't apply to other workspaces, the capacity the workspace is in, or the tenant. There are four Workspace roles and they apply to all items within the workspace.Users that don't have any of these roles, can't access the workspace. The roles are:
-    *Viewer - Can view all content in the workspace, but can't modify it.
-    *Contributor - Can view and modify all content in the workspace.
-    *Member - Can view, modify, and share all content in the workspace.
-    *Admin - Can view, modify, share, and manage all content in the workspace, including managing permissions.
+* Viewer - Can view all content in the workspace, but can't modify it.
+* Contributor - Can view and modify all content in the workspace.
+* Member - Can view, modify, and share all content in the workspace.
+* Admin - Can view, modify, share, and manage all content in the workspace, including managing permissions.
 This is a small sub-set which can be easily remembered when mapping permissions
 
 ## Workspace Roles
