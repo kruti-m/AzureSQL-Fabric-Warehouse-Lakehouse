@@ -2,6 +2,7 @@
 
 * [Item Security](#item-security)
   * [Share item via link](#share-item-via-link)
+  * [Impact Analysis](#impact-analysis)
   * [Semantic Model](#semantic-model)
   * [Data Warehouse](#data-warehouse)
   * [Lakehouse](#lakehouse)
@@ -32,6 +33,13 @@ You have the following options:
 * **People in your organization**: This type of link allows people in your organization to access this item. It doesn't work for external users or guest users.
 * **People with existing access**: This type of link generates a URL to the item, but it doesn't grant any access to the item. Use this link type if you just want to send a link to somebody who already has access.
 * **Specific people**: This type of link allows specific people or groups to access the report. If you select this option, enter the names or email addresses of the people you wish to share with. This link type also lets you share to guest users in your organization's Microsoft Entra ID. You can't share to external users who aren't guests in your organization.
+
+## Impact Analysis
+
+When you make changes to a Fabric item, or are considering making changes, it's important to be able to assess the potential impact of those changes on downstream items that depend on that item. Impact analysis provides you with information that can help you make this assessment.You can open an item's impact analysis from its card in lineage view, or from the Lineage option on the items detail's page.
+
+|<img src='/Assests/Security/Media/ImpactAnalysis1.png' width='250' height='150'>|<img src='/Assests/Security/Media/ImpactAnalysis2.png' width='400' height='200'>|
+| ------------- | ---------- |
 
 ## Semantic model
 

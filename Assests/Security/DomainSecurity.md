@@ -6,6 +6,7 @@
   * [Domain Settings](#domain-settings)
   * [Workspace Assignment to Domains/Subdomains](#workspace-assignment-to-domainsubdomains)
   * [Endorsement](#endorsement)
+  * [Auditing](#auditing)
 
 # Domain Security
 
@@ -100,6 +101,7 @@ Organizations often have large numbers of Microsoft Fabric items available for s
 Whenever a domain is created, edited, or deleted, that activity is recorded in the audit log for Fabric. You can track these activities in the unified audit log or in the Fabric activity log.These settings are configured in the tenant settings section of the Admin portal. 
 
 This information is recorded in the OperationProperties section of the details side pane that opens when you select a domain-related activity on the Audit search page.
+
 | Activity flow | Activity operation name | 
 |:---|:---|
 | Create domain/sub-domain | InsertDataDomainAsAdmin |
