@@ -99,6 +99,7 @@ Organizations often have large numbers of Microsoft Fabric items available for s
 
 Whenever a domain is created, edited, or deleted, that activity is recorded in the audit log for Fabric. You can track these activities in the unified audit log or in the Fabric activity log.These settings are configured in the tenant settings section of the Admin portal. 
 
+This information is recorded in the OperationProperties section of the details side pane that opens when you select a domain-related activity on the Audit search page.
 | Activity flow | Activity operation name | 
 |:---|:---|
 | Create domain/sub-domain | InsertDataDomainAsAdmin |
@@ -108,8 +109,8 @@ Whenever a domain is created, edited, or deleted, that activity is recorded in t
 | Unassign all workspaces to the domain | DeleteAllDataDomainFoldersRelationsAsAdmin | 
 | Assign/Unassign workspaces to the domain as contributor | UpdateDataDomainFoldersRelationsAsContributor |
 | Remove domain from workspace settings as workspace owner | DeleteDataDomainFolderRelationsAsFolderOwner |
-| Initiate/Process bulk assign domain by workspace owners | BulkAssignDataDomainByWsOwnersAsAdmin? |
-| Initiate/Process bulk assign domain by capacities | BulkAssignDataDomainByCapacitiesAsAdmin? |
+| Initiate/Process bulk assign domain by workspace owners | BulkAssignDataDomainByWsOwnersAsAdmin |
+| Initiate/Process bulk assign domain by capacities | BulkAssignDataDomainByCapacitiesAsAdmin |
 | Add/Delete/Update domain access | UpdateDataDomainAccessAsAdmin |
 | Add/Delete/Update default domain | UpdateDefaultDataDomainAsAdmin |
 | Add/Delete/Update contributors | UpdateDataDomainContributorsScopeAsAdmin |
