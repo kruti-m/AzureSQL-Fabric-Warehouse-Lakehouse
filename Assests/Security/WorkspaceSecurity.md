@@ -2,7 +2,7 @@
 
 * [Workspace Scurity](#workspace-security)
   * [Workspace Roles](#workspace-roles)
-  * [Giving access to workspace](#giving-access-to-workspaces)
+  * [Access Management](#access-management)
   * [Workspace Settings](#workspace-settings)
   * [Workspace Retention](#workspace-retention)
   * [Govern "My Workspace"](#govern-my-workspace)
@@ -76,7 +76,7 @@ Here is the extensive list of each roles permission
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
-## Giving access to workspaces
+## Access Management
 
 Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per semantic model.A user or a service principal can be a member of up to 1,000 workspaces. Hence access needs to be provided carefully. 
 
