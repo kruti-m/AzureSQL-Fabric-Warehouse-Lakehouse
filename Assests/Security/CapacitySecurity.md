@@ -42,7 +42,7 @@ Each SKU provides a set of Fabric resources for your organization. Your organiza
 | [Bring your own key for Power BI](/power-bi/enterprise/service-encryption-byok)                          | &#x2705;      | &#x2705; |
 
 | Workspace license mode | User capabilities |  Supported experiences |
-|--|--|--|--|
+|--|--|--|
 | Pro | Use basic Power BI features and collaborate on reports, dashboards, and scorecards. | Power BI |
 | [Premium per-user](/power-bi/enterprise/service-premium-per-user-faq) (PPU) | Collaborate using most of the [Power BI Premium features](/power-bi/enterprise/service-premium-features), including dataflows, and datamarts. | Power BI |
 | [Premium per capacity](/power-bi/enterprise/service-premium-what-is) (P SKUs)   | Create Power BI content. Share, collaborate on, and distribute Power BI content. |  All Fabric experiences |
