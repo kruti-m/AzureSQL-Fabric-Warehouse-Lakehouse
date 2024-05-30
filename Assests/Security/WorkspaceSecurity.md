@@ -6,6 +6,7 @@
   * [Workspace Settings](#workspace-settings)
   * [Workspace Retention](#workspace-retention)
   * [Govern "My Workspace"](#govern-my-workspace)
+  * [Lineage"](#lineage)
   * [Workspace States](#workspace-states)
   * [Quick Tips](#tips-when-working-with-workspaces)
 
@@ -120,7 +121,8 @@ Data lineage is broadly understood as the lifecycle that spans the data’s orig
 
 Lineage is accessible from multiple locations. Typically, you can get to it from the workspace toolbar
 
-|<img src='/Assests/Security/Media/WorspaceLineage.png' width='420' height='350'>|
+|<img src='/Assests/Security/Media/WorspaceLineage.png' width='320' height='250'>|
+| ---------- |
 
 Other methods are from an item's option menu (for instance, in the OneLake data hub) & from the menu items at the top of the item's details page.
 
