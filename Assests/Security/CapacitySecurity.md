@@ -1,8 +1,8 @@
 # In this article we will cover:
 
 * [Capacity Security](#capacity-security)
-  * [Domain Roles](#domain-roles)
-
+  * [Tenant Concept](#tenant-concept)
+  * [Licensing and Feature]()
 
 # Capacity Security
 
@@ -17,8 +17,23 @@ A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a 
 
 |<img src='/Assests/Security/Media/Tenant.png' width='600' height='350'>|
 
+## Licensing and Feature
 
 To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/en-us/fabric/enterprise/licenses#capacity-license), and at least one per-user license. The workspace license mode dictates what kind of capacity the workspace can be hosted in and as a result the capabilities available.
+
+
+| Feature                                                                                                  | F SKU         | P SKUs   |
+|----------------------------------------------------------------------------------------------------------|:-------------:|:--------:|
+| [Copilot](../get-started/copilot-fabric-overview.md)                                                     | F64 or higher | &#x2705; |
+| [Workspace identity](../security/workspace-identity.md)                                                  | F64 or higher | &#x2705; |
+| [Managed Private Endpoints](../security/security-managed-private-endpoints-overview.md)                  | F64 or higher | &#x274C; |
+| [ARM APIs and Terraform](/azure/developer/terraform/overview-azapi-provider)                             | &#x2705;      | &#x274C; |
+| [Trusted workspace access](../security/security-trusted-workspace-access.md)                             | &#x2705;      | &#x274C; |
+| [Data exfiltration protection](/azure/synapse-analytics/security/workspace-data-exfiltration-protection) | &#x2705;      | &#x274C; |
+| [Pause and resume your capacity](pause-resume.md)                                                        | &#x2705;      | &#x274C; |
+| [On-demand resizing](scale-capacity.md)                                                                  | &#x2705;      | &#x274C; |
+| [Power BI Autoscale](/power-bi/enterprise/service-premium-auto-scale)                                    | &#x274C;      | &#x2705; |
+| [Bring your own key for Power BI](/power-bi/enterprise/service-encryption-byok)                          | &#x2705;      | &#x2705; |
 
 | Capabilities | Free | Pro | PPU |
 |--|--|--|--|
@@ -34,6 +49,7 @@ To share content and collaborate in Microsoft Fabric, your organization needs to
 | View Power BI items in Pro workspaces or Fabric Capacity workspaces (where the Fabric Capacity SKU is less than a F64) |  | :heavy_check_mark: |:heavy_check_mark: |
 | Users signing in with their own account can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces (where the Fabric capacity SKU is greater than or equal to a F64) | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 | Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
+
 Capacity licenses are split into Stock Keeping Units (SKUs). 
 
 ## Access Related
