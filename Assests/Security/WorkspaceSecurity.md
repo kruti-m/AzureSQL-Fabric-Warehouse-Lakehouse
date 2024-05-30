@@ -131,7 +131,7 @@ Other methods are from an item's option menu (for instance, in the OneLake data 
 
 When you open lineage view , you'll see the connections between all the items in the workspace the item is located in.
 
-|<img src='/Assests/Security/Media/LineageView.png' width='270' height='250'>|
+|<img src='/Assests/Security/Media/LineageView.png' width='470' height='350'>|
 | ---------- |
 
 ## Workspace States
