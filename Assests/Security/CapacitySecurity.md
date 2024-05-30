@@ -20,7 +20,20 @@ A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a 
 
 To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/en-us/fabric/enterprise/licenses#capacity-license), and at least one per-user license. The workspace license mode dictates what kind of capacity the workspace can be hosted in and as a result the capabilities available.
 
-
+| Capabilities | Free | Pro | PPU |
+|--|--|--|--|
+| Access Microsoft Fabric web application | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Create Fabric capacity workspaces |:heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Create Power BI Premium workspaces | | :heavy_check_mark: | :heavy_check_mark: |
+| Create Pro workspaces | | :heavy_check_mark: |:heavy_check_mark: |
+| Create, update, delete or manage Power BI items in workspaces other than their "My Workspace" |  | :heavy_check_mark: |:heavy_check_mark: |
+| Create PPU workspaces | |  |:heavy_check_mark: |
+| Create non-Power BI Fabric items in Fabric / Trial capacity workspaces | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
+| Create non-Power BI Fabric items in Power BI Premium capacity workspaces |  | :heavy_check_mark: |:heavy_check_mark: |
+| Share non-Power BI Fabric items | :heavy_check_mark: | :heavy_check_mark: | |
+| View Power BI items in Pro workspaces or Fabric Capacity workspaces (where the Fabric Capacity SKU is less than a F64) |  | :heavy_check_mark: |:heavy_check_mark: |
+| Users signing in with their own account can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces (where the Fabric capacity SKU is greater than or equal to a F64) | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
+| Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 Capacity licenses are split into Stock Keeping Units (SKUs). 
 
 ## Access Related
