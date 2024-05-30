@@ -67,8 +67,8 @@ Alternatively, for domains, you can hover over the domain on the Domain tab, sel
 
 To assign workspaces to a domain or subdomain in the admin portal, you must be a Fabric admin or a domain admin.Go to the domain or subdomain's page and select Assign workspaces.In the Assign workspaces to this domain side pane, select how to assign the workspaces.
 
-|<img src='/Assests/Security/Media/DomainAssignment.png' width='380' height='250'>|<img src='/Assests/Security/Media/DomainAssignment2.png' width='400' height='300'>|
-| ------------- |------------- |
+|<img src='/Assests/Security/Media/DomainAssignment.png' width='420' height='250'>|<img src='/Assests/Security/Media/DomainAssignment2.png' width='400' height='300'>|
+| ------------- | ---------- |
 
 * **Assign by workspace name**: Some organizations have naming conventions for workspaces that make it easy to identify the data's business context.If a workspace is already associated with another domain, you'll see an icon next to the specific name.
 * **Assign by workspace admin**: You can select specific users or security groups as per your business structure.When selected all the workspaces the users and security groups are admins of will be associated to the domain. This action excludes "My workspaces". 
