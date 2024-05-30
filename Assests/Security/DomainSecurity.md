@@ -41,8 +41,8 @@ In the New domain dialog that appears, provide a name (mandatory) and specify do
 
 To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
 
-|<img src='/Assests/Security/Media/DomainSettings.png' width='600' height='370'>|
+|<img src='/Assests/Security/Media/DomainSettings.png' width='550' height='350'>|
 
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
-|<img src='/Assests/Security/Media/DomainSettings2.png' width='600' height='370'>|
+|<img src='/Assests/Security/Media/DomainSettings2.png' width='500' height='300'>|
