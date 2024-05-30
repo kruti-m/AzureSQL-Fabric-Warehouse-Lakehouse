@@ -89,6 +89,8 @@ To unassign a workspace from a domain or subdomain, select the checkbox next to 
 
 ## Endorsement
 
-Organizations often have large numbers of Microsoft Fabric items available for sharing and reuse by their Fabric users. Identifying trustworthy, authoritative items can be difficult. Endorsed items are also given priority in some searches, and you can sort for endorsed items for in some lists.There are two kinds of endorsement:
+Organizations often have large numbers of Microsoft Fabric items available for sharing and reuse by their Fabric users. Identifying trustworthy, authoritative items can be difficult. Endorsed items are also given priority in some searches, and you can sort for endorsed items for in some lists.There are two kinds of endorsement: **[Promotion](https://learn.microsoft.com/fabric/get-started/endorsement-promote-certify#promote-items)** & **[Certification](https://learn.microsoft.com/fabric/get-started/endorsement-promote-certify#certify-items)**.
+
+> :memo: **Note:** You can request permission to Certify from Fabric Admin.
 
 |<img src='/Assests/Security/Media/Endorsement.PNG' width='420' height='350'>|
