@@ -126,7 +126,7 @@ Lineage is accessible from multiple locations. Typically, you can get to it from
 
 Other methods are from an item's option menu (for instance, in the OneLake data hub) & from the menu items at the top of the item's details page.
 
-|<img src='/Assests/Security/Media/OneLakeLineage.png' width='450' height='220'>|<img src='/Assests/Security/Media/ItemLineage.png' width='400' height='300'>|
+|<img src='/Assests/Security/Media/OneLakeLineage.png' width='450' height='250'>|<img src='/Assests/Security/Media/ItemLineage.png' width='450' height='320'>|
 | ------------- | ---------- |
 
 ## Workspace States
