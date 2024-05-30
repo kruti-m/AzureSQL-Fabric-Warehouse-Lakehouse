@@ -55,5 +55,5 @@ To open the Domain settings side pane, open the domain or subdomain and select D
 
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
-|<img src='/Assests/Security/Media/DomainSettings2.png' width='350' height='150'>|
+|<img src='/Assests/Security/Media/DomainSettings2.png' width='400' height='150'>|
 | ----------- | 
