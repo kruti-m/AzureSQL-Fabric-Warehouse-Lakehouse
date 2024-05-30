@@ -47,8 +47,8 @@ Open the domain you want to create a subdomain for and select New subdomain.Prov
 
 A default domain is a domain that has been defined as the default domain for specified users and/or security groups. To define a domain as a default domain, you must be a Fabric admin or a domain admin of the domain. Select Default domain and specify users and/or security groups.
 
-|<img src='/Assests/Security/Media/DefaultDomainSetting.png' width='500' height='200'>|
-| ----------- | 
+|<img src='/Assests/Security/Media/DefaultDomainSetting.png' width='600' height='250'>|
+| ----------- |
 
 When you define a domain as the default domain for specified users and/or security groups, the following happens:
 
