@@ -37,6 +37,12 @@ Open the admin portal and select the Domains tab.On the Domains tab, select Crea
 
 In the New domain dialog that appears, provide a name (mandatory) and specify domain admins (optional). If you don't specify domain admins, you can do this later in the domain settings.Select Create. The domain is created, and you can continue configuring the domain as described in the following sections.
 
+**Subdomain Creation**
+To create subdomains for a domain, you must be Fabric admin or domain admin.
+Open the domain you want to create a subdomain for and select New subdomain.Provide a name for the subdomain in the New subdomain dialog that appears. When done, select Create.
+
+|<img src='/Assests/Security/Media/Subdomain.png' width='450' height='250'>|
+
 ## Domain settings
 
 To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
@@ -45,4 +51,4 @@ To open the Domain settings side pane, open the domain or subdomain and select D
 
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
-|<img src='/Assests/Security/Media/DomainSettings2.png' width='300' height='200'>|
+|<img src='/Assests/Security/Media/DomainSettings2.png' width='300' height='150'>|
