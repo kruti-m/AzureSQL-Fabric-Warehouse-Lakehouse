@@ -11,9 +11,11 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 |<img src='/Assests/Security/Media/CapacitySecurity.PNG' width='1000' height='550'>|
 | ----------- | 
 
+## Tenant Concept
+
 A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
-|<img src='/Assests/Security/Media/Tenant.png' width='700' height='300'>|
+|<img src='/Assests/Security/Media/Tenant.png' width='500' height='300'>|
 | ----------- | 
 
 To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/en-us/fabric/enterprise/licenses#capacity-license), and at least one per-user license. The workspace license mode dictates what kind of capacity the workspace can be hosted in and as a result the capabilities available.
