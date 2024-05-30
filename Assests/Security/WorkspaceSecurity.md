@@ -3,10 +3,10 @@
 * [Workspace Scurity](#workspace-security)
   * [Workspace Roles](#workspace-roles)
   * [Giving access to workspace](#giving-access-to-workspaces)
-  * [Workspace settings](#workspace-settings)
-  * [Workspace retention](#workspace-retention)
-  * [Workspace governance](#govern-my-workspace)
-  * [Workspace states](#workspace-states) 
+  * [Workspace Settings](#workspace-settings)
+  * [Workspace Retention](#workspace-retention)
+  * [Govern "My Workspace"](#govern-my-workspace)
+  * [Workspace States](#workspace-states)
   * [Quick Tips](#tips-when-working-with-workspaces)
 
 # Workspace Security
@@ -88,7 +88,7 @@ Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per 
 
 3. Select Add > Close.
 
-## Workspace settings
+## Workspace Settings
 
 To open the workspace settings, you can select the workspace in the nav pane, then select More options (...) > Workspace settings next to the workspace name.
 
@@ -97,10 +97,10 @@ To open the workspace settings, you can select the workspace in the nav pane, th
 
 You can also open it from the workspace page.
 
-|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='400' height='150'>|
+|<img src='/Assests/Security/Media/WorkspaceSetting2.png' width='450' height='150'>|
 | ----------- | 
 
-## Workspace retention
+## Workspace Retention
 
 By default, when a workspace is deleted, it isn't permanently and irrevocably deleted immediately. Instead, it enters a retention period during which it's possible to restore it. At the end of the retention period, it's removed permanently, and it will no longer be possible to recover it or its contents. The retention period for personal workspaces (My workspaces) is 30 days.
 
