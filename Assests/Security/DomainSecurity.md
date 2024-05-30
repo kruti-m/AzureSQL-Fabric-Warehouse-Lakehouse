@@ -3,11 +3,8 @@
 * [Domain Security](#domain-security)
   * [Domain Roles](#domain-roles)
   * [Domain Creation](#domain-creation)
-  * [Domain Settings](#check-existing-workspace-settings)
-  * [Workspace Retention](#workspace-retention)
-  * [Workspace Governance](#govern-my-workspace)
-  * [Workspace States](#workspace-states) 
-  * [Quick Tips](#tips-when-working-with-workspaces)
+  * [Domain Settings](#domain-settings)
+  * [Workspace Assignment to Domains/Subdomains](#workspace-assignment-to-domainsubdomains)
 
 # Domain Security
 
@@ -48,12 +45,26 @@ Open the domain you want to create a subdomain for and select New subdomain.Prov
 
 ## Domain Settings
 
-To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
+A default domain is a domain that has been defined as the default domain for specified users and/or security groups. When you define a domain as the default domain for specified users and/or security groups, the following happens:
+
+1. The system scans the organization's workspaces. When it finds a workspace whose admin is a specified user or member of a specified security group:
+    * If the workspace already has a domain assignment, it is preserved. The default domain doesn't override the current assignment.
+    * If the workspace is unassigned, it is assigned to the default domain.
+2. After this, whenever a specified user or member of a specified security group creates a new workspace, it is assigned to the default domain.
+
+The specified users and/or members of the specified security groups generally automatically become domain contributors of workspaces that are assigned in this manner.To open the Domain settings side pane, open the domain or subdomain and select Domain settings (for subdomains, Subdomain settings).
 
 |<img src='/Assests/Security/Media/DomainSettings.png' width='450' height='250'>|
 | ----------- | 
 
 Alternatively, for domains, you can hover over the domain on the Domain tab, select More options (...), and choose Settings.
 
-|<img src='/Assests/Security/Media/DomainSettings2.png' width='400' height='150'>|
+|<img src='/Assests/Security/Media/DomainSettings2.png' width='450' height='150'>|
 | ----------- | 
+
+## Workspace Assignment to Domain/Subdomains
+
+To assign workspaces to a domain or subdomain in the admin portal, you must be a Fabric admin or a domain admin.Go to the domain or subdomain's page and select Assign workspaces.In the Assign workspaces to this domain side pane, select how to assign the workspaces.
+
+|<img src='/Assests/Security/Media/DomainAssignment.png' width='400' height='300'>|<img src='/Assests/Security/Media/DomainAssignment2.png' width='400' height='300'>|
+| ------------- |------------- |
