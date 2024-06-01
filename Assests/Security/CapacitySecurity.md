@@ -67,12 +67,11 @@ Per-user licenses allow users to work in Microsoft Fabric. There are three types
 | Users signing in with their own account can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces (where the Fabric capacity SKU is greater than or equal to a F64) | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 | Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 
-You can map a Capacity to Workspace or multiple Workspaces
-You may choose to spin up multiple Capacities as well.
+You can map a Capacity to Workspace or multiple Workspaces. You may choose to spin up multiple Capacities as well.
 
 **But at any given point in time one workspace can be mapped to only one specific capacity. Its preferred to keep Prod and Non-Prod Capacities separate.**
 
-|<img src='/Assests/Security/Media/CapacityMapping.PNG' width='700' height='400'>|
+|<img src='/Assests/Security/Media/CapacityMapping.PNG' width='500' height='350'>|
 | --------- |
 
 ## Access Related
