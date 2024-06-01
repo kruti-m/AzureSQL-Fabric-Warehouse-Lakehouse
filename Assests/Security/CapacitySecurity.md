@@ -15,9 +15,9 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 
 ## Tenant Concept
 
-A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
+**A Microsoft Fabric capacity resides on a tenant**.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
-|<img src='/Assests/Security/Media/Tenant.png' width='700' height='400'>|
+|<img src='/Assests/Security/Media/Tenant.png' width='750' height='470'>|
 | -------- |
 
 [Tenant settings](https://learn.microsoft.com/fabric/admin/tenant-settings-index) enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
@@ -25,7 +25,9 @@ A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a 
 |<img src='/Assests/Security/Media/TenantSettings.png' width='700' height='400'>|
 | -------- |
 
-Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins.
+Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins. The important ones to consider are :
+[Create workspaces](https://learn.microsoft.com/fabric/admin/portal-workspace#create-workspaces-new-workspace-experience): So that users can create workspaces.
+[Users can create Fabric items](https://learn.microsoft.com/fabric/admin/fabric-switch) : Users can use production-ready features to create Fabric items. Turning off this setting doesn't impact users’ ability to create Power BI items. 
 
 ## Capacity Licensing and Feature
 
