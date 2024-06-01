@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "terminal.integrated.automationProfile.windows": { "C:\Program Files\Git\bin\bash.exe"
+}
+}

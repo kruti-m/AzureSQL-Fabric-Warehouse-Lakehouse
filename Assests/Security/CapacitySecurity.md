@@ -79,19 +79,10 @@ Per-user licenses allow users to work in Microsoft Fabric. There are three types
 To avoid becoming a bottleneck for every single setting in your organization, a Fabric admin can delegate many of the controls to capacity, workspace, and domain admins.Delegating settings allows your organization to have several admins with different levels of admin rights in multiple logical locations within your organization. The team admin can control settings and permissions relevant for the team, at the capacity, workspace, or domain level, depending on the way your organization is set up.
 
 
-Consumption in Fabric is measured using capacity units (CUs). Using the Capacity 
-Metrics app admins can view consumption in their organization. This report enables 
-you to make informed decisions regarding the use of your organizational resources. 
-You can then take action by scaling a capacity up or down, pausing a capacity 
-operation, optimizing query efficiency, or buying another capacity if needed. 
+Consumption in Fabric is measured using capacity units (CUs). Using the Capacity Metrics app admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources. You can then take action by scaling a capacity up or down, pausing a capacity operation, optimizing query efficiency, or buying another capacity if needed.
 
 ## DR
-For effective disaster recovery planning, it's critical that you understand the 
-relationship between your home region and capacity locations. Understanding home 
-region and capacity locations helps you make strategic selections of capacity regions, 
-as well as the corresponding replication and recovery processes
 
-Choosing a different region for your capacity doesn't entirely relocate all of your data 
-to that region. Some data elements still remain stored in the home region. To see 
-which data remains in the home region and which data is stored in the Multi-Geo 
-enabled region, see Configure Multi-Geo support for Fabric Premium.
+For effective disaster recovery planning, it's critical that you understand the relationship between your home region and capacity locations. Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes
+
+Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
