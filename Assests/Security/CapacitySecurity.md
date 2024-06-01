@@ -25,9 +25,9 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 |<img src='/Assests/Security/Media/TenantSettings.png' width='700' height='400'>|
 | -------- |
 
-Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins. The important ones to consider are :
-[Create workspaces](https://learn.microsoft.com/fabric/admin/portal-workspace#create-workspaces-new-workspace-experience): So that users can create workspaces.
-[Users can create Fabric items](https://learn.microsoft.com/fabric/admin/fabric-switch) : Users can use production-ready features to create Fabric items. Turning off this setting doesn't impact users’ ability to create Power BI items. 
+Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins. The important ones to consider are :</br>
+[Create workspaces](https://learn.microsoft.com/fabric/admin/portal-workspace#create-workspaces-new-workspace-experience): So that users can create workspaces.</br>
+[Users can create Fabric items](https://learn.microsoft.com/fabric/admin/fabric-switch) : Users can use production-ready features to create Fabric items. Turning off this setting doesn't impact users’ ability to create Power BI items.</br>
 
 ## Capacity Licensing and Feature
 
