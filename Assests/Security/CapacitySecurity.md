@@ -26,7 +26,22 @@ Capacity licenses are split into Stock Keeping Units (SKUs).To access the Fabric
 
 ### Capacity license:
 
-Each SKU provides a set of Fabric resources for your organization. Your organization can have as many capacity licenses as needed. To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/en-us/fabric/enterprise/licenses#capacity-license), and at least one per-user license. The workspace license mode dictates what kind of capacity the workspace can be hosted in and as a result the capabilities available.
+Each SKU provides a set of Fabric resources for your organization. Your organization can have as many capacity licenses as needed. 
+
+> :memo: **Note:** Power BI Premium P SKUs support Microsoft Fabric. **A and EM SKUs only support Power BI items.**
+
+The workspace license mode dictates what kind of capacity the workspace can be hosted in and as a result the capabilities available.
+
+| Workspace license mode | User capabilities |  Supported experiences |
+|--|--|--|
+| Pro | Use basic Power BI features and collaborate on reports, dashboards, and scorecards. | Power BI |
+| [Premium per-user](/power-bi/enterprise/service-premium-per-user-faq) (PPU) | Collaborate using most of the [Power BI Premium features](/power-bi/enterprise/service-premium-features), including dataflows, and datamarts. | Power BI |
+| [Premium per capacity](/power-bi/enterprise/service-premium-what-is) (P SKUs)   | Create Power BI content. Share, collaborate on, and distribute Power BI content. |  All Fabric experiences |
+| [Embedded](/power-bi/developer/embedded/embedded-capacity#power-bi-embedded) (A SKUs) | Embed content in an Azure capacity. | Power BI |
+| Fabric capacity (F SKUs) | Create, share, collaborate on, and distribute Fabric content. | All Fabric experiences |
+| Trial | Try Fabric features and experiences for 60 days. |  All Fabric experiences |
+
+To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/fabric/enterprise/licenses#capacity-license), and at least one per-user license.
 
 | Feature                                                                                                  | F SKU         | P SKUs   |
 |----------------------------------------------------------------------------------------------------------|:-------------:|:--------:|
@@ -40,15 +55,6 @@ Each SKU provides a set of Fabric resources for your organization. Your organiza
 | [On-demand resizing](scale-capacity.md)                                                                  | &#x2705;      | &#x274C; |
 | [Power BI Autoscale](/power-bi/enterprise/service-premium-auto-scale)                                    | &#x274C;      | &#x2705; |
 | [Bring your own key for Power BI](/power-bi/enterprise/service-encryption-byok)                          | &#x2705;      | &#x2705; |
-
-| Workspace license mode | User capabilities |  Supported experiences |
-|--|--|--|
-| Pro | Use basic Power BI features and collaborate on reports, dashboards, and scorecards. | Power BI |
-| [Premium per-user](/power-bi/enterprise/service-premium-per-user-faq) (PPU) | Collaborate using most of the [Power BI Premium features](/power-bi/enterprise/service-premium-features), including dataflows, and datamarts. | Power BI |
-| [Premium per capacity](/power-bi/enterprise/service-premium-what-is) (P SKUs)   | Create Power BI content. Share, collaborate on, and distribute Power BI content. |  All Fabric experiences |
-| [Embedded](/power-bi/developer/embedded/embedded-capacity#power-bi-embedded) (A SKUs) | Embed content in an Azure capacity. | Power BI |
-| Fabric capacity (F SKUs) | Create, share, collaborate on, and distribute Fabric content. | All Fabric experiences |
-| Trial | Try Fabric features and experiences for 60 days. |  All Fabric experiences |
 
 ### Per-user License:
 
