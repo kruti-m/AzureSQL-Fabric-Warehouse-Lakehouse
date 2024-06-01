@@ -18,6 +18,15 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
 |<img src='/Assests/Security/Media/Tenant.png' width='700' height='400'>|
+| -------- |
+
+Tenant settings enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
+
+|<img src='/Assests/Security/Media/TenantSettings.png' width='700' height='400'>|
+| -------- |
+
+
+Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins.
 
 ## Licensing and Feature
 
