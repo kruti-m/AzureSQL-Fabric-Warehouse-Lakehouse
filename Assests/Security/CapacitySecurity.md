@@ -2,7 +2,9 @@
 
 * [Capacity Security](#capacity-security)
   * [Tenant Concept](#tenant-concept)
-  * [Licensing and Feature]()
+  * [Licensing and Feature](#capacity-license)
+  * [Access Management](#access-management)
+  * [Capacity Settings]()
 
 # Capacity Security
 
@@ -74,9 +76,38 @@ You can map a Capacity to Workspace or multiple Workspaces. You may choose to sp
 |<img src='/Assests/Security/Media/CapacityMapping.PNG' width='500' height='350'>|
 | --------- |
 
-## Access Related
+## Access Management
 
-To avoid becoming a bottleneck for every single setting in your organization, a Fabric admin can delegate many of the controls to capacity, workspace, and domain admins.Delegating settings allows your organization to have several admins with different levels of admin rights in multiple logical locations within your organization. The team admin can control settings and permissions relevant for the team, at the capacity, workspace, or domain level, depending on the way your organization is set up.
+To avoid becoming a bottleneck for every single setting in your organization, a Fabric admin can delegate many of the controls to capacity, workspace, and domain admins. Delegating settings allows your organization to have several admins with different levels of admin rights in multiple logical locations within your organization. The team admin can control settings and permissions relevant for the team, at the capacity, workspace, or domain level, depending on the way your organization is set up.
+
+Check [this](https://learn.microsoft.com/fabric/get-started/give-access-workspaces#give-access-to-your-workspace) link how to give access.
+
+## Capacity Settings
+
+To view the settings of a specific capacity, follow these steps:
+
+1. Go to the capacity settings page.
+2. Select the capacity type your capacity belongs to.
+From the capacity list, select the capacity you want to view.
+
+There are several settings which can be controlled at the capacity level:
+
+>[!NOTE]
+>Trail capacities only have some of the settings listed in the table
+
+| Details setting name                 | Description |
+|--------------------------------------|-------------|
+| Disaster Recovery                    | Enable [disaster recovery](/azure/reliability/reliability-fabric#set-up-disaster-recovery) for the capacity |
+| Capacity usage report                | The usage report is replaced with the [capacity metrics app](../enterprise/metrics-app.md) |
+| Notifications                        | Enable [notification](service-admin-premium-capacity-notifications.md) for your capacity |
+| Contributor permissions              | Set up the ability to add workspaces to the capacity. Select one of these two options:<li>The entire organization</li><li>Specific users or security groups</li> |
+| Admin permissions                    | Give specific users or security groups the ability to do the following:<li>Change capacity settings</li><li>Add contributors to the capacity</li><li>Add or remove workspaces from the capacity</li> |
+| Power BI workloads                   | Configure [Power BI workloads](/power-bi/enterprise/service-admin-premium-workloads) for:<li>[Semantic models](/power-bi/enterprise/service-admin-premium-workloads#semantic-models)</li><li>[Paginated reports](/power-bi/enterprise/service-admin-premium-workloads#paginated-reports)</li><li>[AI](/power-bi/enterprise/service-admin-premium-workloads#ai-preview)</li> |
+| Preferred capacity for My workspace  | Designate the capacity as the [default capacity for My workspaces](/power-bi/enterprise/service-admin-premium-manage#designate-a-default-capacity-for-my-workspaces)         |
+| Data Engineering/Science Settings    | Allow workspace admins to set the size of their spark [pools](../data-engineering/workspace-admin-settings.md#pool) |
+| Workspaces assigned to this capacity | Add or remove workspaces assigned to the capacity |
+
+## Consumption 
 
 consumption in Fabric is measured using capacity units (CUs). Using the Capacity Metrics app admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources. You can then take action by scaling a capacity up or down, pausing a capacity operation, optimizing query efficiency, or buying another capacity if needed.
 
