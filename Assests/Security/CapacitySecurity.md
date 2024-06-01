@@ -2,7 +2,7 @@
 
 * [Capacity Security](#capacity-security)
   * [Tenant Concept](#tenant-concept)
-  * [Licensing and Feature](#capacity-license)
+  * [Capacity Licensing and Feature](#capacity-license)
   * [Access Management](#access-management)
   * [Capacity Settings](#capacity-settings)
 
@@ -20,15 +20,14 @@ A Microsoft Fabric capacity resides on a tenant.Each capacity that sits under a 
 |<img src='/Assests/Security/Media/Tenant.png' width='700' height='400'>|
 | -------- |
 
-Tenant settings enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
+[Tenant settings](https://learn.microsoft.com/fabric/admin/tenant-settings-index) enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
 
 |<img src='/Assests/Security/Media/TenantSettings.png' width='700' height='400'>|
 | -------- |
 
-
 Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins.
 
-## Licensing and Feature
+## Capacity Licensing and Feature
 
 Capacity licenses are split into Stock Keeping Units (SKUs).To access the Fabric SaaS platform, you need a license. Fabric has two type of licenses:
 
@@ -93,11 +92,7 @@ Check [this](https://learn.microsoft.com/fabric/get-started/give-access-workspac
 
 ## Capacity Settings
 
-To view the settings of a specific capacity, follow these steps:
-
-1. Go to the capacity settings page.
-2. Select the capacity type your capacity belongs to.
-From the capacity list, select the capacity you want to view.
+To view the settings of a specific capacity, follow these steps:</br> 1. Go to the capacity settings page.</br> 2. Select the capacity type your capacity belongs to. From the capacity list, select the capacity you want to view.</br>
 
 |<img src='/Assests/Security/Media/CapacitySettings1.PNG' width='600' height='220'>|
 | -------- |
