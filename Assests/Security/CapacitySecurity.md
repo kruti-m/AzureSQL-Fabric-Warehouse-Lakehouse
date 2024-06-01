@@ -4,7 +4,7 @@
   * [Tenant Concept](#tenant-concept)
   * [Licensing and Feature](#capacity-license)
   * [Access Management](#access-management)
-  * [Capacity Settings]()
+  * [Capacity Settings](#capacity-settings)
 
 # Capacity Security
 
@@ -69,7 +69,7 @@ Per-user licenses allow users to work in Microsoft Fabric. There are three types
 | Users signing in with their own account can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces (where the Fabric capacity SKU is greater than or equal to a F64) | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 | Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 
-You can map a Capacity to Workspace or multiple Workspaces. You may choose to spin up multiple Capacities as well.
+You can map a Capacity to Workspace or multiple Workspaces. You may choose to spin up multiple Capacities as well.Split up capacities based on the requirements of the environment, for example, development/test/acceptance/production (DTAP). This makes for better workload isolation and chargeback.
 
 **But at any given point in time one workspace can be mapped to only one specific capacity. Its preferred to keep Prod and Non-Prod Capacities separate.**
 
@@ -90,10 +90,12 @@ To view the settings of a specific capacity, follow these steps:
 2. Select the capacity type your capacity belongs to.
 From the capacity list, select the capacity you want to view.
 
+|<img src='/Assests/Security/Media/CapacitySettings1.PNG' width='550' height='250'>|<img src='/Assests/Security/Media/CapacitySettings2.PNG' width='450' height='320'>|
+| ------------- | ---------- |
+
 There are several settings which can be controlled at the capacity level:
 
->[!NOTE]
->Trail capacities only have some of the settings listed in the table
+> :memo: **Note:** Trail capacities only have some of the settings listed in the table.
 
 | Details setting name                 | Description |
 |--------------------------------------|-------------|
