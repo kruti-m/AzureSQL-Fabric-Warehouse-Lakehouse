@@ -50,7 +50,13 @@ Each SKU provides a set of Fabric resources for your organization. Your organiza
 | Fabric capacity (F SKUs) | Create, share, collaborate on, and distribute Fabric content. | All Fabric experiences |
 | Trial | Try Fabric features and experiences for 60 days. |  All Fabric experiences |
 
-Per-user License
+### Per-user License:
+
+Per-user licenses allow users to work in Microsoft Fabric. There are three types of individual licenses:
+
+* **Free** - A free license allows you to create and share Fabric content other than Power BI items in Microsoft Fabric, if you have access to a Fabric capacity (either trial or paid).
+* **Pro** - A Pro license lets you share Power BI content with other users. Every organization needs at least one user with a Pro or a Premium Per User (PPU) license, if they intend to use Power BI within Fabric. SKUs smaller than F64 require a Power BI Pro or Premium Per User license for each user consuming Power BI content. 
+* **Premium per-user (PPU)** - PPU licenses allow organizations to access Power BI Premium features by licensing every user with a PPU license instead of purchasing a Power BI Premium capacity. PPU can be more cost effective when Power BI Premium features are needed for fewer than 250 users. 
 
 | Capabilities | Free | Pro | PPU |
 |--|--|--|--|
