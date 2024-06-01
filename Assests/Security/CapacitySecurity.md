@@ -90,8 +90,9 @@ To view the settings of a specific capacity, follow these steps:
 2. Select the capacity type your capacity belongs to.
 From the capacity list, select the capacity you want to view.
 
-|<img src='/Assests/Security/Media/CapacitySettings1.PNG' width='450' height='250'>|<img src='/Assests/Security/Media/CapacitySettings2.PNG' width='600' height='350'>|
-| ------------- | ---------- |
+|<img src='/Assests/Security/Media/CapacitySettings1.PNG' width='400' height='250'>|
+|<img src='/Assests/Security/Media/CapacitySettings2.PNG' width='700' height='300'>|
+
 
 There are several settings which can be controlled at the capacity level:
 
