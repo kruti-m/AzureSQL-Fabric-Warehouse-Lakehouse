@@ -154,7 +154,16 @@ The metadata platform and the back-end capacity platform each run in secured vir
 |<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='400' height='250'>|
 | -------- | -------- |
 
-Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes. When you create new capacities, your data storage is set to the home region by default. If you wish to change your data storage region to another region, you'll need to enable Multi-Geo, a Fabric Premium feature.
+### Home region
+
+The home region which stores Fabric metadata is important because:
+
+* The performance of reports and dashboards depends, in part, on users being in proximity to the tenant location.
+* There could be legal or regulatory reasons that the organization's data be stored in a specific jurisdiction.
+
+The home region for the organization's tenant is set to the location of the first user that signs up. If most of your users are located in a different region, that region might not be the best choice. You can’t move your organization’s tenant between regions by yourself. To [move your tenant to another region](https://learn.microsoft.com/power-bi/support/service-admin-region-move), your global Microsoft 365 administrator should open a support request. The relocation of a tenant to another region isn't a fully automated process, and some downtime is involved. Be sure to take into consideration the [prerequisites and actions](https://learn.microsoft.com/power-bi/admin/service-admin-region-move) that are required before and after the move.
+
+Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes. When you create new capacities, your data storage is set to the home region by default. As a Fabric customer, you can deploy content to data centers in regions other than the home region of the Fabric tenant. If you wish to change your data storage region to another region, you'll need to enable [Multi-Geo](https://learn.microsoft.com/fabric/admin/service-admin-premium-multi-geo#enable-and-configure), a Fabric Premium feature.
 
 In the case of a home region that doesn't have a paired region, capacities in any Multi-Geo enabled region may face operational issues if the home region encounters a disaster, as the core service functionality is tethered to the home region. Multi-Geo is a Fabric feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Fabric customer, you can deploy content to data centers in regions other than the home region of the Fabric tenant. 
 
