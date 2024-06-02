@@ -76,7 +76,7 @@ Here is the extensive list of each roles permission
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
-|<img src='/Assests/Security/Media/ImplicitlyRoles.png' width='700' height='400'>|
+|<img src='/Assests/Security/Media/ImplicitlyRoles.png' width='600' height='300'>|
 | ----------- | 
 
 ## Access Management
