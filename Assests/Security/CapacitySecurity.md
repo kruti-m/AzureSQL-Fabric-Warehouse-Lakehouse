@@ -151,7 +151,7 @@ The metadata platform and the back-end capacity platform each run in secured vir
 * By default, Fabric communicates between experiences using the internal Microsoft backbone network.
 * By default, Fabric metadata is available only in the region where the Fabric tenant is located. To find your home region got to Help pane -> About Microsoft Fabric -> Look for the value next to Your data is stored in.
 
-|<img src='/Assests/Security/Media/HomeRegion1.png' width='500' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='500' height='250'>|
+|<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='450' height='250'>|
 | -------- | -------- |
 
 Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
