@@ -68,12 +68,12 @@ Alternatively, for domains, you can hover over the domain on the Domain tab, sel
 
 The domain settings side pane has the following tabs:
 
-* [General settings](https://learn.microsoft.com/fabric/governance/domains#edit-name-and-description): Edit domain name and description
-* [Image](https://learn.microsoft.com/fabric/governance/domains#specify-a-domain-image): Specify domain image
-* [Admins](https://learn.microsoft.com/fabric/governance/domains#specify-domain-admins): Specify domain admins
-* [Contributors](https://learn.microsoft.com/fabric/governance/domains#specify-domain-contributors): Specify domain contributors
-* [Default domain](https://learn.microsoft.com/fabric/governance/domains#define-the-domain-as-a-default-domain): Set up domain as a default domain
-* [Delegated settings](https://learn.microsoft.com/fabric/governance/domains#delegate-settings-to-the-domain-level): Override tenant-level settings
+* [General settings](https://learn.microsoft.com/fabric/governance/domains#edit-name-and-description): Edit domain name and description.
+* [Image](https://learn.microsoft.com/fabric/governance/domains#specify-a-domain-image): Specify domain image.
+* [Admins](https://learn.microsoft.com/fabric/governance/domains#specify-domain-admins): Specify domain admins.
+* [Contributors](https://learn.microsoft.com/fabric/governance/domains#specify-domain-contributors): Specify domain contributors.
+* [Default domain](https://learn.microsoft.com/fabric/governance/domains#define-the-domain-as-a-default-domain): Set up domain as a default domain.
+* [Delegated settings](https://learn.microsoft.com/fabric/governance/domains#delegate-settings-to-the-domain-level): Override tenant-level settings.
 
 ## Workspace Assignment to Domain/Subdomains
 
