@@ -51,5 +51,7 @@ The artifact is embedded into an IFrame in the application or portal. An IFrame 
 In an embed for your organization scenario, Microsoft Entra or through customized portals.ITs. All Power BI policies and capabilities described in this paper such as Row Level Security (RLS) and object-level security (OLS) are automatically applied to all users independently of whether they access Power BI through the Power BI portal or through customized portals.
 
 
-
-What you can do is a quick run-down of you code with this Embedding Setup Tool. 
+What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup)
+|Embed for your customers  |Embed for your organization  |
+|---------|---------|
+|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='520' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='520' height='300'>
