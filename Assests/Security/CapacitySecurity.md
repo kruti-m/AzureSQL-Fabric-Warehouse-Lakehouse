@@ -2,9 +2,14 @@
 
 * [Capacity Security](#capacity-security)
   * [Tenant Concept](#tenant-concept)
-  * [Capacity Licensing and Feature](#capacity-license)
+    * [Tenant Settings](#tenant-settings)
+  * [Licensing and Feature](#capacity-license)
+    * [Capacity License](#capacity-license)
+    * [Per-user License](#per-user-license)
   * [Access Management](#access-management)
   * [Capacity Settings](#capacity-settings)
+  *[Consumption](#consumption)
+  *[DR](#dr)
 
 # Capacity Security
 
@@ -15,7 +20,7 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 
 ## Tenant Concept
 
-**A Microsoft Fabric capacity resides on a tenant**.Tenant in Microsoft Azure cloud service works as an organization and created in Azure Active Directory. In Azure Active Directory all the users and applications are into a group, and these groups are known as tenants.A tenant can be associated with multiple subscriptions.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
+**A Microsoft Fabric capacity resides on a tenant**. Tenant in Microsoft Azure cloud service works as an organization and created in Azure Active Directory. In Azure Active Directory all the users and applications are into a group, and these groups are known as tenants.A tenant can be associated with multiple subscriptions.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
 |<img src='/Assests/Security/Media/TenatArchitecture.png' width='500' height='250'>|<img src='/Assests/Security/Media/Tenant.png' width='700' height='450'>|
 | -------- | -------- |
