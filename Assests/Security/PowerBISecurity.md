@@ -26,7 +26,7 @@ To enable Power BI Premium (per-user), Go to the admin portal, then select “Us
 |<img src='/Assests/Security/Media/EnablingPPUFabric.png' width='900' height='400'>|
 | ----------- | 
 
-## Power BI Embedded Analytics 
+## Power BI Embedded Analytics
 
 While Power BI as a service has its own [Power BI security whitepaper](https://learn.microsoft.com/power-bi/guidance/whitepaper-powerbi-security) published, this module focusses on the PowerBI Embedded Analytics offerings. Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application. Hence from a security view-point we will understand these and features to encorporate when using Fabric -> Power BI experience. 
 
@@ -35,7 +35,7 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 1. [Embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers)
 2. [Embed for your organization](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-organization)
 
-|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='520' height='300'>|
+|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='550' height='350'>|
 | ----------- | 
 
 |Embed for your customers  |Embed for your organization  |
