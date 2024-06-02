@@ -5,6 +5,7 @@
     * [Embedding Setup Tool](#embedding-setup-tool)
   * [Row Level Security](#row-level-securityrls)
   * [Object Level Security](#object-level-securityols)
+  * [Dynamic Data Masking](#dynamic-data-masking)
 
 # PowerBi Security
 
@@ -55,7 +56,7 @@ The artifact is embedded into an IFrame in the application or portal. An IFrame 
 What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup)
 |Embed for your customers  |Embed for your organization  |
 |---------|---------|
-|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='520' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='520' height='300'>
+|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='470' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='470' height='300'>
 
 You can leverage All Power BI Row Level Security (RLS) and object-level security (OLS) capabilities whether they access Power BI through the Power BI portal or through customized portals.
 
@@ -88,7 +89,7 @@ Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-obje
 
 ## Dynamic Data Masking
 
-Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users. Dynamic data masking can be configured on designated database fields to hide sensitive data in the result sets of queries. The underlying data in the database isn't changed, so it can be used with existing applications since masking rules are applied to query results.Dynamic data masking is complementary to other Fabric security features like row-level security & object-level security.A Warehouse Admin/Member/Contributor can apply this.
+Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users. Dynamic data masking can be configured on designated database fields to hide sensitive data in the result sets of queries. The underlying data in the database isn't changed, so it can be used with existing applications since masking rules are applied to query results.Dynamic data masking is complementary to other Fabric security features like row-level security & object-level security. A Warehouse Admin/Member/Contributor can apply this.
 
 You can select from these existing [data masking rules](https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking#define-a-dynamic-data-mask) to apply to your columns.
 
@@ -97,7 +98,7 @@ It's a 2 step procedure:[Refer [this link](https://learn.microsoft.com/fabric/da
 1. **Configure table with MASK clause**: Here the MASKED WITH FUNCTION clause is used for whichever columns the data needs to be masked.
 2. **Grant UNMASK permission**: Here you grant permission only to those users who should see the data. If anyone else attempts to run a select they will see gibberish data in the masked columns.
 
-|<img src='/Assests/Security/Media/DataMasking.png' width='500' height='350'>|
+|<img src='/Assests/Security/Media/DataMasking.png' width='600' height='350'>|
 | ----------- | 
 
 > :memo: **Note:** User who does not have the Administrator, Member, or Contributor rights on the workspace, or elevated permissions on the Warehouse or you are not granted explicit permission will not see the data.
