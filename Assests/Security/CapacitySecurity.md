@@ -194,7 +194,7 @@ Fabric provides a disaster recovery switch on the capacity settings page. It's a
 * **BCDR continuity for Power BI**: While disaster recovery for OneLake data can be toggled on and off, BCDR for Power BI is always supported, regardless of whether the switch is on or off.
 * **Frequency**: Once you change the disaster recovery capacity setting, you must wait 30 days before being able to alter it again. The wait period is set in place to maintain stability and prevent constant toggling,
 
-|<img src='/Assests/Security/Media/CapacityDRsettings.png' width='500' height='430'>|
+|<img src='/Assests/Security/Media/CapacityDRsettings.png' width='600' height='430'>|
 | ---------- |
 
 > :memo: **Note:** After turning on the disaster recovery capacity setting, it can take up to 72 hours for the data to start replicating.
