@@ -23,7 +23,7 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 **A Microsoft Fabric capacity resides on a tenant**. Tenant in Microsoft Azure cloud service works as an organization and created in Azure Active Directory. In Azure Active Directory all the users and applications are into a group, and these groups are known as tenants.A tenant can be associated with multiple subscriptions.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
 |<img src='/Assests/Security/Media/TenatArchitecture.png' width='500' height='250'>|<img src='/Assests/Security/Media/Tenant.png' width='700' height='450'>|
-| -------- | -------- |
+|--------|--------|
 
 In your tenant, you can enable Microsoft Fabric for:
 
@@ -96,7 +96,7 @@ You can map a Capacity to Workspace or multiple Workspaces. You may choose to sp
 
 **But at any given point in time one workspace can be mapped to only one specific capacity. Its preferred to keep Prod and Non-Prod Capacities separate.**
 
-|<img src='/Assests/Security/Media/CapacityMapping.PNG' width='500' height='350'>|
+|<img src='/Assests/Security/Media/CapacityMapping.PNG' width='470' height='350'>|
 | --------- |
 
 ## Access Management
@@ -153,4 +153,5 @@ The metadata platform and the back-end capacity platform each run in secured vir
 
 |<img src='/Assests/Security/Media/HomeRegion1.png' width='500' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='500' height='250'>|
 | -------- | -------- |
+
 Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
