@@ -139,4 +139,18 @@ Consumption in Fabric is measured using capacity units (CUs). Using the [Capacit
 
 For effective disaster recovery planning, it's critical that you understand the relationship between your home region and capacity locations. Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes
 
-The back-end capacity platform is responsible for compute operations and for storing customer data, and it's located in the capacity region. It leverages Azure core services in that region as necessary for specific Fabric experiences.Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
+### Back-end architecture
+
+The back-end capacity platform is responsible for compute operations and for storing customer data, and it's located in the capacity region. It leverages Azure core services in that region as necessary for specific Fabric experiences.
+
+### Data residency
+
+The metadata platform and the back-end capacity platform each run in secured virtual networks. These networks expose a series of secure endpoints to the internet so that they can receive requests from customers and other services. Apart from these endpoints, services are protected by network security rules that block access from the public internet. Communication within virtual networks is also restricted based on the privilege of each internal service. The application layer ensures that tenants are only able to access data from within their own tenant.
+
+* The Fabric backend platform is protected by a virtual network and isn't directly accessible from the public internet other than through secure endpoints.
+* By default, Fabric communicates between experiences using the internal Microsoft backbone network.
+* By default, Fabric metadata is available only in the region where the Fabric tenant is located. To find your home region got to Help pane -> About Microsoft Fabric -> Look for the value next to Your data is stored in.
+
+|<img src='/Assests/Security/Media/HomeRegion1.png' width='500' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='500' height='250'>|
+| -------- | -------- |
+Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
