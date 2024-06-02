@@ -53,7 +53,8 @@ The artifact is embedded into an IFrame in the application or portal. An IFrame 
 
 ### Embedding Setup Tool
 
-What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup)
+What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup). There are also [PowerBI Developer Samples](https://github.com/microsoft/powerbi-developer-samples/) available for reference.
+
 |Embed for your customers  |Embed for your organization  |
 |---------|---------|
 |<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='470' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='470' height='300'>
