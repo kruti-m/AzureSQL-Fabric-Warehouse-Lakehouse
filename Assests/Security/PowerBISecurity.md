@@ -70,7 +70,7 @@ Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint
 |<img src='/Assests/Security/Media/RLSConcept.PNG' width='450' height='150'>|
 | ----------- | 
 
-Its a 4 step procedure: [Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation.]
+Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation.Its a 4 step procedure:
 
 1. **Creating a mapping table**: This contains information which users should access which part of the table.
 2. **Creating tables**: These tables are where the sensitive data resides
@@ -94,7 +94,7 @@ Dynamic data masking limits sensitive data exposure by masking it to nonprivileg
 
 You can select from these existing [data masking rules](https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking#define-a-dynamic-data-mask) to apply to your columns.
 
-It's a 2 step procedure:[Refer [this link](https://learn.microsoft.com/fabric/data-warehouse/howto-dynamic-data-masking) for step-by-step implementation]
+Refer [this link](https://learn.microsoft.com/fabric/data-warehouse/howto-dynamic-data-masking) for step-by-step implementation.It's a 2 step procedure:
 
 1. **Configure table with MASK clause**: Here the MASKED WITH FUNCTION clause is used for whichever columns the data needs to be masked.
 2. **Grant UNMASK permission**: Here you grant permission only to those users who should see the data. If anyone else attempts to run a select they will see gibberish data in the masked columns.
