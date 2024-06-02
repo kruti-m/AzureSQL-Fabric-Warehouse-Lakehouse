@@ -35,7 +35,7 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 1. [Embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers)
 2. [Embed for your organization](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-organization)
 
-|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='600' height='270'>|
+|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='520' height='300'>|
 | ----------- | 
 
 |Embed for your customers  |Embed for your organization  |
