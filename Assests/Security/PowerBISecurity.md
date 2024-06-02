@@ -98,7 +98,7 @@ It's a 2 step procedure:[Refer [this link](https://learn.microsoft.com/fabric/da
 1. **Configure table with MASK clause**: Here the MASKED WITH FUNCTION clause is used for whichever columns the data needs to be masked.
 2. **Grant UNMASK permission**: Here you grant permission only to those users who should see the data. If anyone else attempts to run a select they will see gibberish data in the masked columns.
 
-|<img src='/Assests/Security/Media/DataMasking.png' width='600' height='350'>|
+|<img src='/Assests/Security/Media/DataMasking.png' width='700' height='350'>|
 | ----------- | 
 
 > :memo: **Note:** User who does not have the Administrator, Member, or Contributor rights on the workspace, or elevated permissions on the Warehouse or you are not granted explicit permission will not see the data.
