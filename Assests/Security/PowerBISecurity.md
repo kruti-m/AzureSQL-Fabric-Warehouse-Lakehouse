@@ -62,7 +62,7 @@ Row-level security (RLS) enables you to use group membership or execution contex
 
 Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint (in Lakehouse) supports predicate-based security. Filter predicates silently filter the rows available to read operations.
 
-|<img src='/Assests/Security/Media/RLSConcept.PNG' width='400' height='150'>|
+|<img src='/Assests/Security/Media/RLSConcept.PNG' width='450' height='150'>|
 | ----------- | 
 
 Its a 4 step procedure: [Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation]
@@ -80,5 +80,5 @@ Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-obje
 
 OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
 
-|<img src='/Assests/Security/Media/RLS_OLS.png' width='400' height='200'>|
+|<img src='/Assests/Security/Media/RLS_OLS.png' width='450' height='300'>|
 | ----------- | 
