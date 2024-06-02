@@ -35,6 +35,8 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 1. [Embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers)
 2. [Embed for your organization](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-organization)
 
+The artifact is embedded into an IFrame in the application or portal. An IFrame is not allowed to read or write data from the external web application or portal, and the communication with the IFrame is done by using the Power BI Client SDK using POST messages.
+
 |<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='520' height='300'>|
 | ----------- | 
 
@@ -44,4 +46,10 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 |Aimed at external users         |Aimed at internal users         |
 |To authenticate app users, use your own authentication method        |App users authenticate against Microsoft Entra ID         |
 |App users don't need a license         |Each app user needs a Power BI license         |
-|Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate         |
+|Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate.  |
+
+In an embed for your organization scenario, Microsoft Entra or through customized portals.ITs. All Power BI policies and capabilities described in this paper such as Row Level Security (RLS) and object-level security (OLS) are automatically applied to all users independently of whether they access Power BI through the Power BI portal or through customized portals.
+
+
+
+What you can do is a quick run-down of you code with this Embedding Setup Tool. 
