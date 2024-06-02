@@ -17,8 +17,10 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 
 **A Microsoft Fabric capacity resides on a tenant**.Each capacity that sits under a specific tenant is a distinct pool of resources allocated to Microsoft Fabric. The size of the capacity determines the amount of computation power available. Workspaces reside within capacities and are used as containers for Microsoft Fabric items. 
 
-|<img src='/Assests/Security/Media/Tenant.png' width='750' height='470'>|
-| -------- |
+|<img src='/Assests/Security/Media/TenatArchitecture.png' width='750' height='470'>|<img src='/Assests/Security/Media/Tenant.png' width='750' height='470'>|
+| -------- | -------- |
+
+### Tenant Settings
 
 [Tenant settings](https://learn.microsoft.com/fabric/admin/tenant-settings-index) enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
 
@@ -27,7 +29,9 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 
 Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins. The important ones to consider are :</br>
 [Create workspaces](https://learn.microsoft.com/fabric/admin/portal-workspace#create-workspaces-new-workspace-experience): So that users can create workspaces.</br>
-[Users can create Fabric items](https://learn.microsoft.com/fabric/admin/fabric-switch) : Users can use production-ready features to create Fabric items. Turning off this setting doesn't impact users’ ability to create Power BI items.</br> [Block users from reassigning personal workspaces (My Workspace)](https://learn.microsoft.com/fabric/admin/portal-workspace#block-users-from-reassigning-personal-workspaces-my-workspace): Turn on this setting to prevent users from reassigning their personal workspaces (My Workspace) from Premium capacities to shared capacities. </br>[Service principals can use Fabric APIs](https://learn.microsoft.com/power-bi/developer/embedded/embed-service-principal)Web apps registered in Microsoft Entra ID can use service principals, rather than user credentials, to authenticate to Fabric APIs.</br>[Create and use Gen1 dataflows](https://learn.microsoft.com/power-bi/transform-model/dataflows/dataflows-introduction-self-service):Users in the organization can create and use Gen1 dataflows. </br>[Block Public Internet Access](https://learn.microsoft.com/power-bi/enterprise/service-security-private-links): For extra security, block access to your Fabric tenant via the public internet. This means people who don't have access to the Private Link won't be able to get in. Keep in mind, turning this on could take 10 to 20 minutes to take effect.</br>[Create Datamarts (preview)](https://learn.microsoft.com/power-bi/transform-model/datamarts/datamarts-administration) : Users in the organization can create Datamarts.</br>[Users can synchronize workspace items with their Git repositories (preview)](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration):Users can import and export workspace items to Git repositories for collaboration and version control. 
+[Users can create Fabric items](https://learn.microsoft.com/fabric/admin/fabric-switch) : Users can use production-ready features to create Fabric items. Turning off this setting doesn't impact users’ ability to create Power BI items.</br> [Block users from reassigning personal workspaces (My Workspace)](https://learn.microsoft.com/fabric/admin/portal-workspace#block-users-from-reassigning-personal-workspaces-my-workspace): Turn on this setting to prevent users from reassigning their personal workspaces (My Workspace) from Premium capacities to shared capacities. </br>[Service principals can use Fabric APIs](https://learn.microsoft.com/power-bi/developer/embedded/embed-service-principal)Web apps registered in Microsoft Entra ID can use service principals, rather than user credentials, to authenticate to Fabric APIs.</br>[Create and use Gen1 dataflows](https://learn.microsoft.com/power-bi/transform-model/dataflows/dataflows-introduction-self-service):Users in the organization can create and use Gen1 dataflows. </br>[Block Public Internet Access](https://learn.microsoft.com/power-bi/enterprise/service-security-private-links): For extra security, block access to your Fabric tenant via the public internet. This means people who don't have access to the Private Link won't be able to get in. Keep in mind, turning this on could take 10 to 20 minutes to take effect.</br>[Create Datamarts (preview)](https://learn.microsoft.com/power-bi/transform-model/datamarts/datamarts-administration) : Users in the organization can create Datamarts.</br>[Users can synchronize workspace items with their Git repositories (preview)](https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration):Users can import and export workspace items to Git repositories for collaboration and version control.
+
+> :warning: **Warning:** If not properly set these settings can block users from creating items in workspaces and consuming Fabric capacity.
 
 ## Capacity Licensing and Feature
 
@@ -36,9 +40,9 @@ Capacity licenses are split into Stock Keeping Units (SKUs).To access the Fabric
 1. **Capacity license** - An organizational license that provides a pool of resources for Fabric operations. Capacity licenses are divided into stock keeping units (SKUs). Each SKU provides a different number of capacity units (CUs) which are used to calculate the capacity's compute power.
 2. **Per user license** - Per user licenses allow users to work in Fabric.
 
-### Capacity license:
+### Capacity license
 
-Each SKU provides a set of Fabric resources for your organization. Your organization can have as many capacity licenses as needed. 
+Each SKU provides a set of Fabric resources for your organization. Your organization can have as many capacity licenses as needed.
 
 > :memo: **Note:** Power BI Premium P SKUs support Microsoft Fabric. **A and EM SKUs only support Power BI items.**
 
@@ -55,13 +59,12 @@ The workspace license mode dictates what kind of capacity the workspace can be h
 
 To share content and collaborate in Microsoft Fabric, your organization needs to have an [F or P capacity license](https://learn.microsoft.com/fabric/enterprise/licenses#capacity-license), and at least one per-user license.
 
-
-### Per-user License:
+### Per-user License
 
 Per-user licenses allow users to work in Microsoft Fabric. There are three types of individual licenses:
 
 * **Free** - A free license allows you to create and share Fabric content other than Power BI items in Microsoft Fabric, if you have access to a Fabric capacity (either trial or paid).
-* **Pro** - A Pro license lets you share Power BI content with other users. Every organization needs at least one user with a Pro or a Premium Per User (PPU) license, if they intend to use Power BI within Fabric. SKUs smaller than F64 require a Power BI Pro or Premium Per User license for each user consuming Power BI content. 
+* **Pro** - A Pro license lets you share Power BI content with other users. Every organization needs at least one user with a Pro or a Premium Per User (PPU) license, if they intend to use Power BI within Fabric. SKUs smaller than F64 require a Power BI Pro or Premium Per User license for each user consuming Power BI content.
 * **Premium per-user (PPU)** - PPU licenses allow organizations to access Power BI Premium features by licensing every user with a PPU license instead of purchasing a Power BI Premium capacity. PPU can be more cost effective when Power BI Premium features are needed for fewer than 250 users. 
 
 | Capabilities | Free | Pro | PPU |
@@ -118,9 +121,9 @@ There are several settings which can be controlled at the capacity level:
 | Data Engineering/Science Settings    | Allow workspace admins to set the size of their spark [pools](../data-engineering/workspace-admin-settings.md#pool) |
 | Workspaces assigned to this capacity | Add or remove workspaces assigned to the capacity |
 
-## Consumption 
+## Consumption
 
-consumption in Fabric is measured using capacity units (CUs). Using the Capacity Metrics app admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources. You can then take action by scaling a capacity up or down, pausing a capacity operation, optimizing query efficiency, or buying another capacity if needed.
+Consumption in Fabric is measured using capacity units (CUs). Using the [Capacity Metrics app](https://learn.microsoft.com/fabric/enterprise/metrics-app) admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources. You can then take action by [scaling](https://learn.microsoft.com/fabric/enterprise/scale-capacity) a capacity up or down, [pausing](https://learn.microsoft.com/fabric/enterprise/pause-resume) a capacity operation, optimizing query efficiency, or buying another capacity if needed.
 
 ## DR
 
