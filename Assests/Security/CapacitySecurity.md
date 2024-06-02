@@ -154,4 +154,9 @@ The metadata platform and the back-end capacity platform each run in secured vir
 |<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='400' height='250'>|
 | -------- | -------- |
 
+Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes. When you create new capacities, your data storage is set to the home region by default. If you wish to change your data storage region to another region, you'll need to enable Multi-Geo, a Fabric Premium feature.
+
+In the case of a home region that doesn't have a paired region, capacities in any Multi-Geo enabled region may face operational issues if the home region encounters a disaster, as the core service functionality is tethered to the home region. Multi-Geo is a Fabric feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Fabric customer, you can deploy content to data centers in regions other than the home region of the Fabric tenant. 
+
+
 Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
