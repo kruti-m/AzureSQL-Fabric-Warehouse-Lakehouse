@@ -2,6 +2,9 @@
 
 * [PowerBI Security](#powerbi-security)
   * [PowerBI Embedded Analytics](#power-bi-embedded-analytics)
+    * [Embedding Setup Tool](#embedding-setup-tool)
+  * [Row Level Security](#row-level-securityrls)
+  * [Object Level Security](#object-level-securityols)
 
 # PowerBi Security
 
@@ -65,7 +68,7 @@ Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint
 |<img src='/Assests/Security/Media/RLSConcept.PNG' width='450' height='150'>|
 | ----------- | 
 
-Its a 4 step procedure: [Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation]
+Its a 4 step procedure: [Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation.]
 
 1. **Creating a mapping table**: This contains information which users should access which part of the table.
 2. **Creating tables**: These tables are where the sensitive data resides
@@ -80,5 +83,21 @@ Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-obje
 
 > :warning: **Warning:**OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
 
-|<img src='/Assests/Security/Media/RLS_OLS.png' width='450' height='350'>|
+|<img src='/Assests/Security/Media/RLS_OLS.png' width='500' height='350'>|
 | ----------- | 
+
+## Dynamic Data Masking
+
+Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users. Dynamic data masking can be configured on designated database fields to hide sensitive data in the result sets of queries. The underlying data in the database isn't changed, so it can be used with existing applications since masking rules are applied to query results.Dynamic data masking is complementary to other Fabric security features like row-level security & object-level security.A Warehouse Admin/Member/Contributor can apply this.
+
+You can select from these existing [data masking rules](https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking#define-a-dynamic-data-mask) to apply to your columns.
+
+It's a 2 step procedure:[Refer [this link](https://learn.microsoft.com/fabric/data-warehouse/howto-dynamic-data-masking) for step-by-step implementation]
+
+1. **Configure table with MASK clause**: Here the MASKED WITH FUNCTION clause is used for whichever columns the data needs to be masked.
+2. **Grant UNMASK permission**: Here you grant permission only to those users who should see the data. If anyone else attempts to run a select they will see gibberish data in the masked columns.
+
+|<img src='/Assests/Security/Media/DataMasking.png' width='500' height='350'>|
+| ----------- | 
+
+> :memo: **Note:** User who does not have the Administrator, Member, or Contributor rights on the workspace, or elevated permissions on the Warehouse or you are not granted explicit permission will not see the data.
