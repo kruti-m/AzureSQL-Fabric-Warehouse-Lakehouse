@@ -9,7 +9,11 @@
   * [Access Management](#access-management)
   * [Capacity Settings](#capacity-settings)
   * [Consumption](#consumption)
-  * [DR](#dr)
+  * [Disaster Recovery](#disaster-recovery)
+    * [Back-end Architecture](#back-end-architecture)
+    * [Home Region](#home-region)
+    * [Resiliency and Multi-geo Support](#in-built-resiliency--multi-geo-support)
+    * [Disaster Recovery Settings](#disaster-recovery-capacity-settings)
 
 # Capacity Security
 
@@ -135,15 +139,13 @@ There are several settings which can be controlled at the capacity level:
 
 Consumption in Fabric is measured using capacity units (CUs). Using the [Capacity Metrics app](https://learn.microsoft.com/fabric/enterprise/metrics-app) admins can view consumption in their organization. This report enables you to make informed decisions regarding the use of your organizational resources. You can then take action by [scaling](https://learn.microsoft.com/fabric/enterprise/scale-capacity) a capacity up or down, [pausing](https://learn.microsoft.com/fabric/enterprise/pause-resume) a capacity operation, optimizing query efficiency, or buying another capacity if needed.
 
-## DR
+## Disaster Recovery
 
 For effective disaster recovery planning, it's critical that you understand the relationship between your home region and capacity locations. Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes
 
-### Back-end architecture
+### Back-end Architecture
 
 The back-end capacity platform is responsible for compute operations and for storing customer data, and it's located in the capacity region. It leverages Azure core services in that region as necessary for specific Fabric experiences.
-
-### Data residency
 
 The metadata platform and the back-end capacity platform each run in secured virtual networks. These networks expose a series of secure endpoints to the internet so that they can receive requests from customers and other services. Apart from these endpoints, services are protected by network security rules that block access from the public internet. Communication within virtual networks is also restricted based on the privilege of each internal service. The application layer ensures that tenants are only able to access data from within their own tenant.
 
@@ -151,19 +153,23 @@ The metadata platform and the back-end capacity platform each run in secured vir
 * By default, Fabric communicates between experiences using the internal Microsoft backbone network.
 * By default, Fabric metadata is available only in the region where the Fabric tenant is located. To find your home region got to Help pane -> About Microsoft Fabric -> Look for the value next to Your data is stored in.
 
-|<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='400' height='250'>|
+|<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='350' height='250'>|
 | -------- | -------- |
 
-### Home region
+### Home Region
 
 The home region which stores Fabric metadata is important because:
 
 * The performance of reports and dashboards depends, in part, on users being in proximity to the tenant location.
 * There could be legal or regulatory reasons that the organization's data be stored in a specific jurisdiction.
 
-The home region for the organization's tenant is set to the location of the first user that signs up. If most of your users are located in a different region, that region might not be the best choice. You can’t move your organization’s tenant between regions by yourself. To [move your tenant to another region](https://learn.microsoft.com/power-bi/support/service-admin-region-move), your global Microsoft 365 administrator should open a support request. The relocation of a tenant to another region isn't a fully automated process, and some downtime is involved. Be sure to take into consideration the [prerequisites and actions](https://learn.microsoft.com/power-bi/admin/service-admin-region-move) that are required before and after the move.
+The home region for the organization's tenant is set to the location of the first user that signs up. If most of your users are located in a different region, that region might not be the best choice. You can’t move your organization’s tenant between regions by yourself. To [move your tenant to another region](https://learn.microsoft.com/power-bi/support/service-admin-region-move), your global Microsoft 365 administrator should open a support request.
 
-### Multi-Geo support for Fabric
+> :bulb: **Tip:** : The relocation of a tenant to another region isn't a fully automated process, and some downtime is involved. Be sure to take into consideration the [prerequisites and actions](https://learn.microsoft.com/power-bi/admin/service-admin-region-move) that are required before and after the move.
+
+### In-built Resiliency & Multi-Geo Support
+
+Fabric makes commercially reasonable efforts to [support zone-redundant availability zones](https://learn.microsoft.com/azure/reliability/reliability-fabric#prerequisites), where resources automatically replicate across zones, without any need for you to set up or configure.During a zone-wide outage, no action is required during zone recovery. Fabric capabilities in regions listed in supported regions self-heal and rebalance automatically to take advantage of the healthy zone.
 
 Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes. When you create new capacities, your data storage is set to the home region by default.</br>
 As a Fabric customer, you can deploy content to data centers in regions other than the home region of the Fabric tenant. If you wish to change your data storage region to another region, you'll need to enable [Multi-Geo](https://learn.microsoft.com/fabric/admin/service-admin-premium-multi-geo#enable-and-configure), a Fabric Premium feature.Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. [Elements](https://learn.microsoft.com/fabric/admin/service-admin-premium-multi-geo) below still remain stored in the home region for the tenant:
@@ -177,3 +183,15 @@ As a Fabric customer, you can deploy content to data centers in regions other th
 7. Metadata linked to Purview Data Map
 
 > :memo: **Note:** : In the case of a home region that doesn't have a paired region, capacities in any Multi-Geo enabled region may face operational issues if the home region encounters a disaster, as the core service functionality is tethered to the home region.
+
+### Disaster Recovery Capacity Settings
+
+Fabric provides a disaster recovery switch on the capacity settings page. It's available where Azure regional pairings align with Fabric's service presence. Here are the specifics of this switch:
+
+* **Role access**: Only users with the capacity admin role or higher can use this switch.
+* **Granularity**: The granularity of the switch is the capacity level. It's available for both Premium and Fabric capacities.
+* **Data scope**: The disaster recovery toggle specifically addresses OneLake data, which includes Lakehouse and Warehouse data. The switch does not influence your data stored outside OneLake.
+* **BCDR continuity for Power BI**: While disaster recovery for OneLake data can be toggled on and off, BCDR for Power BI is always supported, regardless of whether the switch is on or off.
+* **Frequency**: Once you change the disaster recovery capacity setting, you must wait 30 days before being able to alter it again. The wait period is set in place to maintain stability and prevent constant toggling,
+
+> :memo: **Note:** After turning on the disaster recovery capacity setting, it can take up to 72 hours for the data to start replicating.
