@@ -24,4 +24,4 @@ As a SaaS service, Fabric offers a complete security package for the entire plat
 |**[Item Security](/Assests/Security/ItemSecurity.md)**| Share item via link, Impact Analysis, Semantic Model, Data Warehouse, Lakehouse, Data Factory |
 |**[Workspace Security](/Assests/Security/WorkspaceSecurity.md)**| Workspace Roles, Access Management, Settings, Retention, Governance, Lineage, State |
 |**[Domain Security](/Assests/Security/DomainSecurity.md)**| Domain Roles, Creation, Settings, Assignment, Endorsement, Auditing |
-|**[Capacity Security](/Assests/Security/CapacitySecurity.md)**| |
+|**[Capacity Security](/Assests/Security/CapacitySecurity.md)**| Tenant Concept and Settings, Capacity License and Features, Access Management, Consumption, DR |

@@ -8,8 +8,8 @@
     * [Per-user License](#per-user-license)
   * [Access Management](#access-management)
   * [Capacity Settings](#capacity-settings)
-  *[Consumption](#consumption)
-  *[DR](#dr)
+  * [Consumption](#consumption)
+  * [DR](#dr)
 
 # Capacity Security
 
@@ -25,6 +25,11 @@ Capacities are the compute resources used by all Fabric workloads. Based on orga
 |<img src='/Assests/Security/Media/TenatArchitecture.png' width='500' height='250'>|<img src='/Assests/Security/Media/Tenant.png' width='700' height='450'>|
 | -------- | -------- |
 
+In your tenant, you can enable Microsoft Fabric for:
+
+* **The entire organization** - In most cases your organization has one tenant, so selecting this option enables it for the entire organization. In organizations that have several tenants, if you want to enable Microsoft Fabric for the entire organization, you need to enable it in each tenant.
+* **Specific security groups** - Use this option to enable Microsoft Fabric for specific users. You can either specify the security groups that Microsoft Fabric will be enabled for, or the security groups that Microsoft Fabric won't be available for.
+
 ### Tenant Settings
 
 [Tenant settings](https://learn.microsoft.com/fabric/admin/tenant-settings-index) enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
@@ -38,7 +43,7 @@ Tenant, domain, and workspace admins each have settings within their scope that 
 
 > :warning: **Warning:** If not properly set these settings can block users from creating items in workspaces and consuming Fabric capacity.
 
-## Capacity Licensing and Feature
+## Licensing and Features
 
 Capacity licenses are split into Stock Keeping Units (SKUs).To access the Fabric SaaS platform, you need a license. Fabric has two type of licenses:
 
@@ -134,4 +139,4 @@ Consumption in Fabric is measured using capacity units (CUs). Using the [Capacit
 
 For effective disaster recovery planning, it's critical that you understand the relationship between your home region and capacity locations. Understanding home region and capacity locations helps you make strategic selections of capacity regions, as well as the corresponding replication and recovery processes
 
-Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
+The back-end capacity platform is responsible for compute operations and for storing customer data, and it's located in the capacity region. It leverages Azure core services in that region as necessary for specific Fabric experiences.Choosing a different region for your capacity doesn't entirely relocate all of your data to that region. Some data elements still remain stored in the home region. To see which data remains in the home region and which data is stored in the Multi-Geo enabled region, see Configure Multi-Geo support for Fabric Premium.
