@@ -26,7 +26,7 @@ You can either assign roles to individuals or to security groups, Microsoft 365 
 * Contributor - Can view and modify all content in the workspace.
 * Member - Can view, modify, and share all content in the workspace.
 * Admin - Can view, modify, share, and manage all content in the workspace, including managing permissions.
-This is a small sub-set which can be easily remembered when mapping permissions
+This is a small sub-set which can be easily remembered when mapping permissions.
 
 ## Workspace Roles
 
@@ -76,6 +76,9 @@ Here is the extensive list of each roles permission
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
+|<img src='/Assests/Security/Media/ImplicitlyRoles.png' width='800' height='500'>|
+| ----------- | 
+
 ## Access Management
 
 Workspaces can contain a maximum of 1,000 semantic models, or 1,000 reports per semantic model.A user or a service principal can be a member of up to 1,000 workspaces. Hence access needs to be provided carefully. 
@@ -111,7 +114,7 @@ The retention period for collaborative workspaces is configurable. The default r
 For development purposes, a best practice is to have isolated workspaces per developer, so that they can work on their own without interfering with the shared workspace.
 Every Fabric user has a personal workspace called My workspace where they can work with their own content. While generally only My workspace owners have access to their My workspaces, you can explicitly [prevent users from moving My workspaces](https://learn.microsoft.com/fabric/admin/portal-workspaces#prevent-my-workspace-owners-from-reassigning-their-my-workspaces-to-a-different-capacity) to a different capacity that might reside in noncompliant regions & designate a default capacity for My Workspaces. This can be done through Admin portal -> select Capacity settings -> Fabric Capacity -> Preferred capacity for My workspace
 
-To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators
+To avoid becoming a bottleneck for every single setting in your organization, you can [delegate many of the controls](https://learn.microsoft.com/fabric/admin/admin-overview#delegate-admin-rights) to Capacity, Workspace, and Domain administrators.
 
 ## Lineage
 
@@ -119,7 +122,7 @@ Data lineage is broadly understood as the lifecycle that spans the data’s orig
 
 > :warning: **Note:**Lineage in Fabric is in preview, and not all connections between items are fully supported yet. It is possible that the lineage between some items will be incorrectly shown.
 
-Lineage is accessible from multiple locations. Typically, you can get to it from the workspace toolbar
+Lineage is accessible from multiple locations. Typically, you can get to it from the workspace toolbar.
 
 |<img src='/Assests/Security/Media/WorspaceLineage.png' width='270' height='150'>|
 | ---------- |
