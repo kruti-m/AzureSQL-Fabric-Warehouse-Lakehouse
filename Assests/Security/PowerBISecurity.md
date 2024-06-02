@@ -78,7 +78,7 @@ Object-level security (OLS) enables model authors to secure specific tables or c
 
 Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-object-level-security?tabs=table) for step-by-step implementation.
 
-OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
+> :warning: **Warning:**OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
 
-|<img src='/Assests/Security/Media/RLS_OLS.png' width='450' height='300'>|
+|<img src='/Assests/Security/Media/RLS_OLS.png' width='450' height='350'>|
 | ----------- | 
