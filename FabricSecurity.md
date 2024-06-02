@@ -26,4 +26,4 @@ As a SaaS service, Fabric offers a complete security package for the entire plat
 |**[Workspace Security](/Assests/Security/WorkspaceSecurity.md)**| Workspace Roles, Access Management, Settings, Retention, Governance, Lineage, State |
 |**[Domain Security](/Assests/Security/DomainSecurity.md)**| Domain Roles, Creation, Settings, Assignment, Endorsement, Auditing |
 |**[Capacity Security](/Assests/Security/CapacitySecurity.md)**| Tenant Concept and Settings, Capacity License and Features, Access Management, Consumption, Disaster Recovery |
-|**[PowerBI Security](/Assests/Security/PowerBISecurity.md)**| |
+|**[PowerBI Security](/Assests/Security/PowerBISecurity.md)**| PowerBI Embedded Analytics |
