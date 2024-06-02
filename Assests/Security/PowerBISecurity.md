@@ -23,7 +23,7 @@ We roughly touched this topic under [Capacity Licenses and Features](/Assests/Se
 > :memo: **Note:** Power BI Premium P SKUs support Microsoft Fabric. **A and EM SKUs only support Power BI items.**
 
 To enable Power BI Premium (per-user), Go to the admin portal, then select “Users can try Microsoft Fabric paid features” 
-|<img src='/Assests/Security/Media/EnablingPPUFabric.png' width='850' height='400'>|
+|<img src='/Assests/Security/Media/EnablingPPUFabric.png' width='900' height='400'>|
 | ----------- | 
 
 ## Power BI Embedded Analytics 
@@ -35,7 +35,7 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 1. [Embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers)
 2. [Embed for your organization](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-organization)
 
-|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='600' height='300'>|
+|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='600' height='270'>|
 | ----------- | 
 
 |Embed for your customers  |Embed for your organization  |
