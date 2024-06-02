@@ -47,7 +47,14 @@ The artifact is embedded into an IFrame in the application or portal. An IFrame 
 |App users don't need a license         |Each app user needs a Power BI license         |
 |Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate.  |
 
- You can leverage All Power BI Row Level Security (RLS) and object-level security (OLS) capabilities whether they access Power BI through the Power BI portal or through customized portals.
+### Embedding Setup Tool
+
+What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup)
+|Embed for your customers  |Embed for your organization  |
+|---------|---------|
+|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='520' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='520' height='300'>
+
+You can leverage All Power BI Row Level Security (RLS) and object-level security (OLS) capabilities whether they access Power BI through the Power BI portal or through customized portals.
 
 ## Row Level Security(RLS)
 
@@ -55,14 +62,23 @@ Row-level security (RLS) enables you to use group membership or execution contex
 
 Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint (in Lakehouse) supports predicate-based security. Filter predicates silently filter the rows available to read operations.
 
-|<img src='/Assests/Security/Media/RLSConcept.PNG' width='400' height='200'>|
+|<img src='/Assests/Security/Media/RLSConcept.PNG' width='400' height='150'>|
 | ----------- | 
+
+Its a 4 step procedure: [Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation]
+
+1. **Creating a mapping table**: This contains information which users should access which part of the table.
+2. **Creating tables**: These tables are where the sensitive data resides
+3. **Creating a function**: These are definition referencing the mapping table. This is schema bound & is to be evaluated on every "Select" statement.
+4. **Creating a policy**: This is to enforce function execution whenever data is being accessed from the underlying tables.
 
 ## Object Level Security(OLS)
 
-### Embedding Setup Tool
+Object-level security (OLS) enables model authors to secure specific tables or columns from report viewers.  For example, a column that includes personal data can be restricted so that only certain viewers can see and interact with it. In addition, you can also restrict object names and metadata. This added layer of security prevents users without the appropriate access levels from discovering business critical or sensitive personal information like employee or financial records.
 
-What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup)
-|Embed for your customers  |Embed for your organization  |
-|---------|---------|
-|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='520' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='520' height='300'>
+Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-object-level-security?tabs=table) for step-by-step implementation.
+
+OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
+
+|<img src='/Assests/Security/Media/RLS_OLS.png' width='400' height='200'>|
+| ----------- | 
