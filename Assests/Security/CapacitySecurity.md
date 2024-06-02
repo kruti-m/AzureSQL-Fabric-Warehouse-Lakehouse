@@ -153,7 +153,7 @@ The metadata platform and the back-end capacity platform each run in secured vir
 * By default, Fabric communicates between experiences using the internal Microsoft backbone network.
 * By default, Fabric metadata is available only in the region where the Fabric tenant is located. To find your home region got to Help pane -> About Microsoft Fabric -> Look for the value next to Your data is stored in.
 
-|<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='200'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='350' height='250'>|
+|<img src='/Assests/Security/Media/HomeRegion1.png' width='300' height='230'>|<img src='/Assests/Security/Media/HomeRegion2.png' width='350' height='250'>|
 | -------- | -------- |
 
 ### Home Region
@@ -193,5 +193,8 @@ Fabric provides a disaster recovery switch on the capacity settings page. It's a
 * **Data scope**: The disaster recovery toggle specifically addresses OneLake data, which includes Lakehouse and Warehouse data. The switch does not influence your data stored outside OneLake.
 * **BCDR continuity for Power BI**: While disaster recovery for OneLake data can be toggled on and off, BCDR for Power BI is always supported, regardless of whether the switch is on or off.
 * **Frequency**: Once you change the disaster recovery capacity setting, you must wait 30 days before being able to alter it again. The wait period is set in place to maintain stability and prevent constant toggling,
+
+|<img src='/Assests/Security/Media/CapacityDRsettings.png' width='500' height='430'>|
+| ---------- |
 
 > :memo: **Note:** After turning on the disaster recovery capacity setting, it can take up to 72 hours for the data to start replicating.
