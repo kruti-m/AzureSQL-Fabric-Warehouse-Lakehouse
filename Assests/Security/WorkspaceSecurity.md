@@ -58,21 +58,21 @@ Here is the extensive list of each roles permission
 | Manage subscriptions created by others. | :heavy_check_mark: |   |   |  |
 | Can receive subscriptions created by others <sup>6</sup>|  | :heavy_check_mark:  | :heavy_check_mark:   | :heavy_check_mark:  |
 
-<sup>1</sup> Contributors can [update the app that's associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
+<sup>1</sup> Contributors can [update the app that's associated with the workspace](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to edit it.
 
-<sup>2</sup> Contributors and Viewers can also share items in a workspace or an app, including semantic models, if the app creator selected **Allow users to share the semantic models in this app**. See the [Create and manage multiple audiences](../collaborate-share/service-create-distribute-apps.md#create-and-manage-multiple-audiences) section of "Publish an app in Power BI."
+<sup>2</sup> Contributors and Viewers can also share items in a workspace or an app, including semantic models, if the app creator selected **Allow users to share the semantic models in this app**. See the [Create and manage multiple audiences](https://learn.microsoft.com/power-bi/collaborate-share/service-create-distribute-apps#create-and-manage-multiple-audiences) section of "Publish an app in Power BI."
 
-<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a semantic model in the current workspace, you need [Build permission for the semantic model](../connect-data/service-datasets-build-permissions.md). You also need at least the Contributor role on the source and destination workspaces. For semantic models in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](../connect-data/service-datasets-copy-reports.md).
+<sup>3</sup> To copy a report to another workspace, and to create a report in another workspace based on a semantic model in the current workspace, you need [Build permission for the semantic model](https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-build-permissions). You also need at least the Contributor role on the source and destination workspaces. For semantic models in the original workspace, if you have at least the Contributor role, you automatically have Build permission through your workspace role. For details, see [Copy reports from other workspaces](https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-copy-reports).
 
-<sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. For details, see [Manage an on-premises gateway](/data-integration/gateway/service-gateway-manage).
+<sup>4</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. For details, see [Manage an on-premises gateway](https://learn.microsoft.com/data-integration/gateway/service-gateway-manage).
 
 <sup>5</sup> If the items are in a workspace in a Premium capacity, you can view and interact with items in the Power BI service even if you don't have a Power BI Pro license.
 
 <sup>6</sup> To subscribe yourself or others requires a paid (Power BI Pro or Premium Per User (PPU)() license. When you subscribe others, those recipients also need a paid subscription, unless the items are in a workspace in a Premium capacity. B2B guest users can't subscribe others, only themselves.
 
-<sup>7</sup> If your admin has enabled this feature, see [Manage featured content](/fabric/admin/service-admin-portal-featured-content).
+<sup>7</sup> If your admin has enabled this feature, see [Manage featured content](/https://learn.microsoft.com/fabric/admin/service-admin-portal-featured-content).
 
-<sup>8</sup> If your admin has enabled this feature, see [Users can try Microsoft Fabric paid features](/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features).
+<sup>8</sup> If your admin has enabled this feature, see [Users can try Microsoft Fabric paid features](https://learn.microsoft.com/fabric/admin/service-admin-portal-help-support#users-can-try-microsoft-fabric-paid-features).
 
 <sup>9</sup> If you want your users with the Viewer role to Analyze in Excel or export underlying data from the datasets in the workspace, you need to also give them Build permission on the appropriate datasets.
 
@@ -108,6 +108,9 @@ You can also open it from the workspace page.
 By default, when a workspace is deleted, it isn't permanently and irrevocably deleted immediately. Instead, it enters a retention period during which it's possible to restore it. At the end of the retention period, it's removed permanently, and it will no longer be possible to recover it or its contents. The retention period for personal workspaces (My workspaces) is 30 days.
 
 The retention period for collaborative workspaces is configurable. The default retention period is seven days. However, Fabric administrators should change the length of the retention period by turning on the Define workspace retention period setting in the admin portal and specifying the desired retention period (from 7 to 90 days).
+
+|<img src='/Assests/Security/Media/WorkspaceRetention.png' width='450' height='350'>|
+| ----------- | 
 
 ## Govern My Workspace
 
