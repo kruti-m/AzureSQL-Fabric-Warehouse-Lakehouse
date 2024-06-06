@@ -65,9 +65,9 @@ The workspace license mode dictates what kind of capacity the workspace can be h
 | Workspace license mode | User capabilities |  Supported experiences |
 |--|--|--|
 | Pro | Use basic Power BI features and collaborate on reports, dashboards, and scorecards. | Power BI |
-| [Premium per-user](/power-bi/enterprise/service-premium-per-user-faq) (PPU) | Collaborate using most of the [Power BI Premium features](/power-bi/enterprise/service-premium-features), including dataflows, and datamarts. | Power BI |
+| [Premium per-user](https://learn.microsoft.com/power-bi/enterprise/service-premium-per-user-faq) (PPU) | Collaborate using most of the [Power BI Premium features](https://learn.microsoft.com/power-bi/enterprise/service-premium-what-is), including dataflows, and datamarts. | Power BI |
 | [Premium per capacity](/power-bi/enterprise/service-premium-what-is) (P SKUs)   | Create Power BI content. Share, collaborate on, and distribute Power BI content. |  All Fabric experiences |
-| [Embedded](/power-bi/developer/embedded/embedded-capacity#power-bi-embedded) (A SKUs) | Embed content in an Azure capacity. | Power BI |
+| [Embedded](https://learn.microsoft.com/power-bi/developer/embedded/embedded-capacity#power-bi-embedded) (A SKUs) | Embed content in an Azure capacity. | Power BI |
 | Fabric capacity (F SKUs) | Create, share, collaborate on, and distribute Fabric content. | All Fabric experiences |
 | Trial | Try Fabric features and experiences for 60 days. |  All Fabric experiences |
 
@@ -94,7 +94,7 @@ Per-user licenses allow users to work in Microsoft Fabric. There are three types
 | Share non-Power BI Fabric items | :heavy_check_mark: | :heavy_check_mark: | |
 | View Power BI items in Pro workspaces or Fabric Capacity workspaces (where the Fabric Capacity SKU is less than a F64) |  | :heavy_check_mark: |:heavy_check_mark: |
 | Users signing in with their own account can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces (where the Fabric capacity SKU is greater than or equal to a F64) | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
-| Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
+| Anyone can view Power BI items in Power BI Premium Per Capacity or Fabric Capacity workspaces when they're embedded using the [embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers?tabs=net-core) solution | :heavy_check_mark: | :heavy_check_mark: |:heavy_check_mark: |
 
 You can map a Capacity to Workspace or multiple Workspaces. You may choose to spin up multiple Capacities as well.Split up capacities based on the requirements of the environment, for example, development/test/acceptance/production (DTAP). This makes for better workload isolation and chargeback.
 
@@ -125,14 +125,14 @@ There are several settings which can be controlled at the capacity level:
 
 | Details setting name                 | Description |
 |--------------------------------------|-------------|
-| Disaster Recovery                    | Enable [disaster recovery](/azure/reliability/reliability-fabric#set-up-disaster-recovery) for the capacity |
-| Capacity usage report                | The usage report is replaced with the [capacity metrics app](../enterprise/metrics-app.md) |
-| Notifications                        | Enable [notification](service-admin-premium-capacity-notifications.md) for your capacity |
+| Disaster Recovery                    | Enable [disaster recovery](https://learn.microsoft.com/azure/reliability/reliability-fabric#disaster-recovery-capacity-setting) for the capacity |
+| Capacity usage report                | The usage report is replaced with the [capacity metrics app](https://learn.microsoft.com/fabric/enterprise/metrics-app) |
+| Notifications                        | Enable [notification](https://learn.microsoft.com/fabric/admin/service-admin-premium-capacity-notifications) for your capacity |
 | Contributor permissions              | Set up the ability to add workspaces to the capacity. Select one of these two options:<li>The entire organization</li><li>Specific users or security groups</li> |
 | Admin permissions                    | Give specific users or security groups the ability to do the following:<li>Change capacity settings</li><li>Add contributors to the capacity</li><li>Add or remove workspaces from the capacity</li> |
-| Power BI workloads                   | Configure [Power BI workloads](/power-bi/enterprise/service-admin-premium-workloads) for:<li>[Semantic models](/power-bi/enterprise/service-admin-premium-workloads#semantic-models)</li><li>[Paginated reports](/power-bi/enterprise/service-admin-premium-workloads#paginated-reports)</li><li>[AI](/power-bi/enterprise/service-admin-premium-workloads#ai-preview)</li> |
-| Preferred capacity for My workspace  | Designate the capacity as the [default capacity for My workspaces](/power-bi/enterprise/service-admin-premium-manage#designate-a-default-capacity-for-my-workspaces)         |
-| Data Engineering/Science Settings    | Allow workspace admins to set the size of their spark [pools](../data-engineering/workspace-admin-settings.md#pool) |
+| Power BI workloads                   | Configure [Power BI workloads](/https://learn.microsoft.com/power-bi/enterprise/service-admin-premium-workloads) for:<li>[Semantic models](https://learn.microsoft.com/power-bi/enterprise/service-admin-premium-workloads#semantic-models)</li><li>[Paginated reports](https://learn.microsoft.com/power-bi/enterprise/service-admin-premium-workloads#paginated-reports)</li><li>[AI](https://learn.microsoft.com/power-bi/enterprise/service-admin-premium-workloads#ai-preview)</li> |
+| Preferred capacity for My workspace  | Designate the capacity as the [default capacity for My workspaces](https://learn.microsoft.com/power-bi/enterprise/service-admin-premium-manage#designate-a-default-capacity-for-my-workspaces)         |
+| Data Engineering/Science Settings    | Allow workspace admins to set the size of their spark [pools](https://learn.microsoft.com/fabric/data-engineering/workspace-admin-settings#pool) |
 | Workspaces assigned to this capacity | Add or remove workspaces assigned to the capacity |
 
 ## Consumption
