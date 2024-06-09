@@ -16,5 +16,7 @@ OneLake comes automatically with every Microsoft Fabric tenant and is designed t
 | ----------- | 
 
 **Every customer tenant has exactly one OneLake.**
-Any data that lands in OneLake is governed by default. Within a tenant, you can create any number of workspaces. Within a workspace, you can create data items and you access all data in OneLake through data items.
+Any data that lands in OneLake is governed by default. Within a tenant, you can create any number of workspaces. Within a workspace, you can create data items and you access all data in OneLake through data items.Fabric stores Lakehouses, Warehouses, and other items in OneLake.OneLake is built on top of Azure Data Lake Storage (ADLS) Gen2 or the Windows file system like a hierarchical data lake. It can support any type of file, structured or unstructured. This structure allows you to set security at different levels in the hierarchy to govern access. OneLake is the OneDrive for data.
 
+|<img src='/Assests/Security/Media/OneLake.png' width='500' height='350'>|
+| ----------- | 
