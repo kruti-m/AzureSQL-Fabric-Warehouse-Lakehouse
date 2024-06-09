@@ -3,7 +3,6 @@
 * [OneLake Security](#onelake-security)
   * [Encryption](#encryption)
   * [Restricted Access](#restricted-access)
- 
 
 # OneLake Security
 
@@ -23,7 +22,7 @@ Any data that lands in OneLake is governed by default. Within a tenant, you can 
 
 By now you would be familiar that users can't view or use data in the Items unless you give them access to them either at the item/workspace/capacity level.
 
-|<img src='/Assests/Security/Media/OneLakepermission.png' width='500' height='370'>|
+|<img src='/Assests/Security/Media/OneLakepermission.png' width='500' height='430'>|
 | ----------- | 
 
 ## Encryption
@@ -33,3 +32,8 @@ Data stored in OneLake is encrypted at rest by default using Microsoft-managed k
 ## Restricted Access
 
 OneLake allows you to restrict access to data from applications running outside of Fabric environments.These settings are available at the tenant level.
+
+|<img src='/Assests/Security/Media/TenantSettings.png' width='500' height='430'>|
+| ----------- | 
+|<img src='/Assests/Security/Media/ExternalAppSettings.png' width='500' height='430'>|
+| ----------- | 
