@@ -2,7 +2,7 @@
 
 * [OneLake Security](#onelake-security)
   * [Encryption](#encryption)
-  * [Restricted Access](#restricted-access)
+  * [Restricted External Access](#restricted-access)
 
 # OneLake Security
 
@@ -33,17 +33,15 @@ Data stored in OneLake is encrypted at rest by default using Microsoft-managed k
 
 OneLake allows you to restrict access to data from applications running outside of Fabric environments.These settings are available at the tenant level.When you turn this switch ON, users can access data via all sources. When you turn the switch OFF, users can't access data via applications running outside of Fabric environments. For example, users can access data via applications like Azure Databricks, custom applications using Azure Data Lake Storage (ADLS) APIs, or OneLake file explorer.
 
-|<img src='/Assests/Security/Media/TenantSettings.png' width='800' height='430'>|
+|<img src='/Assests/Security/Media/TenantOneLakeSetting.PNG.png' width='700' height='450'>|
 | ----------- | 
 
-|<img src='/Assests/Security/Media/ExternalAppSettings.png' width='400' height='200'>|
-| ----------- | 
 
 ## Shortcuts
 
 Shortcuts are objects in OneLake that point to other storage locations. The location can be internal or external to OneLake. Shortcuts appear as folders in OneLake and any workload or service that has access to OneLake can use them. Shortcuts behave like symbolic links. They're an independent object from the target. If you delete a shortcut, the target remains unaffected. If you move, rename, or delete a target path, the shortcut can break.
 
-|<img src='/Assests/Security/Media/ShortcutsOneLake.png' width='400' height='300'>|
+|<img src='/Assests/Security/Media/ShortcutsOneLake.png' width='600' height='300'>|
 | ----------- | 
 
 You can follow the links below which will walk you through the different Shortcut options available in OneLake today
