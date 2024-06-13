@@ -1,8 +1,8 @@
 # In this article we will cover:
 
-* [OneLake Security](#onelake-security)
-  * [PowerBI Embedded Analytics](#power-bi-embedded-analytics)
-    * [Embedding Setup Tool](#embedding-setup-tool)
+* [Network Security](#network-security)
+  * [Private Links](#private-links)
+    * [How-To Enable](#how-to-enable)
  
 # Network Security
 
@@ -47,4 +47,4 @@ B. If Azure Private Link is properly configured and Block public Internet access
 * Traffic from the virtual network targeting endpoints and scenarios that don't support private links are transported through the public Internet, and will be allowed by Fabric services.
 * If the virtual network is configured to block public Internet access, scenarios that don't support private links will be blocked by the virtual network, and won't work.
 
-Refer this link to understand Private Link in Fabric experiences
+Refer this link to understand Private Link in Fabric experiences. The [cost of private links](https://azure.microsoft.com/pricing/details/private-link/) and the increase of the [ExpressRoute](https://learn.microsoft.com/azure/expressroute/expressroute-introduction) bandwidth to allow private connectivity from your network, might add costs to your organization

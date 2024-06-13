@@ -2,7 +2,11 @@
 
 * [OneLake Security](#onelake-security)
   * [Encryption](#encryption)
-  * [Restricted External Access](#restricted-access)
+  * [Restricted External Access](#restricted-external-access)
+  * [Shortcuts](#shortcuts)
+  * [Least Privilege](#least-privilege)
+  * [BCDR](#bcdr)
+
 
 # OneLake Security
 
@@ -36,7 +40,6 @@ OneLake allows you to restrict access to data from applications running outside 
 |<img src='/Assests/Security/Media/TenantOneLakeSetting.PNG.png' width='700' height='450'>|
 | ----------- | 
 
-
 ## Shortcuts
 
 Shortcuts are objects in OneLake that point to other storage locations. The location can be internal or external to OneLake. Shortcuts appear as folders in OneLake and any workload or service that has access to OneLake can use them. Shortcuts behave like symbolic links. They're an independent object from the target. If you delete a shortcut, the target remains unaffected. If you move, rename, or delete a target path, the shortcut can break.
@@ -51,3 +54,12 @@ You can follow the links below which will walk you through the different Shortcu
 3. [Create an S3 compatible shortcut](https://learn.microsoft.com/fabric/onelake/create-s3-compatible-shortcut)
 4. [Create a Google Cloud Storage shortcut](https://learn.microsoft.com/fabric/onelake/create-gcs-shortcut)
 5. [Create shortcuts to on-premises data](https://learn.microsoft.com/fabric/onelake/create-on-premises-shortcut)
+
+## Least Privilege
+
+Least privilege access is a fundamental security principle in computer science that advocates for restricting users' permissions and access rights to only those permissions necessary to perform their tasks.There are 2 ways to do this:
+
+1. [**Secure by workload**](https://learn.microsoft.com/fabric/onelake/security/best-practices-secure-data-in-onelake#secure-by-workload): There are three main workloads for OneLake where this is relevant: Apache Spark/OneLake access, SQL Endpoints, and Semantic Models.
+1. [**Secure by use case**](https://learn.microsoft.com/fabric/onelake/security/best-practices-secure-data-in-onelake#secure-by-use-case). There are three main layers to this. Workspace role management, item sharing/management, OneLake permission management.
+
+## BCDR
