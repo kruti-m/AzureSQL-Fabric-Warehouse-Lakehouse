@@ -3,7 +3,9 @@
 * [Network Security](#network-security)
   * [Private Links](#private-links)
     * [How-To Enable](#how-to-enable)
- 
+  * [Service Tags](#service-tags)
+  * [URL's and Ports](#urls-and-ports)
+
 # Network Security
 
  Interactions within Fabric use the internal Microsoft network and traffic outside of the service is protected by default.
@@ -20,7 +22,14 @@ The Fabric backend platform is protected by a virtual network and isn't directly
 
 With PaaS services, it's common to put the compute in the same private network as the storage account.
 
-## Private Links
+## Workspace Managed Private Endpoint [Outbound Traffic]
+
+Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. It helps enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
+
+|<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='450'>|
+| ----------- | 
+
+## Private Links [Inbound Traffic]
 
 With private endpoints your service is assigned a private IP address from your virtual network.
 Private Link provides private access to Azure services. Here, "private" means that the connection uses the Microsoft Azure backbone network instead of the internet. To make that switch, Private Link changes the connectivity method for the Azure resource from public endpoint to private endpoint.
@@ -55,12 +64,12 @@ Before you enable or disable any defaults it's noteworthy to check the considera
 * Each private endpoint can be connected to one tenant only.
 * On-premises data gateways aren't supported and fail to register when Private Link is enabled. To run the gateway configured successfully, Private Link must be disabled. VNet data gateways will work.
 
+
 ## Service Tags
 
 IP addresses within Azure have protections enabled by default to build extra layers of protections against security threats. These protections include integrated DDoS protection and protections at the edge such as enablement of Resource Public Key Infrastructure (RPKI). RPKI protects Microsoft networks to ensure no one else tries to announce the Microsoft IP space on the Internet. Azure automatically applies RPKI and DDoS protections to mitigate IP spoofing.
 
 Many customers enable Service Tags as part of their strategy of defense. Service Tags are labels that identify Azure services by their IP ranges. A service tag represents groups of IP address prefixes associated with specific Azure services and can be used in Network Security Groups (NSGs), Azure Firewall, and User-Defined Routes (UDR).
-
 
 One of the recommendations and standard procedures is to use an Access Control List (ACL) to protect an environment from harmful traffic. When you set up IP ACLs, you're setting up a list of IP Addresses that you want to allow to traverse the network and blocking all others. In addition, you're applying these policies not just on the IP address but also on the port. Service tags reduce the number of manual touches that are required and ensure that the traffic for a service is always accurate.You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. 
 
@@ -76,7 +85,8 @@ In Microsoft Fabric, you can use the service tags listed in the table below. The
 | KustoAnalytics | Real-Time Intelligence | Both | No | No |
 
 ## URL's and Ports
-Microsoft Fabric URLs required for interfacing with Fabric workloads. The URLs are divided into two categories: required and optional. Fabric requires only TCP Port 443 to be opened for the listed endpoints.
+
+Microsoft Fabric URLs required for interfacing with Fabric workloads. The URLs are divided into two categories: required and optional. Fabric requires only TCP Port 443 to be opened for the listed endpoints. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints.The Power BI service requires internet connectivity. The endpoints listed in the following tables should be reachable for customers who use the Power BI service. All endpoints in the Power BI service support HTTP/2.
 
 Table below contains the **required URL's** for each experience in Fabric
 
@@ -113,3 +123,8 @@ Table below contains the **required URL's** for each experience in Fabric
 ||https://*.z[0-9].kusto.fabric.microsoft.com||
 |**Event Stream**|||
 |Customers can send/read events from Event stream in their custom app |sb://*.servicebus.windows.net|http: 443<br>amqp: 5672/5673<br>kafka: 9093|
+
+More Details
+
+[Add Fabric URLs to your allowlist](https://learn.microsoft.com/fabric/security/fabric-allow-list-urls)
+[Add Power BI URLs to allowlist](https://learn.microsoft.com/fabric/security/power-bi-allow-list-urls)
