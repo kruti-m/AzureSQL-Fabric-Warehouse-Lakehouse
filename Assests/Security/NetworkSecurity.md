@@ -48,3 +48,68 @@ B. If Azure Private Link is properly configured and Block public Internet access
 * If the virtual network is configured to block public Internet access, scenarios that don't support private links will be blocked by the virtual network, and won't work.
 
 Refer [this link](https://learn.microsoft.com/fabric/security/security-private-links-overview#private-link-in-fabric-experiences) to understand Private Link in Fabric experiences. The [cost of private links](https://azure.microsoft.com/pricing/details/private-link/) and the increase of the [ExpressRoute](https://learn.microsoft.com/azure/expressroute/expressroute-introduction) bandwidth to allow private connectivity from your network, might add costs to your organization.
+
+Before you enable or disable any defaults it's noteworthy to check the considerations and limitations for Private Endpoints. For example:
+
+* Private link doesn't support in Trial capacity.
+* Each private endpoint can be connected to one tenant only.
+* On-premises data gateways aren't supported and fail to register when Private Link is enabled. To run the gateway configured successfully, Private Link must be disabled. VNet data gateways will work.
+
+## Service Tags
+
+IP addresses within Azure have protections enabled by default to build extra layers of protections against security threats. These protections include integrated DDoS protection and protections at the edge such as enablement of Resource Public Key Infrastructure (RPKI). RPKI protects Microsoft networks to ensure no one else tries to announce the Microsoft IP space on the Internet. Azure automatically applies RPKI and DDoS protections to mitigate IP spoofing.
+
+Many customers enable Service Tags as part of their strategy of defense. Service Tags are labels that identify Azure services by their IP ranges. A service tag represents groups of IP address prefixes associated with specific Azure services and can be used in Network Security Groups (NSGs), Azure Firewall, and User-Defined Routes (UDR).
+
+
+One of the recommendations and standard procedures is to use an Access Control List (ACL) to protect an environment from harmful traffic. When you set up IP ACLs, you're setting up a list of IP Addresses that you want to allow to traverse the network and blocking all others. In addition, you're applying these policies not just on the IP address but also on the port. Service tags reduce the number of manual touches that are required and ensure that the traffic for a service is always accurate.You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. 
+
+In Microsoft Fabric, you can use the service tags listed in the table below. There's no service tag for untrusted code which is used in Data Engineering items.
+
+| Tag | Purpose | Can use inbound or outbound? | Can be regional? | Can use with Azure Firewall? |
+|--|--|--|--|--|
+| DataFactory | Azure Data Factory | Both | No | Yes |
+| DataFactoryManagement| On premises data pipeline activity | Outbound | No | Yes |
+| EventHub | Azure Event Hubs | Outbound | Yes | Yes |
+| Power BI | Power BI and Microsoft Fabric | Both | No | Yes |
+| PowerQueryOnline | Power Query Online | Both | No | Yes |
+| KustoAnalytics | Real-Time Intelligence | Both | No | No |
+
+## URL's and Ports
+Microsoft Fabric URLs required for interfacing with Fabric workloads. The URLs are divided into two categories: required and optional. Fabric requires only TCP Port 443 to be opened for the listed endpoints.
+
+Table below contains the **required URL's** for each experience in Fabric
+
+|Purpose   |Endpoint  |Port      |
+|:---------|:---------|:---------|
+|**Required**: Portal|*.fabric.microsoft.com|TCP 443|
+|For OneLake access for DFS APIs (default Onelake endpoint) |*.onelake.dfs.fabric.microsoft.com|Port 1443|
+|Onelake endpoint for calling Blob APIs|*.onelake.blob.fabric.microsoft.com|TCP 443|
+|**PowerBI For outbound connections**|||
+|**Required**: Portal|*.powerbi.com|TCP 443|
+|**Required**: Backend APIs for Portal|*.pbidedicated.windows.net|TCP 443|
+|**Required**: Cloud pipelines|No specific endpoint is required|N/A|
+|**PowerBI For inbound connections**|||
+|**PowerBI For inbound connections**|No specific endpoints other than the customer's data store endpoints required in pipelines and behinds the firewall.<br>(User can use service tag DataFactory, regional tag is supported, like DataFactory.WestUs)|
+|**Lakehouse for Inbound connections**|https://cdn.jsdelivr.net/npm/monaco-editor*|N/A|
+|**Notebook for Inbound connections (icons)**|http://res.cdn.office.net/|N/A|
+|**Required**: Notebook backend|https://\*.pbidedicated.windows.net<br>wss://\*.pbidedicated.windows.net<br>(HTTP/WebSocket)|N/A|
+|**Required**: Lakehouse backend|https://onelake.dfs.fabric.microsoft.com|N/A|
+|**Required**: Shared backend|https://*.analysis.windows.net|N/A|
+|**Required**: DE/DS extension UX|https://pbides.powerbi.com|N/A|
+|**Required**: Notebooks UX|https://aznb-ame-prod.azureedge.net|N/A|
+|**Required**: Notebooks UX|https://*.notebooks.azuresandbox.ms|N/A|
+|**Required**: Notebooks UX|https://content.powerapps.com|N/A|
+|**Required**: Notebooks UX|https://aznbcdn.notebooks.azure.net|N/A|
+|**Data Warehouse**|||
+|**Required**: Datamart SQL |datamart.fabric.microsoft.com|1433|
+|**Required**: Datamart SQL |datamart.pbidedicated.microsoft.com|1433|
+|**Required**: Fabric DW SQL |datawarehouse.fabric.microsoft.com|1433|
+|**Required**: Fabric SQL |datawarehouse.pbidedicated.microsoft.com|1433|
+|**Data Science**|||
+|Inbound connections (library management for PyPI)|https://pypi.org/*|N/A|
+|Inbound connections (library management for Conda)|local static endpoints for condaPackages|N/A|
+|**Kusto Database**|||
+||https://*.z[0-9].kusto.fabric.microsoft.com||
+|**Event Stream**|||
+|Customers can send/read events from Event stream in their custom app |sb://*.servicebus.windows.net|http: 443<br>amqp: 5672/5673<br>kafka: 9093|
