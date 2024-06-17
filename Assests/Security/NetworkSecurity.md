@@ -29,18 +29,35 @@ Managed virtual networks are virtual networks that are created and managed by Mi
 |<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='450'>|
 | ----------- | 
 
+### How-To Enable (Workspace Level)
+
+Go to Workspace Settings -> Network Security -> Create Managed Private Endpoint
+
+|<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='450'>|
+| ----------- | 
+
+Fabric workspaces that are provisioned with a dedicated virtual network provide you with value in three ways:
+
+1. With a managed virtual network you get complete network isolation for the Spark clusters running your Spark jobs (which allow users to run arbitrary user code) while offloading the burden of managing the virtual network to Microsoft Fabric.
+2. You don't need to create a subnet for the Spark clusters based on peak load, as this is managed for you by Microsoft Fabric.
+3. A managed virtual network for your workspace, along with managed private endpoints, allows you to access data sources that are behind firewalls or otherwise blocked from public access.
+
 ## Private Links [Inbound Traffic]
 
 With private endpoints your service is assigned a private IP address from your virtual network.
 Private Link provides private access to Azure services. Here, "private" means that the connection uses the Microsoft Azure backbone network instead of the internet. To make that switch, Private Link changes the connectivity method for the Azure resource from public endpoint to private endpoint.
 Now you don't access the Azure resource using a public IP address. Instead, you use a private IP address that Azure assigns to the resource from the address space of your subnet.The resource's public endpoint still exists, however, even though you're not using it. It's possible to disable the Azure resource's public endpoint, which bypasses that potential security issue. You can configure Fabric to deny all requests that don't come from the configured network path.
 
-### How-To Enable
+### How-To Enable (Tenant Level)
 
-There are two tenant settings in the Fabric admin portal involved in Private Link configuration: **Azure Private Links** and **Block Public Internet Access**.
+Tenant admins can enable the Private Link setting in the Admin portal of their Microsoft Fabric tenant. There are two tenant settings in the Fabric admin portal involved in Private Link
+configuration: **Azure Private Links** and **Block Public Internet Access**.
 
 |<img src='/Assests/Security/Media/TenantPrivateLink.PNG' width='700' height='450'>|
 | ----------- | 
+|<img src='/Assests/Security/Media/TenantSettingPrivateLink.gif' width='700' height='450'>|
+| ----------- | 
+
 
 A. If Azure Private Link is properly configured and Block public Internet access is enabled:
 
