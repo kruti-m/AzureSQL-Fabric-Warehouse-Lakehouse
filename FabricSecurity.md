@@ -14,16 +14,18 @@ As a SaaS service, Fabric offers a complete security package for the entire plat
 1. ***Power BI*** - Power BI is an online software service (SaaS, or Software as a Service) offering as part of Microsoft Fabric. Its the unified visualization layer for Fabric. When a Power BI report loads data from OneLake, the data goes through the internal Microsoft network.
 
 |<img src='/Assests/Security/Media/FabricSecurityLayers.PNG' width='1000' height='550'>|
-| ----------- | 
+| ----------- |
 
 ## Fabric Layer-wise Security Features
 
 | Layer | Feature|
 |----------|--------------|
 |**[Data Handling and Security](/Assests/Security/DataSecurity.md)**|Encryption, Labelling, Customer Lockbox|
-|**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication, Authorization, Guest user sharing|
+|**[Access Management](/Assests/Security/AccessManagement.md)**| Authentication, Authorization, Workspace Identities, Guest user sharing|
 |**[Item Security](/Assests/Security/ItemSecurity.md)**| Share item via link, Impact Analysis, Semantic Model, Data Warehouse, Lakehouse, Data Factory |
 |**[Workspace Security](/Assests/Security/WorkspaceSecurity.md)**| Workspace Roles, Access Management, Settings, Retention, Governance, Lineage, State |
 |**[Domain Security](/Assests/Security/DomainSecurity.md)**| Domain Roles, Creation, Settings, Assignment, Endorsement, Auditing |
 |**[Capacity Security](/Assests/Security/CapacitySecurity.md)**| Tenant Concept and Settings, Capacity License and Features, Access Management, Consumption, Disaster Recovery |
 |**[PowerBI Security](/Assests/Security/PowerBISecurity.md)**| PowerBI Embedded Analytics, Row-level security, Object/Column-Level Security, Dynamic Data Masking |
+|**[OneLake Security](/Assests/Security/OneLakeSecurity.md)**| Encryption, Restricted External Access, Shortcuts, Least Privilege, BCDR |
+|**[Network Security](/Assests/Security/NetworkSecurity.md)**| Private Endpoint, Private Links, Service Tags, URL's and Ports |

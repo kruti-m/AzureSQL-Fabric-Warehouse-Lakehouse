@@ -3,6 +3,7 @@
 * [Access Management](#access-management)
   * [Authentication](#authentication)
   * [Authorization](#authorization)
+  * [Workspace Identities](#workspace-identities)
   * [Guest user sharing](#guest-user-sharing)
 
 # Access management
@@ -45,7 +46,35 @@ Some compute engines in Fabric have their own security models.Granular engine pe
 * [Data Factory - Set up you Lakehouse Connection](https://learn.microsoft.com/fabric/data-factory/connector-lakehouse-overview)
 * [Real-Time Analytics Row-Level Security](https://learn.microsoft.com/azure/data-explorer/kusto/management/row-level-security-policy)
 
-## Guest user sharing 
+## Workspace Identities
+
+A [Fabric workspace identity](https://learn.microsoft.com/fabric/security/workspace-identity) is an automatically managed service principal that can be associated with a Fabric workspace. Workspace identities are supported in workspaces assigned to Fabric capacities (F64 or higher). If this workspace was migrated and is no longer assigned to an F64 (or higher) capacity, any items using workspace identities may no longer work.
+
+Fabric workspaces with a workspace identity can securely read or write to firewall-enabled Azure Data Lake Storage Gen2 accounts through trusted workspace access for OneLake shortcuts.Fabric will use workspace identities to obtain Microsoft Entra tokens without the customer having to manage any credentials.A workspace identity is automatically assigned the **workspace contributor role** and has access to workspace items.
+
+### How-To Create Workspace Identity
+
+You navigate to the workspace and open the workspace settings -> Workspace identity tab -> Workspace identity button.
+
+|<img src='/Assests/Security/Media/WorkspaceIdentity.gif' width='780' height='400'>|
+| -------- |
+
+When you create a workspace identity, Fabric creates a service principal in Microsoft Entra ID to represent the identity. An accompanying app registration is also created. Fabric automatically manages the credentials associated with workspace identities, thereby preventing credential leaks and downtime due to improper credential handling.
+
+### Identity details
+
+| Detail | Description |
+|:-------|:-----|
+| **Name** | Workspace identity name. The workspace identity name is the same as the workspace name.|
+| **ID** | The workspace identity GUID. This is a unique identifier for the identity. |
+| **Role** | The workspace role assigned to the identity. Workspace identities are automatically assigned the contributor role upon creation. |
+| **State** | The state of the workspace. Possible values: *Active*, *Inactive*, *Deleting*, *Unusable*, *Failed*, *DeleteFailed* |
+
+> :warning: Note When a workspace is deleted, the workspace identity is deleted as well. its workspace identity is deleted as well. If the workspace is restored after deletion, the workspace identity is not restored.When a workspace gets renamed, the workspace identity is also renamed to match the workspace name. However its Entra application and service principal remain the same.
+
+Do review [considerations and limitations](https://learn.microsoft.com/fabric/security/workspace-identity#considerations-and-limitations) before implementation.
+
+## Guest user sharing
 
 Sharing items with guest users in Fabric is similar to sharing items with guest users in Power BI, except that in Fabric, you can only share items by sharing the workspace.
 

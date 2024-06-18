@@ -1,103 +1,82 @@
 # In this article we will cover:
 
 * [OneLake Security](#onelake-security)
-  * [PowerBI Embedded Analytics](#power-bi-embedded-analytics)
-    * [Embedding Setup Tool](#embedding-setup-tool)
- 
+  * [Encryption](#encryption)
+  * [Restricted External Access](#restricted-external-access)
+  * [Shortcuts](#shortcuts)
+    * [Trusted Workspace Access](#trusted-workspace-access)
+  * [Least Privilege](#least-privilege)
+  * [BCDR](#bcdr)
 
 # OneLake Security
 
-Power BI is an online software service (SaaS, or Software as a Service) offering as part 
-of Microsoft Fabric that lets you easily and quickly create self-service Business 
-Intelligence dashboards, reports, semantic models, and visualizations.
+OneLake comes automatically with every Microsoft Fabric tenant and is designed to be the single place for all your analytics data. OneLake brings customers:
 
-|<img src='/Assests/Security/Media/PowerBiSecurity.PNG' width='1000' height='550'>|
+* One data lake for the entire organization.
+* One copy of data for use with multiple analytical engines.
+
+|<img src='/Assests/Security/Media/OnelakeSecurity.PNG' width='1000' height='550'>|
 | ----------- | 
 
-Power BI uses two primary data storage resource types:</br>
-• Azure Storage </br>
-• Azure SQL Databases </br>
-In most scenarios, Azure Storage is utilized to persist the data of Power BI artifacts, while Azure SQL Databases are used to persist artifact metadata. All data persisted by Power BI is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using [Azure SQL's Transparent Data Encryption (TDE)](https://learn.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql) technology. Customer data stored in Azure 
-storage is encrypted using [Azure Storage Encryption](https://learn.microsoft.com/azure/storage/common/storage-service-encryption).
+**Every customer tenant has exactly one OneLake.**
+Any data that lands in OneLake is governed by default. Within a tenant, you can create any number of workspaces. Within a workspace, you can create data items and you access all data in OneLake through data items.Fabric stores Lakehouses, Warehouses, and other items in OneLake.OneLake is built on top of Azure Data Lake Storage (ADLS) Gen2 or the Windows file system like a hierarchical data lake. It can support any type of file, structured or unstructured. This structure allows you to set security at different levels in the hierarchy to govern access. OneLake is the OneDrive for data.Items always live within workspaces and workspaces always live directly under the OneLake namespace. 
 
-We roughly touched this topic under [Capacity Licenses and Features](/Assests/Security/CapacitySecurity.md/#capacity-license). All Power BI Premium capacities are automatically upgraded to support all the Fabric workloads.
-> :memo: **Note:** Power BI Premium P SKUs support Microsoft Fabric. **A and EM SKUs only support Power BI items.**
-
-To enable Power BI Premium (per-user), Go to the admin portal, then select “Users can try Microsoft Fabric paid features”.
-|<img src='/Assests/Security/Media/EnablingPPUFabric.png' width='900' height='450'>|
+|<img src='/Assests/Security/Media/OneLake.png' width='450' height='270'>|
 | ----------- |
 
-## Power BI Embedded Analytics
+By now you would be familiar that users can't view or use data in the Items unless you give them access to them either at the item/workspace/capacity level.
 
-While Power BI as a service has its own [Power BI security whitepaper](https://learn.microsoft.com/power-bi/guidance/whitepaper-powerbi-security) published, this module focusses on the PowerBI Embedded Analytics offerings. Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application. Hence from a security view-point we will understand these and features to incorporate when using Fabric -> Power BI experience. 
+|<img src='/Assests/Security/Media/OneLakepermission.png' width='500' height='430'>|
+| ----------- |
 
-Power BI Embedded has basically the same features as Power BI Premium. Power BI embedded analytics offers two solutions:
+## Encryption
 
-1. [Embed for your customers](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-customers)
-2. [Embed for your organization](https://learn.microsoft.com/power-bi/developer/embedded/embedded-analytics-power-bi#embed-for-your-organization)
+Data stored in OneLake is encrypted at rest by default using Microsoft-managed key. Microsoft-managed keys are rotated appropriately. Data in OneLake is encrypted and decrypted transparently and it is FIPS 140-2 compliant.Data in transit across the public internet between Microsoft services is always encrypted with at least TLS 1.2. Fabric negotiates to TLS 1.3 whenever possible.
 
-The artifact is embedded into an IFrame in the application or portal. An IFrame is not allowed to read or write data from the external web application or portal, and the communication with the IFrame is done by using the Power BI Client SDK using POST messages.
+## Restricted External Access
 
-|<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='520' height='300'>|
-| ----------- | 
+OneLake allows you to restrict access to data from applications running outside of Fabric environments.These settings are available at the tenant level.When you turn this switch ON, users can access data via all sources. When you turn the switch OFF, users can't access data via applications running outside of Fabric environments. For example, users can access data via applications like Azure Databricks, custom applications using Azure Data Lake Storage (ADLS) APIs, or OneLake file explorer.
 
-|Embed for your customers  |Embed for your organization  |
-|---------|---------|
-|Also known as **app owns data**         |Also known as **user owns data**         |
-|Aimed at external users         |Aimed at internal users         |
-|To authenticate app users, use your own authentication method        |App users authenticate against Microsoft Entra ID         |
-|App users don't need a license         |Each app user needs a Power BI license         |
-|Non-interactive authentication. Your app uses a *service principal* or a *master user* to authenticate        |Interactive authentication. Your app uses the app user's credentials to authenticate.  |
+|<img src='/Assests/Security/Media/TenantOneLakeSetting.PNG.png' width='700' height='450'>|
+| ----------- |
 
-### Embedding Setup Tool
+## Shortcuts
 
-What you can do is a quick run-down of you code with this [Embedding Setup Tool.](https://app.powerbi.com/embedsetup). There are also [PowerBI Developer Samples](https://github.com/microsoft/powerbi-developer-samples/) available for reference.
+Shortcuts are objects in OneLake that point to other storage locations. The location can be internal or external to OneLake. Shortcuts appear as folders in OneLake and any workload or service that has access to OneLake can use them. Shortcuts behave like symbolic links. They're an independent object from the target. If you delete a shortcut, the target remains unaffected. If you move, rename, or delete a target path, the shortcut can break.
 
-|Embed for your customers  |Embed for your organization  |
-|---------|---------|
-|<img src='/Assests/Security/Media/EmbeddCustomers.PNG' width='470' height='300'>|<img src='/Assests/Security/Media/EmbeddOrganization.PNG' width='470' height='300'>
+|<img src='/Assests/Security/Media/ShortcutsOneLake.png' width='600' height='300'>|
+| ----------- |
 
-You can leverage All Power BI Row Level Security (RLS) and object-level security (OLS) capabilities whether they access Power BI through the Power BI portal or through customized portals.
+You can follow the links below which will walk you through the different Shortcut options available in OneLake today
 
-## Row Level Security(RLS)
+1. [Create an Azure Data Lake Storage Gen2 shortcut](https://learn.microsoft.com/fabric/onelake/create-adls-shortcut)
+2. [Create an Amazon S3 shortcut](https://learn.microsoft.com/fabric/onelake/create-s3-shortcut)
+3. [Create an S3 compatible shortcut](https://learn.microsoft.com/fabric/onelake/create-s3-compatible-shortcut)
+4. [Create a Google Cloud Storage shortcut](https://learn.microsoft.com/fabric/onelake/create-gcs-shortcut)
+5. [Create shortcuts to on-premises data](https://learn.microsoft.com/fabric/onelake/create-on-premises-shortcut)
 
-Row-level security (RLS) enables you to use group membership or execution context to control access to rows in a database table. For example, you can ensure that workers access only those data rows that are pertinent to their department. Another example is to restrict customers' data access to only the data relevant to their company in a multi-tenant architecture.
+### Trusted Workspace Access
 
-Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint (in Lakehouse) supports predicate-based security. Filter predicates silently filter the rows available to read operations.
+Fabric allows you to access firewall-enabled Azure Data Lake Storage (ADLS) Gen2 accounts in a secure manner. Fabric workspaces that have a workspace identity can securely access ADLS Gen2 accounts with public network access enabled from selected virtual networks and IP addresses. You can limit ADLS Gen2 access to specific Fabric workspaces. Trusted workspace access is generally available. Fabric workspace identity can only be created in workspaces associated with a Fabric capacity (F64 or higher).
 
-|<img src='/Assests/Security/Media/RLSConcept.PNG' width='450' height='150'>|
-| ----------- | 
+**Pre-requisites :**
 
-Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation.Its a 4 step procedure:
+1. A Fabric workspace associated with a Fabric capacity. See Workspace identity.
+2. Create a workspace identity associated with the Fabric workspace.
+3. The user account or service principal used for creating the shortcut should have Azure RBAC roles on the storage account. The principal must have a Storage Blob Data Contributor, Storage Blob Data owner, or Storage Blob Data Reader role at the storage account scope, or a Storage Blob Delegator role at the storage account scope in addition to a Storage Blob Data Reader role at the container scope.
+4. Configure a [resource instance rule](https://learn.microsoft.com/fabric/security/security-trusted-workspace-access#resource-instance-rule) for the storage account.
 
-1. **Creating a mapping table**: This contains information which users should access which part of the table.
-2. **Creating tables**: These tables are where the sensitive data resides
-3. **Creating a function**: These are definition referencing the mapping table. This is schema bound & is to be evaluated on every "Select" statement.
-4. **Creating a policy**: This is to enforce function execution whenever data is being accessed from the underlying tables.
+## Least Privilege
 
-## Object Level Security(OLS)
+Least privilege access is a fundamental security principle in computer science that advocates for restricting users' permissions and access rights to only those permissions necessary to perform their tasks.There are 2 ways to do this:
 
-Object-level security (OLS) enables model authors to secure specific tables or columns from report viewers.  For example, a column that includes personal data can be restricted so that only certain viewers can see and interact with it. In addition, you can also restrict object names and metadata. This added layer of security prevents users without the appropriate access levels from discovering business critical or sensitive personal information like employee or financial records.
+1. [**Secure by workload**](https://learn.microsoft.com/fabric/onelake/security/best-practices-secure-data-in-onelake#secure-by-workload): There are three main workloads for OneLake where this is relevant: Apache Spark/OneLake access, SQL Endpoints, and Semantic Models.
+1. [**Secure by use case**](https://learn.microsoft.com/fabric/onelake/security/best-practices-secure-data-in-onelake#secure-by-use-case). There are three main layers to this. Workspace role management, item sharing/management, OneLake permission management.
 
-Refer [this link](https://learn.microsoft.com/fabric/security/service-admin-object-level-security?tabs=table) for step-by-step implementation.
+## BCDR
 
-> :warning: **Warning:**OLS is also defined within model roles inside PowerBI. OLS only applies to Viewers in a workspace. Workspace members assigned Admin, Member, or Contributor have edit permission for the semantic model and, therefore, OLS doesn’t apply to them.
+You can enable or disable BCDR (Business Continuity and Disaster Recovery) for a specific capacity through the Capacity Admin Portal. If your capacity has BCDR activated, your data is duplicated and stored in two different geographic regions, making it geo-redundant. The choice of the secondary region is determined by Azure's standard region pairings and can't be modified. All data in OneLake is accessed through data items. These data items can reside in different regions depending on their workspace, as a workspace is created under a capacity tied to a specific region.
 
-|<img src='/Assests/Security/Media/RLS_OLS.png' width='500' height='350'>|
-| ----------- | 
+If a disaster makes the primary region unrecoverable, OneLake may initiate a regional failover. Once the failover completes, you can use OneLake's APIs through the global endpoint to access your data in the secondary region. Data replication to the secondary region is asynchronous, so any data not copied during the disaster is lost. After a failover, the new primary data center will have local redundancy only.
 
-## Dynamic Data Masking
-
-Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users. Dynamic data masking can be configured on designated database fields to hide sensitive data in the result sets of queries. The underlying data in the database isn't changed, so it can be used with existing applications since masking rules are applied to query results.Dynamic data masking is complementary to other Fabric security features like row-level security & object-level security. A Warehouse Admin/Member/Contributor can apply this.
-
-You can select from these existing [data masking rules](https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking#define-a-dynamic-data-mask) to apply to your columns.
-
-Refer [this link](https://learn.microsoft.com/fabric/data-warehouse/howto-dynamic-data-masking) for step-by-step implementation.It's a 2 step procedure:
-
-1. **Configure table with MASK clause**: Here the MASKED WITH FUNCTION clause is used for whichever columns the data needs to be masked.
-2. **Grant UNMASK permission**: Here you grant permission only to those users who should see the data. If anyone else attempts to run a select they will see gibberish data in the masked columns.
-
-|<img src='/Assests/Security/Media/DataMasking.png' width='700' height='350'>|
-| ----------- | 
-
-> :memo: **Note:** User who does not have the Administrator, Member, or Contributor rights on the workspace, or elevated permissions on the Warehouse or you are not granted explicit permission will not see the data.
+You can also consider [soft delete option](https://learn.microsoft.com/fabric/onelake/onelake-disaster-recovery#soft-delete-for-onelake-files) which is chargeable.
