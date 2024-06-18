@@ -26,14 +26,14 @@ With PaaS services, it's common to put the compute in the same private network a
 
 Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. It helps enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
-|<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='400'>|
+|<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='370'>|
 | ----------- | 
 
 ### How-To Enable (Workspace Level)
 
 Go to Workspace Settings -> Network Security -> Create Managed Private Endpoint
 
-|<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='400'>|
+|<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='370'>|
 | ----------- | 
 
 Fabric workspaces that are provisioned with a dedicated virtual network provide you with value in three ways:
@@ -53,9 +53,9 @@ Now you don't access the Azure resource using a public IP address. Instead, you 
 Tenant admins can enable the Private Link setting in the Admin portal of their Microsoft Fabric tenant. There are two tenant settings in the Fabric admin portal involved in Private Link
 configuration: **Azure Private Links** and **Block Public Internet Access**.
 
-|<img src='/Assests/Security/Media/TenantPrivateLink.PNG' width='700' height='400'>|
+|<img src='/Assests/Security/Media/TenantPrivateLink.PNG' width='650' height='350'>|
 
-|<img src='/Assests/Security/Media/TenantSettingPrivateLink.gif' width='500' height='300'>|
+|<img src='/Assests/Security/Media/TenantSettingPrivateLink.gif' width='600' height='350'>|
 
 A. If Azure Private Link is properly configured and Block public Internet access is enabled:
 

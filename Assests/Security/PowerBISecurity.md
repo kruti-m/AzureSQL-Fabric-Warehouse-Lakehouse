@@ -14,13 +14,12 @@ of Microsoft Fabric that lets you easily and quickly create self-service Busines
 Intelligence dashboards, reports, semantic models, and visualizations.
 
 |<img src='/Assests/Security/Media/PowerBiSecurity.PNG' width='1000' height='550'>|
-| ----------- | 
+| ----------- |
 
 Power BI uses two primary data storage resource types:</br>
 • Azure Storage </br>
 • Azure SQL Databases </br>
-In most scenarios, Azure Storage is utilized to persist the data of Power BI artifacts, while Azure SQL Databases are used to persist artifact metadata. All data persisted by Power BI is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using [Azure SQL's Transparent Data Encryption (TDE)](https://learn.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql) technology. Customer data stored in Azure 
-storage is encrypted using [Azure Storage Encryption](https://learn.microsoft.com/azure/storage/common/storage-service-encryption).
+In most scenarios, Azure Storage is utilized to persist the data of Power BI artifacts, while Azure SQL Databases are used to persist artifact metadata. All data persisted by Power BI is encrypted by default using Microsoft-managed keys. Customer data stored in Azure SQL Databases is fully encrypted using [Azure SQL's Transparent Data Encryption (TDE)](https://learn.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql) technology. Customer data stored in Azure storage is encrypted using [Azure Storage Encryption](https://learn.microsoft.com/azure/storage/common/storage-service-encryption).
 
 We roughly touched this topic under [Capacity Licenses and Features](/Assests/Security/CapacitySecurity.md/#capacity-license). All Power BI Premium capacities are automatically upgraded to support all the Fabric workloads.
 > :memo: **Note:** Power BI Premium P SKUs support Microsoft Fabric. **A and EM SKUs only support Power BI items.**
@@ -31,7 +30,7 @@ To enable Power BI Premium (per-user), Go to the admin portal, then select “Us
 
 ## Power BI Embedded Analytics
 
-While Power BI as a service has its own [Power BI security whitepaper](https://learn.microsoft.com/power-bi/guidance/whitepaper-powerbi-security) published, this module focusses on the PowerBI Embedded Analytics offerings. Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application. Hence from a security view-point we will understand these and features to incorporate when using Fabric -> Power BI experience. 
+While Power BI as a service has its own [Power BI security whitepaper](https://learn.microsoft.com/power-bi/guidance/whitepaper-powerbi-security) published, this module focusses on the PowerBI Embedded Analytics offerings. Power BI embedded analytics allows you to embed Power BI content, such as reports, dashboards and tiles, into your application. Hence from a security view-point we will understand these and features to incorporate when using Fabric -> Power BI experience.
 
 Power BI Embedded has basically the same features as Power BI Premium. Power BI embedded analytics offers two solutions:
 
@@ -41,7 +40,7 @@ Power BI Embedded has basically the same features as Power BI Premium. Power BI 
 The artifact is embedded into an IFrame in the application or portal. An IFrame is not allowed to read or write data from the external web application or portal, and the communication with the IFrame is done by using the Power BI Client SDK using POST messages.
 
 |<img src='/Assests/Security/Media/PowerBiEmbedded.PNG' width='520' height='300'>|
-| ----------- | 
+| ----------- |
 
 |Embed for your customers  |Embed for your organization  |
 |---------|---------|
@@ -68,7 +67,7 @@ Row-level security (RLS) enables you to use group membership or execution contex
 Row-level security in Fabric Synapse Data Warehouse & and SQL analytics endpoint (in Lakehouse) supports predicate-based security. Filter predicates silently filter the rows available to read operations.
 
 |<img src='/Assests/Security/Media/RLSConcept.PNG' width='450' height='150'>|
-| ----------- | 
+| ----------- |
 
 Refer [this link](https://medium.com/tech-start/data-security-in-fabric-datawarehouse-c9552705944f#:~:text=Row%2Dlevel%20security%20(RLS),assigned%20to%20their%20sales%20region) for step-by-step implementation.Its a 4 step procedure:
 
