@@ -13,7 +13,7 @@
  Interactions within Fabric use the internal Microsoft network and traffic outside of the service is protected by default.
 
 |<img src='/Assests/Security/Media/NetworkSecurity.PNG' width='1000' height='550'>|
-| ----------- | 
+| ----------- |
 
 The Fabric backend platform is protected by a virtual network and isn't directly accessible from the public internet other than through secure endpoints.By default, Fabric communicates between [experiences](https://learn.microsoft.com/fabric/get-started/microsoft-fabric-overview#components-of-microsoft-fabric) using the internal Microsoft backbone network. This configuration is different from having to set up multiple Platform as a Service (PaaS) services to connect to each other over a private network.Fabric's default security settings include:
 
@@ -29,14 +29,14 @@ With PaaS services, it's common to put the compute in the same private network a
 Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. It helps enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
 |<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='350'>|
-| ----------- | 
+| ----------- |
 
 ### How-To Enable (Workspace Level)
 
 Go to Workspace Settings -> Network Security -> Create Managed Private Endpoint
 
 |<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='320'>|
-| ----------- | 
+| ----------- |
 
 Fabric workspaces that are provisioned with a dedicated virtual network provide you with value in three ways:
 
@@ -145,5 +145,3 @@ More Details
 * [Add Fabric URLs to your allowlist](https://learn.microsoft.com/fabric/security/fabric-allow-list-urls)
 * [Add Power BI URLs to allowlist](https://learn.microsoft.com/fabric/security/power-bi-allow-list-urls)
 
-## Workspace 
-Workspace identities are supported in workspaces assigned to Fabric capacities (F64 or higher). If this workspace was migrated and is no longer assigned to an F64 (or higher) capacity, any items using workspace identities may no longer work
