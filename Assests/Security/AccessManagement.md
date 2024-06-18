@@ -57,7 +57,7 @@ When you create a workspace identity, Fabric creates a service principal in Micr
 
 You navigate to the workspace and open the workspace settings -> Workspace identity tab -> Workspace identity button.
 
-|<img src='/Assests/Security/Media/WorkspaceIdentity.gif' width='600' height='370'>|
+|<img src='/Assests/Security/Media/WorkspaceIdentity.gif' width='700' height='400'>|
 | -------- |
 
 ## Guest user sharing 
