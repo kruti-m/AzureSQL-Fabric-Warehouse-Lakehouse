@@ -1,8 +1,10 @@
 # In this article we will cover:
 
 * [Network Security](#network-security)
-  * [Private Links](#private-links)
-    * [How-To Enable](#how-to-enable)
+  * [Private Endpoint](#workspace-managed-private-endpoint-outbound-traffic)
+    * [How-To Enable](#how-to-enable-workspace-level)
+  * [Private Links](#private-links-inbound-traffic)
+    * [How-To Enable](#how-to-enable-tenant-level)
   * [Service Tags](#service-tags)
   * [URL's and Ports](#urls-and-ports)
 
@@ -26,14 +28,14 @@ With PaaS services, it's common to put the compute in the same private network a
 
 Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. It helps enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
-|<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='370'>|
+|<img src='/Assests/Security/Media/ManagedVnet.gif' width='700' height='350'>|
 | ----------- | 
 
 ### How-To Enable (Workspace Level)
 
 Go to Workspace Settings -> Network Security -> Create Managed Private Endpoint
 
-|<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='370'>|
+|<img src='/Assests/Security/Media/ManagedPrivateEndpoint.gif' width='700' height='320'>|
 | ----------- | 
 
 Fabric workspaces that are provisioned with a dedicated virtual network provide you with value in three ways:
@@ -55,7 +57,7 @@ configuration: **Azure Private Links** and **Block Public Internet Access**.
 
 |<img src='/Assests/Security/Media/TenantPrivateLink.PNG' width='650' height='350'>|
 
-|<img src='/Assests/Security/Media/TenantSettingPrivateLink.gif' width='600' height='350'>|
+|<img src='/Assests/Security/Media/TenantSettingsOneLake.gif' width='600' height='350'>|
 
 A. If Azure Private Link is properly configured and Block public Internet access is enabled:
 
@@ -78,7 +80,6 @@ Before you enable or disable any defaults it's noteworthy to check the considera
 * Private link doesn't support in Trial capacity.
 * Each private endpoint can be connected to one tenant only.
 * On-premises data gateways aren't supported and fail to register when Private Link is enabled. To run the gateway configured successfully, Private Link must be disabled. VNet data gateways will work.
-
 
 ## Service Tags
 
@@ -141,5 +142,8 @@ Table below contains the **required URL's** for each experience in Fabric
 
 More Details
 
-[Add Fabric URLs to your allowlist](https://learn.microsoft.com/fabric/security/fabric-allow-list-urls)
-[Add Power BI URLs to allowlist](https://learn.microsoft.com/fabric/security/power-bi-allow-list-urls)
+* [Add Fabric URLs to your allowlist](https://learn.microsoft.com/fabric/security/fabric-allow-list-urls)
+* [Add Power BI URLs to allowlist](https://learn.microsoft.com/fabric/security/power-bi-allow-list-urls)
+
+## Workspace 
+Workspace identities are supported in workspaces assigned to Fabric capacities (F64 or higher). If this workspace was migrated and is no longer assigned to an F64 (or higher) capacity, any items using workspace identities may no longer work
