@@ -6,10 +6,10 @@ This Repository contains artifacts to for several use-cases of Microsoft Fabric.
 
 The [BasicTutorials](/BasicTutorials.md) page walks you through scenarios like :
 
-- Moving Data from Azure SQL to Fabric DataWarehouse.
-- Projecting data from Fabric DataWarehouse to PowerBI Reports.
-- Moving Data from Azure SQL to Fabric Lakehouse.
-- Projecting data from Fabric Lakehouse to PowerBI Reports.
+- Moving Data from [Azure SQL to Fabric DataWarehouse.](/Assests/BasicTutorials/MovingdatafromAzureSQLtoWarehouse.md)
+- Projecting data from [Fabric DataWarehouse to PowerBI Reports.](/Assests/BasicTutorials/CreatingWarehouseReport.md)
+- Moving Data from [Azure SQL to Fabric Lakehouse.](/Assests/BasicTutorials/MovingdatafromAzureSQLtoLakehouse.md)
+- Projecting data from [Fabric Lakehouse to PowerBI Reports.](/Assests/BasicTutorials/CreatingLakehouseReport.md)
 
 Essentially its a starter lab for anyone new to Fabric and wanting to move data from Azure SQL to Microsoft Fabric (both Warehouse and Lakehouse.)
 
