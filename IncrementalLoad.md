@@ -6,7 +6,9 @@ Pattern 2: Moving data from Azure SQL to Fabric Warehouse within the same region
 
 # Pre-requisites
 
-In order to implement the patterns below, it is expected that the user knows how to create Azure Storage accounts and have acquired trial or Fabric licenses which will allow them to create workspaces and pipelines. It is implicit that the user would also have the required permissions on both Azure Storage accounts and Microsoft Fabric for the implementation. 
+In order to implement the patterns below, it is expected that the user knows how to create Azure Storage accounts and have acquired trial or Fabric licenses which will allow them to create workspaces and pipelines. It is implicit that the user would also have the required permissions on both Azure Storage accounts and Microsoft Fabric for the implementation.
+
+[Work in progress]
 
 # Lakehouse Tutorials
 
