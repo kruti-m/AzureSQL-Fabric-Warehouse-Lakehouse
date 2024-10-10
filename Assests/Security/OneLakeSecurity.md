@@ -37,7 +37,7 @@ Data stored in OneLake is encrypted at rest by default using Microsoft-managed k
 
 OneLake allows you to restrict access to data from applications running outside of Fabric environments.These settings are available at the tenant level.When you turn this switch ON, users can access data via all sources. When you turn the switch OFF, users can't access data via applications running outside of Fabric environments. For example, users can access data via applications like Azure Databricks, custom applications using Azure Data Lake Storage (ADLS) APIs, or OneLake file explorer.
 
-|<img src='/Assests/Security/Media/TenantOneLakeSetting.PNG.png' width='700' height='450'>|
+|<img src='/Assests/Security/Media/TenantOneLakeSetting.PNG' width='700' height='450'>|
 | ----------- |
 
 ## Shortcuts
