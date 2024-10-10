@@ -38,7 +38,7 @@ In your tenant, you can enable Microsoft Fabric for:
 
 [Tenant settings](https://learn.microsoft.com/fabric/admin/tenant-settings-index) enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features might not be right for your organization, or you might only want a particular feature to be available to a specific group.
 
-|<img src='/Assests/Security/Media/' width='700' height='400'>|
+|<img src='/Assests/Security/Media/TenantSettings.png' width='700' height='400'>|
 | -------- |
 
 Tenant, domain, and workspace admins each have settings within their scope that they can configure to control who has access to certain functionalities at different levels. Some tenant-level settings can be delegated to domain and capacity admins. The important ones to consider are :</br>
